@@ -1,0 +1,36 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D "D:\Study\PTIT\Do an tot nghiep\project_BLE_Mesh\ESP-IDF_BLE_MEsh\esp_ble_mesh\custom_model\node_client_3\build\bootloader\esp-idf\esptool_py" && d:\Study\ESP-IDF_VSC\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Users/ASUS/esp/v5.3.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 "D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_client_3/build/bootloader/bootloader.bin""
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/rfid_servo.c.obj
+In file included from D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_client_3/main/rfid_servo.h:4,
+                 from D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_client_3/main/rfid_servo.c:2:
+D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_client_3/main/header.h:31: warning: "TIME_SEND_DATA" redefined
+   31 | #define TIME_SEND_DATA 10 // seconds
+      | 
+In file included from D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_client_3/main/header.h:24:
+D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_client_3/main/common.h:28: note: this is the location of the previous definition
+   28 | #define TIME_SEND_DATA 600 // seconds
+      | 
+[3/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+In file included from D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_client_3/main/main.c:1:
+D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_client_3/main/header.h:31: warning: "TIME_SEND_DATA" redefined
+   31 | #define TIME_SEND_DATA 10 // seconds
+      | 
+In file included from D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_client_3/main/header.h:24:
+D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_client_3/main/common.h:28: note: this is the location of the previous definition
+   28 | #define TIME_SEND_DATA 600 // seconds
+      | 
+D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_client_3/main/main.c:6:16: warning: 'ticks' defined but not used [-Wunused-variable]
+    6 | static uint8_t ticks = 0;
+      |                ^~~~~
+[4/8] Linking C static library esp-idf\main\libmain.a
+[5/8] Generating ld/sections.ld
+[6/8] Linking CXX executable node_client_3.elf
+[7/8] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_client_3/build/node_client_3.bin
+[8/8] cmd.exe /C "cd /D "D:\Study\PTIT\Do an tot nghiep\project_BLE_Mesh\ESP-IDF_BLE_MEsh\esp_ble_mesh\custom_model\node_client_3\build\esp-idf\esptool_py" && d:\Study\ESP-IDF_VSC\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Users/ASUS/esp/v5.3.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app "D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_client_3/build/partition_table/partition-table.bin" "D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_client_3/build/node_client_3.bin""
+node_client_3.bin binary size 0x10bd20 bytes. Smallest app partition is 0x177000 bytes. 0x6b2e0 bytes (29%) free.

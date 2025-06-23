@@ -1,0 +1,3285 @@
+C��+ښ�j%�(39) boot.�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 25 2024 16:34:09[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 001e0000[0m
+[0;32mI (92) boot:  3 storage          WiFi data        01 02 001f0000 00010000[0m
+[0;32mI (99) boot: End of partition table[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=605c8h (394696) map[0m
+[0;32mI (247) esp_image: segment 1: paddr=000705f0 vaddr=3ffbdb60 size=071d4h ( 29140) load[0m
+[0;32mI (258) esp_image: segment 2: paddr=000777cc vaddr=40080000 size=0884ch ( 34892) load[0m
+[0;32mI (272) esp_image: segment 3: paddr=00080020 vaddr=400d0020 size=12c690h (1230480) map[0m
+[0;32mI (694) esp_image: segment 4: paddr=001ac6b8 vaddr=4008884c size=1721ch ( 94748) load[0m
+[0;32mI (747) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (748) boot: Disabling RNG early entropy source...[0m
+[0;32mI (760) cpu_start: Multicore app[0m
+[0;32mI (768) cpu_start: Pro cpu start user code[0m
+[0;32mI (768) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (768) app_init: Application information:[0m
+[0;32mI (771) app_init: Project name:     node_server[0m
+[0;32mI (776) app_init: App version:      1[0m
+[0;32mI (781) app_init: Compile time:     Nov 25 2024 16:33:07[0m
+[0;32mI (787) app_init: ELF file SHA256:  10fd3c7c5...[0m
+[0;32mI (792) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (797) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (802) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (806) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (812) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (819) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (825) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (831) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (837) heap_init: At 3FFD0AC0 len 0000F540 (61 KiB): DRAM[0m
+[0;32mI (843) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (849) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (856) heap_init: At 4009FA68 len 00000598 (1 KiB): IRAM[0m
+[0;32mI (864) spi_flash: detected chip: generic[0m
+[0;32mI (866) spi_flash: flash io: dio[0m
+[0;33mW (870) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (884) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (895) coexist: coex firmware version: 4482466[0m
+[0;32mI (900) main_task: Started on CPU0[0m
+[0;32mI (910) main_task: Calling app_main()[0m
+[0;32mI (910) MAIN: Initializing...[0m
+[0;32mI (940) BTDM_INIT: BT controller compile version [b022216][0m
+[0;32mI (950) BTDM_INIT: Bluetooth MAC: c0:49:ef:f9:9d:6a[0m
+[0;32mI (950) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+Bluetooth Mesh v1.1 commit: [10f7fdc1a9]
+[0;33mW (1410) BLE_MESH: bt_mesh_proxy_server_prov_disable, Already[0m
+[0;32mI (1430) MESH_SERVER: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (1430) MESH_SERVER: net_idx: 0x0000, addr: 0x0003[0m
+[0;32mI (1430) MESH_SERVER: flags: 0x00, iv_index: 0x00000000[0m
+[0;32mI (1430) MESH_SERVER: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1440) MESH_SERVER: ESP_BLE_MESH_NODE_SET_UNPROV_DEV_NAME_COMP_EVT, Name: SERVER_NODE, err_code 0[0m
+[0;33mW (1450) BLE_MESH: bt_mesh_prov_enable, Already[0m
+[0;32mI (1450) MESH_SERVER: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code -120[0m
+[0;32mI (1460) MESH_SERVER: BLE Mesh Node initialized![0m
+[0;33mW (1920) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000b76[0m
+[0;33mW (2020) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000b77[0m
+[0;33mW (2080) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000b78[0m
+[0;32mI (2470) OLED: OLED initialization[0m
+[0;33mW (2790) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000b79[0m
+[0;33mW (2840) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000b7a[0m
+[0;33mW (2920) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000b7b[0m
+[0;32mI (3580) wifi:wifi driver task: 3ffdde4c, prio:23, stack:6656, core=0[0m
+[0;32mI (3590) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (3590) wifi:wifi certification version: v7.0[0m
+[0;32mI (3590) wifi:config NVS flash: enabled[0m
+[0;32mI (3590) wifi:config nano formating: disabled[0m
+[0;32mI (3600) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (3600) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (3600) wifi:Init management short buffer num: 32[0m
+[0;32mI (3610) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (3610) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (3620) wifi:Init static rx buffer num: 10[0m
+[0;32mI (3620) wifi:Init dynamic rx buffer num: 32[0m
+[0;33mW (3630) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000b7c[0m
+[0;32mI (3630) wifi_init: rx ba win: 6[0m
+[0;32mI (3640) wifi_init: accept mbox: 6[0m
+[0;32mI (3640) wifi_init: tcpip mbox: 32[0m
+[0;32mI (3640) wifi_init: udp mbox: 6[0m
+[0;32mI (3650) wifi_init: tcp mbox: 6[0m
+[0;32mI (3650) wifi_init: tcp tx win: 5760[0m
+[0;32mI (3660) wifi_init: tcp rx win: 5760[0m
+[0;32mI (3660) wifi_init: tcp mss: 1440[0m
+[0;32mI (3660) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (3670) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (3680) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000b7d[0m
+[0;33mW (3680) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (3690) wifi:mode : sta (c0:49:ef:f9:9d:68)[0m
+[0;32mI (3690) wifi:enable tsf[0m
+[0;32mI (3700) MQTT_EXAMPLE: wifi_init_sta finished[0m
+[0;31mE (3710) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3710) esp-tls: Failed to open new connection[0m
+[0;31mE (3720) transport_base: Failed to open a new connection[0m
+[0;31mE (3720) mqtt_client: Error transport connect[0m
+[0;32mI (3730) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (3730) MAIN: Task initializing..[0m
+[0;32mI (3740) MAIN: Task initializing..[0m
+[0;32mI (3750) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (3750) mqtt_client: Client force reconnect requested[0m
+[0;32mI (3760) main_task: Returned from app_main()[0m
+[0;31mE (3760) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3770) esp-tls: Failed to open new connection[0m
+[0;33mW (3770) wifi:[0;31mE (3780) transport_base: Failed to open a new connection[0m[0m
+exceed max band, 2g, ngroup:3
+[0;31mE (3790) mqtt_client: Error transport connect[0m
+[0;33mW (3790) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (3790) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (3800) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3810) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3830) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3840) wifi:state: assoc -> run (0x10)[0m
+[0;33mW (4530) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000b80[0m
+[0;33mW (4650) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000b81[0m
+[0;32mI (4860) wifi:connected with Thuy, aid = 3, channel 1, BW20, bssid = d6:0e:69:0f:74:e7[0m
+[0;32mI (4860) wifi:security: WPA2-PSK, phy: bgn, rssi: -91[0m
+[0;32mI (4860) wifi:pm start, type: 1[0m
+
+[0;32mI (4860) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (4900) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (4900) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;33mW (4900) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (5000) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (5110) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (5210) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (5280) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000b82[0m
+[0;33mW (5310) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (5370) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000b83[0m
+[0;33mW (5410) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (5480) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000b84[0m
+[0;33mW (5520) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (5620) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (5830) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (5870) esp_netif_handlers: sta ip: 192.168.73.246, mask: 255.255.255.0, gw: 192.168.73.71[0m
+[0;32mI (5870) MQTT_EXAMPLE: got ip:192.168.73.246[0m
+[0;33mW (6030) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (6130) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (6230) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (6330) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (6440) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (6540) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (6640) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (6740) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (6850) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (6950) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (7050) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (7150) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (7250) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (7360) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (7460) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (7560) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (7660) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (7770) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (7870) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (7970) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (8080) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (8180) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (8280) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (8380) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (8480) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (8690) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (8790) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (8800) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (8800) mqtt_client: Client force reconnect requested[0m
+[0;33mW (8890) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (9000) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (9300) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (9410) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (9510) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (9610) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (9710) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (9920) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (10020) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (10120) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (10230) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (10330) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (10430) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (10530) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (10630) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (10740) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (10840) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (10940) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (11040) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (11150) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (11250) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (11350) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (11450) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (11560) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (11660) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (11760) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (11930) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000b85[0m
+[0;33mW (11970) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (12020) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000b86[0m
+[0;33mW (12070) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (12110) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000b87[0m
+[0;33mW (12170) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (12270) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (12370) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (12480) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (12580) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (12680) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (12770) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000b88[0m
+[0;33mW (12790) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (12870) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000b89[0m
+[0;33mW (12890) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (12960) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000b8a[0m
+[0;33mW (12990) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (13090) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (13200) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (13300) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (13400) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (13500) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (13590) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000b8b[0m
+[0;33mW (13610) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (13670) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000b8c[0m
+[0;33mW (13710) wifi:exceed max band, 2g, ngroup:3[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (13750) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (13760) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000b8d[0m
+[0;33mW (13790) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (13810) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (13810) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (13810) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (13840) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (13840) mqtt_client: Client force reconnect requested[0m
+[0;33mW (13910) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (14010) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (14220) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (14320) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (14420) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (14450) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000b8e[0m
+[0;33mW (14530) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (14540) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000b8f[0m
+[0;33mW (14630) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (14670) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000b90[0m
+[0;33mW (14730) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (14830) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (14940) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (15040) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (15140) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (15240) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (15330) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000b91[0m
+[0;33mW (15350) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (15400) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000b92[0m
+[0;33mW (15450) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (15490) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000b93[0m
+[0;33mW (15550) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (15650) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (15750) wifi:exceed max band, 2g, ngroup:3[0m
+[0;31mE (15800) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (15800) esp-tls: Failed to open new connection[0m
+[0;31mE (15800) transport_base: Failed to open a new connection[0m
+[0;31mE (15810) mqtt_client: Error transport connect[0m
+[0;32mI (15810) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;33mW (15860) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (15960) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (16060) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (16160) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (16270) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (16370) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (16470) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (16580) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (16680) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (16780) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (16880) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (16980) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (17090) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (17190) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (17290) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (17390) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (17500) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (17600) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (17700) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (17800) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (17910) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (18010) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (18110) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (18210) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (18310) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (18420) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (18520) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (18620) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (18730) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (18830) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (18880) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (18880) mqtt_client: Client force reconnect requested[0m
+[0;33mW (18930) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (19030) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (19140) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (19240) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (19340) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (19440) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (19540) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (19650) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (19750) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (19850) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (19950) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (20060) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (20160) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (20260) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (20360) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (20470) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (20570) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (20670) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (20770) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (20880) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (21080) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (21180) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (21390) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (21490) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (21690) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (21800) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (21980) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000b94[0m
+[0;33mW (22000) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (22090) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000b96[0m
+[0;33mW (22100) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (22310) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (22410) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (22620) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (22720) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (22790) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000b97[0m
+[0;33mW (22920) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (23030) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (23230) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (23330) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (23430) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (23540) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (23630) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000b9a[0m
+[0;33mW (23640) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (23690) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000b9b[0m
+[0;33mW (23740) wifi:exceed max band, 2g, ngroup:3[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (23780) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000b9c[0m
+[0;33mW (23790) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (23810) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (23840) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (23840) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;33mW (23850) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (23920) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (23920) mqtt_client: Client force reconnect requested[0m
+[0;33mW (23950) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (24050) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (24150) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (24260) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (24360) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (24450) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000b9d[0m
+[0;33mW (24460) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (24530) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000b9e[0m
+[0;33mW (24560) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (24640) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000b9f[0m
+[0;33mW (24670) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (24770) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (24870) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (24970) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (25070) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (25180) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (25280) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (25380) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (25430) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000ba1[0m
+[0;33mW (25470) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000ba2[0m
+[0;33mW (25480) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (25590) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (25690) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (25790) wifi:exceed max band, 2g, ngroup:3[0m
+[0;31mE (25880) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (25880) esp-tls: Failed to open new connection[0m
+[0;31mE (25880) transport_base: Failed to open a new connection[0m
+[0;31mE (25890) mqtt_client: Error transport connect[0m
+[0;33mW (25890) wifi:[0;32mI (25890) MQTT_EXAMPLE: MQTT Disconnected from broker[0m[0m
+exceed max band, 2g, ngroup:3
+[0;33mW (25990) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (26100) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (26200) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (26300) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (26400) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (26510) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (26610) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (26710) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (26810) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (26920) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (27020) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (27120) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (27220) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (27330) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (27430) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (27530) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (27630) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (27740) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (27840) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (27940) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (28040) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (28150) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (28250) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (28350) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (28450) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (28560) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (28760) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (28860) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (28960) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (28960) mqtt_client: Client force reconnect requested[0m
+[0;33mW (28970) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (29070) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (29170) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (29270) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (29370) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (29480) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (29580) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (29680) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (29780) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (29890) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (29990) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (30090) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (30190) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (30300) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (30400) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (30500) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (30600) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (30700) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (30810) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (30910) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (31010) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (31110) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (31220) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (31320) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (31420) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (31530) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (31630) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (31730) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (31830) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (31930) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (31960) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000ba3[0m
+[0;33mW (32040) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (32050) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000ba4[0m
+[0;33mW (32140) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (32170) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000ba5[0m
+[0;33mW (32240) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (32340) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (32450) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (32550) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (32650) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (32750) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (32810) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000ba6[0m
+[0;33mW (32860) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (32910) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000ba7[0m
+[0;33mW (32960) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (33030) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000ba8[0m
+[0;33mW (33060) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (33160) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (33270) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (33370) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (33470) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (33570) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (33630) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000ba9[0m
+[0;33mW (33680) wifi:exceed max band, 2g, ngroup:3[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (33780) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (33790) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (33810) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (33840) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (33840) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;33mW (33880) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (33980) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (34000) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (34000) mqtt_client: Client force reconnect requested[0m
+[0;33mW (34090) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (34190) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (34290) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (34390) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (34460) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bac[0m
+[0;33mW (34500) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (34580) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bad[0m
+[0;33mW (34600) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (34700) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (34700) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bae[0m
+[0;33mW (34800) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (34910) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (35010) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (35110) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (35210) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (35310) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (35340) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000baf[0m
+[0;33mW (35420) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (35420) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bb0[0m
+[0;33mW (35510) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bb1[0m
+[0;33mW (35520) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (35620) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (35720) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (35830) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (35930) wifi:exceed max band, 2g, ngroup:3[0m
+[0;31mE (35960) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (35960) esp-tls: Failed to open new connection[0m
+[0;31mE (35960) transport_base: Failed to open a new connection[0m
+[0;31mE (35970) mqtt_client: Error transport connect[0m
+[0;32mI (35970) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;33mW (36030) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (36130) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (36240) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (36340) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (36440) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (36540) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (36650) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (36750) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (36850) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (36950) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (37050) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (37160) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (37260) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (37360) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (37460) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (37570) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (37670) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (37770) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (37870) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (38080) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (38180) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (38280) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (38390) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (38490) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (38590) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (38690) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (38800) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (38900) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (39000) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (39040) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (39040) mqtt_client: Client force reconnect requested[0m
+[0;33mW (39100) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (39210) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (40230) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (40330) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (40440) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (40540) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (40640) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (40740) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (40840) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (40950) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (41050) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (41150) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (41250) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (41360) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (41460) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (41560) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (41660) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (41770) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (41870) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (41950) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bb2[0m
+[0;33mW (41970) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (42070) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bb3[0m
+[0;33mW (42070) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (42150) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bb4[0m
+[0;33mW (42180) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (42280) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (42380) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (42480) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (42580) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (42690) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (42790) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (42870) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bb5[0m
+[0;33mW (42890) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bb6[0m
+[0;33mW (42890) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (43000) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (43030) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bb7[0m
+[0;33mW (43100) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (43200) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (43400) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (43510) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (43610) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (43710) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bb8[0m
+[0;33mW (43710) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (43730) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bb9[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (43810) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bba[0m
+[0;33mW (43810) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (43820) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (43850) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (43870) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (43870) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;33mW (43920) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (44020) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (44080) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (44080) mqtt_client: Client force reconnect requested[0m
+[0;33mW (44120) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (44220) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (44330) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (44430) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (44510) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bbb[0m
+[0;33mW (44530) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (44570) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bbc[0m
+[0;33mW (44630) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (44700) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bbd[0m
+[0;33mW (44740) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (44840) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (45040) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (45150) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (45340) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bbe[0m
+[0;33mW (45350) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (45400) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bbf[0m
+[0;33mW (45450) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (45550) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bc0[0m
+[0;33mW (45660) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (45760) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (45960) wifi:exceed max band, 2g, ngroup:3[0m
+[0;31mE (46040) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (46040) esp-tls: Failed to open new connection[0m
+[0;31mE (46040) transport_base: Failed to open a new connection[0m
+[0;31mE (46050) mqtt_client: Error transport connect[0m
+[0;32mI (46050) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;33mW (46070) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (46270) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (46370) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (46580) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (46680) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (46890) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (46990) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (47190) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (47290) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (47400) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (47500) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (47600) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (47710) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (47810) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (47910) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (48010) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (48110) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (48220) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (48320) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (48420) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (48520) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (48630) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (48730) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (48830) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (48930) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (49040) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (49120) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (49120) mqtt_client: Client force reconnect requested[0m
+[0;32mI (49150) wifi:<ba-add>idx:0 (ifx:0, d6:0e:69:0f:74:e7), tid:0, ssn:4, winSize:64[0m
+[0;31mE (49170) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (49180) esp-tls: Failed to open new connection[0m
+[0;31mE (49180) transport_base: Failed to open a new connection[0m
+[0;31mE (49190) mqtt_client: Error transport connect[0m
+[0;32mI (49190) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;33mW (49340) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (49450) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (49650) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (49750) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (49960) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (50060) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (50160) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (50260) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (50370) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (50470) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (50570) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (50680) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (50780) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (50880) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (50980) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (51080) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (51190) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (51290) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (51390) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (51490) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (51600) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (51700) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (51800) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (51900) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (51960) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bc1[0m
+[0;33mW (52010) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (52090) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bc2[0m
+[0;33mW (52110) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (52150) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bc3[0m
+[0;33mW (52210) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (52310) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (52410) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (52520) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (52620) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (52720) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (52820) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (52910) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bc5[0m
+[0;33mW (52930) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (53030) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (53060) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bc6[0m
+[0;33mW (53130) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (53230) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (53340) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (53440) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (53540) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (53640) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (53750) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (53750) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bc8[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (53810) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (53850) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (53850) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (53870) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (53870) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;33mW (53950) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (54050) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (54160) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (54160) mqtt_client: Client force reconnect requested[0m
+[0;33mW (54160) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (54260) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (54360) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (54460) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (54520) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bca[0m
+[0;33mW (54570) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (54610) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bcb[0m
+[0;33mW (54670) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (54700) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bcc[0m
+[0;33mW (54770) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (54870) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (54970) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (55080) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (55180) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (55280) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (55390) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (55490) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (55590) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (55690) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (55800) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (55900) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (56000) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (56100) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (56200) wifi:exceed max band, 2g, ngroup:3[0m
+[0;31mE (56230) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (56240) esp-tls: Failed to open new connection[0m
+[0;31mE (56240) transport_base: Failed to open a new connection[0m
+[0;31mE (56250) mqtt_client: Error transport connect[0m
+[0;32mI (56250) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;33mW (56310) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (56410) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (56510) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (56610) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (56720) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (56820) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (56920) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (57020) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (57130) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (57230) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (57330) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (57430) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (57540) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (57640) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (57740) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (57950) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (58050) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (58150) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (58250) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (58460) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (58560) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (58660) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (58770) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (58870) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (58970) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (59070) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (59170) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (59210) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (59210) mqtt_client: Client force reconnect requested[0m
+[0;33mW (59280) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (59380) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (59480) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (59580) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (59690) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (59790) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (59890) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (59990) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (60100) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (60200) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (60300) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (60400) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (60510) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (60610) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (60710) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (60810) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (60920) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (61020) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (61120) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (61220) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (61330) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (61430) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (61530) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (61630) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (61730) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (61840) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (61940) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (61980) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bd0[0m
+[0;33mW (62040) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (62100) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bd1[0m
+[0;33mW (62140) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (62180) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bd2[0m
+[0;33mW (62250) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (62350) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (62450) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (62550) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (62660) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (62760) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (62830) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bd3[0m
+[0;33mW (62860) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (62950) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bd4[0m
+[0;33mW (62960) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (63010) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bd5[0m
+[0;33mW (63060) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (63170) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (63270) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (63370) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (63470) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (63580) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (63680) wifi:exceed max band, 2g, ngroup:3[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (63880) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (63890) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bd8[0m
+[0;33mW (63910) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (63940) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (63960) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (63960) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;33mW (63990) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (64090) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (64190) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (64250) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (64250) mqtt_client: Client force reconnect requested[0m
+[0;33mW (64290) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (64400) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (64500) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (64590) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bd9[0m
+[0;33mW (64600) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (64630) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bda[0m
+[0;33mW (64700) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (64710) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bdb[0m
+[0;33mW (64810) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (64910) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (65010) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (65110) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (65210) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (65320) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (65430) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bdc[0m
+[0;33mW (65520) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (65560) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bde[0m
+[0;33mW (65620) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (65730) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (65830) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (66140) wifi:exceed max band, 2g, ngroup:3[0m
+[0;31mE (66210) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (66210) esp-tls: Failed to open new connection[0m
+[0;31mE (66210) transport_base: Failed to open a new connection[0m
+[0;31mE (66220) mqtt_client: Error transport connect[0m
+[0;32mI (66220) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;33mW (66240) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (66340) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (66550) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (66650) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (66750) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (66850) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (66960) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (67060) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (67160) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (67260) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (67360) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (67470) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (67570) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (67670) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (67770) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (67880) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (67980) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (68080) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (68180) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (68290) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (68390) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (68490) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (68600) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (68700) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (68800) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (68900) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (69110) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (69210) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (69290) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (69290) mqtt_client: Client force reconnect requested[0m
+[0;33mW (69420) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (69820) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (70030) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (70230) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (70330) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (70540) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (70640) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (70740) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (71050) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (71160) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (71260) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (71360) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (71560) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (71670) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (71770) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (71870) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (71970) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (71990) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bdf[0m
+[0;33mW (72080) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (72130) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000be0[0m
+[0;33mW (72180) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (72210) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000be1[0m
+[0;33mW (72280) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (72380) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (72490) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (72590) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (72690) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (72790) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (72900) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (72950) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000be2[0m
+[0;33mW (73000) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (73000) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000be3[0m
+[0;33mW (73070) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000be4[0m
+[0;33mW (73100) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (73200) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (73310) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (73410) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (73510) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (73610) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (73710) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (73770) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000be5[0m
+Device Number: 0
+Temperature: 4294967296.000000
+[0;33mW (73830) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000be6[0m
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (73850) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (73890) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (73910) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (73910) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;33mW (73920) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (73940) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000be7[0m
+[0;33mW (74020) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (74120) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (74230) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (74330) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (74330) mqtt_client: Client force reconnect requested[0m
+[0;33mW (74330) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (74430) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (74540) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (74570) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000be8[0m
+[0;33mW (74640) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (74660) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000be9[0m
+[0;33mW (74740) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (74810) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bea[0m
+[0;33mW (74840) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (74950) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (75050) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (75150) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (75250) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (75350) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (75410) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000beb[0m
+[0;33mW (75460) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (75540) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bec[0m
+[0;33mW (75560) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (75600) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bed[0m
+[0;33mW (75660) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (75760) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (75870) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (75970) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (76070) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (76170) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (76280) wifi:exceed max band, 2g, ngroup:3[0m
+[0;31mE (76290) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (76290) esp-tls: Failed to open new connection[0m
+[0;31mE (76290) transport_base: Failed to open a new connection[0m
+[0;31mE (76300) mqtt_client: Error transport connect[0m
+[0;32mI (76300) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;33mW (76580) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (76690) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (76790) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (76890) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (76990) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (77100) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (77200) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (77300) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (77400) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (77500) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (77610) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (77810) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (77910) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (78020) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (78120) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (78220) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (78320) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (78430) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (78530) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (78630) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (78730) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (78830) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (78940) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (79040) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (79140) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (79240) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (79350) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (79370) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (79370) mqtt_client: Client force reconnect requested[0m
+[0;33mW (79450) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (79650) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (79760) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (79860) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (79960) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (80060) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (80170) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (80270) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (80470) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (80580) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (80680) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (80780) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (80880) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (80990) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (81090) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (81190) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (81290) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (81390) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (81500) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (81600) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (81700) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (81810) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (81910) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (82000) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bee[0m
+[0;33mW (82100) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bef[0m
+[0;33mW (82110) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (82320) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (82420) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (82520) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (82620) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (82730) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (82830) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (82870) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bf1[0m
+[0;33mW (82930) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (82950) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bf2[0m
+[0;33mW (83030) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (83070) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bf3[0m
+[0;33mW (83140) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (83240) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (83340) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (83440) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (83550) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (83710) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bf4[0m
+[0;33mW (83750) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (83830) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bf5[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (83850) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (83860) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (83880) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (83890) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bf6[0m
+[0;33mW (83910) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (83910) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;33mW (83960) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (84060) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (84160) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (84260) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (84370) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (84410) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (84410) mqtt_client: Client force reconnect requested[0m
+[0;33mW (84470) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (84570) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bf7[0m
+[0;33mW (84570) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (84640) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bf8[0m
+[0;33mW (84670) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (84740) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bf9[0m
+[0;33mW (84770) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (84880) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (84980) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (85080) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (85190) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (85290) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (85390) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (85410) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bfa[0m
+[0;33mW (85490) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (85550) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bfb[0m
+[0;33mW (85590) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (85700) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (85800) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (85900) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (86100) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (86210) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (86310) wifi:exceed max band, 2g, ngroup:3[0m
+[0;31mE (86370) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (86370) esp-tls: Failed to open new connection[0m
+[0;31mE (86370) transport_base: Failed to open a new connection[0m
+[0;31mE (86380) mqtt_client: Error transport connect[0m
+[0;32mI (86380) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;33mW (86410) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (86520) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (86620) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (86720) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (86820) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (86920) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (87030) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (87130) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (87230) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (87330) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (87440) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (87540) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (87640) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (87750) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (87850) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (87950) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (88050) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (88260) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (88360) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (88460) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (88560) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (88660) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (88770) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (88870) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (88970) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (89080) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (89180) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (89280) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (89380) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (89450) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (89450) mqtt_client: Client force reconnect requested[0m
+[0;33mW (89890) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (90300) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (90410) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (90510) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (90610) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (90710) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (90820) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (90920) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (91020) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (91120) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (91230) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (91330) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (91430) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (91530) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (91630) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (91740) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (91840) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (91940) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (92050) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (92070) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bfd[0m
+[0;33mW (92150) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (92170) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bfe[0m
+[0;33mW (92200) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000bff[0m
+[0;33mW (92250) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (92350) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (92450) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (92560) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (92660) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (92760) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (92870) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c00[0m
+[0;33mW (92970) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (93010) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c01[0m
+[0;33mW (93070) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c02[0m
+[0;33mW (93270) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (93380) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (93580) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (93680) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (93710) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c03[0m
+[0;33mW (93890) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c05[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+[0;33mW (93890) wifi:Relay 1: 0[0m
+exceed max band, 2g, ngroup:3Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+
+Door: 0
+[0;33mW (93910) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (93950) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (93970) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (93970) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;33mW (93990) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (94200) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (94300) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (94490) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (94490) mqtt_client: Client force reconnect requested[0m
+[0;33mW (94500) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (94610) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (94610) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c06[0m
+[0;33mW (94660) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c07[0m
+[0;33mW (94810) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c08[0m
+[0;33mW (94810) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (94910) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (95120) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (95220) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (95410) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c09[0m
+[0;33mW (95420) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (95530) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (95580) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c0b[0m
+[0;33mW (95630) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (95730) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (95830) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (95940) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (96040) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (96140) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (96240) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (96350) wifi:exceed max band, 2g, ngroup:3[0m
+[0;31mE (96450) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;33mW (96450) wifi:[0;31mE (96450) esp-tls: Failed to open new connection[0m[0m
+exceed max band, 2g, ngroup:3[0;31mE (96450) transport_base: Failed to open a new connection[0m
+
+[0;31mE (96460) mqtt_client: Error transport connect[0m
+[0;32mI (96470) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;33mW (96550) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (96650) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (96760) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (96860) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (96960) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (97060) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (97170) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (97270) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (97370) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (97470) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (97570) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (97680) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (97780) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (97880) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (97980) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (98090) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (98190) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (98290) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (98390) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (98500) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (98600) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (98700) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (98800) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (98910) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (99010) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (99110) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (99210) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (99310) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (99420) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (99520) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (99530) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (99530) mqtt_client: Client force reconnect requested[0m
+[0;33mW (99620) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (99730) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (99830) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (99930) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (100030) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (100140) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (100340) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (100440) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (100540) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (100650) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (100750) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (100850) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (100950) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (101060) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (101160) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (101260) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (101360) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (101460) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (101570) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (101670) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (101770) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (101870) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (101980) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (102080) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (102130) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c0c[0m
+[0;33mW (102180) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (102190) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c0d[0m
+[0;33mW (102280) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (102340) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c0e[0m
+[0;33mW (102390) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (102490) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (102590) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (102690) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (102800) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (102900) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (102920) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c0f[0m
+[0;33mW (103000) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (103070) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c10[0m
+[0;33mW (103100) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (103190) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c11[0m
+[0;33mW (103210) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (103310) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (103410) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (103510) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (103620) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (103720) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (103790) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c12[0m
+[0;33mW (103820) wifi:exceed max band, 2g, ngroup:3[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (103920) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (103920) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (103950) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (103970) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (103970) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;33mW (104030) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (104130) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (104230) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (104330) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (104440) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (104540) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (104570) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (104570) mqtt_client: Client force reconnect requested[0m
+[0;33mW (104610) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c15[0m
+[0;33mW (104640) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (104690) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c16[0m
+[0;33mW (104740) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (104790) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c17[0m
+[0;33mW (104840) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (104950) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (105050) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (105150) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (105250) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (105460) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (105480) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c18[0m
+[0;33mW (105560) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (105610) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c19[0m
+[0;33mW (105660) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (105690) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c1a[0m
+[0;33mW (105870) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (105970) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (106070) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (106280) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (106380) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (106480) wifi:exceed max band, 2g, ngroup:3[0m
+[0;31mE (106530) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (106530) esp-tls: Failed to open new connection[0m
+[0;31mE (106530) transport_base: Failed to open a new connection[0m
+[0;31mE (106540) mqtt_client: Error transport connect[0m
+[0;32mI (106540) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;33mW (106590) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (106690) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (106790) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (106890) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (106990) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (107100) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (107200) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (107300) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (107400) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (107510) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (107610) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (107710) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (107810) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (107920) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (108020) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (108120) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (108220) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (108330) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (108430) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (108530) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (108630) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (108740) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (108840) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (108940) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (109040) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (109150) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (109250) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (109350) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (109450) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (109550) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (109610) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (109610) mqtt_client: Client force reconnect requested[0m
+[0;33mW (109660) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (109760) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (109860) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (109960) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (110070) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (110170) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (110270) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (110370) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (110480) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (110580) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (110680) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (110780) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (110890) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (110990) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (111090) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (111190) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (111300) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (111400) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (111500) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (111600) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (112010) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (112220) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (112270) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c1d[0m
+[0;33mW (112320) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (112420) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (112520) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (112630) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (112730) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (112830) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (112930) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c1e[0m
+[0;33mW (112930) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (112990) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c1f[0m
+[0;33mW (113040) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (113090) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c20[0m
+[0;33mW (113140) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (113240) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (113340) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (113450) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (113550) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (113650) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (113750) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c21[0m
+[0;33mW (113750) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (113840) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c22[0m
+[0;33mW (113860) wifi:exceed max band, 2g, ngroup:3[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (113950) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c23[0m
+[0;33mW (113950) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (113960) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (113980) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (114000) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (114000) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;33mW (114060) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (114160) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (114270) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (114370) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (114470) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (114570) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (114650) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (114650) mqtt_client: Client force reconnect requested[0m
+[0;33mW (114660) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c24[0m
+[0;33mW (114680) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (114730) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c25[0m
+[0;33mW (114780) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (114870) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c26[0m
+[0;33mW (114880) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (114980) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (115080) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (115190) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (115290) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (115390) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (115600) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (115620) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c28[0m
+[0;33mW (115680) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c29[0m
+[0;33mW (115700) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (115800) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (116010) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (116110) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (116210) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (116310) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (116420) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (116520) wifi:exceed max band, 2g, ngroup:3[0m
+[0;31mE (116610) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (116610) esp-tls: Failed to open new connection[0m
+[0;31mE (116610) transport_base: Failed to open a new connection[0m
+[0;31mE (116620) mqtt_client: Error transport connect[0m
+[0;33mW (116620) wifi:[0;32mI (116620) MQTT_EXAMPLE: MQTT Disconnected from broker[0m[0m
+exceed max band, 2g, ngroup:3
+[0;33mW (116720) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (116830) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (117030) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (117130) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (117340) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (117440) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (117640) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (117750) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (117950) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (118050) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (118260) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (118360) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (118670) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (118870) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (118980) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (119180) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (119280) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (119390) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (119490) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (119590) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (119690) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (119690) mqtt_client: Client force reconnect requested[0m
+[0;33mW (119690) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (119800) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (119900) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (120000) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (120100) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (120200) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (120310) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (120410) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (120510) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (120610) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (120720) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (120820) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (120920) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (121020) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (121130) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (121230) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (121330) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (121430) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (121540) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (121640) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (121740) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (121840) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (121950) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (122050) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (122060) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c2a[0m
+[0;33mW (122150) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (122200) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c2b[0m
+[0;33mW (122250) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (122270) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c2c[0m
+[0;33mW (122360) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (122460) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (122560) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (122660) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (122760) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (122870) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (122910) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c2d[0m
+[0;33mW (122970) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (122990) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c2e[0m
+[0;33mW (123070) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (123090) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c2f[0m
+[0;33mW (123170) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (123280) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (123380) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (123480) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (123580) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (123790) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (123860) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c31[0m
+[0;33mW (123890) wifi:exceed max band, 2g, ngroup:3[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (123950) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c32[0m
+[0;33mW (123950) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (123970) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (123990) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (124000) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (124000) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;33mW (124100) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (124200) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (124300) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (124400) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (124510) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (124580) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c33[0m
+[0;33mW (124610) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (124700) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c34[0m
+[0;33mW (124710) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (124730) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (124730) mqtt_client: Client force reconnect requested[0m
+[0;33mW (124780) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c35[0m
+[0;33mW (124810) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (124920) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (125020) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (125120) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (125220) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (125330) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (125430) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (125460) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c36[0m
+[0;33mW (125530) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (125570) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c37[0m
+[0;33mW (125630) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (125690) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c38[0m
+[0;33mW (125730) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (125840) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (125940) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (126140) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (126250) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (126350) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (126450) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (126550) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (126660) wifi:exceed max band, 2g, ngroup:3[0m
+[0;31mE (126690) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (126690) esp-tls: Failed to open new connection[0m
+[0;31mE (126690) transport_base: Failed to open a new connection[0m
+[0;31mE (126700) mqtt_client: Error transport connect[0m
+[0;32mI (126700) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;33mW (126760) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (126860) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (126960) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (127070) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (127170) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (127270) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (127370) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (127480) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (127580) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (127680) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (127780) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (127880) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (127990) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (128090) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (128190) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (128290) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (128400) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (128500) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (128600) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (128700) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (128810) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (128910) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (129010) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (129110) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (129220) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (129320) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (129420) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (129520) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (129630) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (129730) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (129770) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (129770) mqtt_client: Client force reconnect requested[0m
+[0;33mW (129830) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (129930) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (130040) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (130140) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (130240) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (130340) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (130440) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (130550) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (130650) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (130750) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (130850) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (130960) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (131060) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (131160) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (131260) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (131370) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (131470) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (131570) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (131670) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (131780) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (131880) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (131980) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (132190) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (132290) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (132390) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (132490) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (132600) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (132700) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (132800) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (132900) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (133010) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (133110) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (133210) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (133310) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (133410) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (133520) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (133620) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (133720) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (133820) wifi:exceed max band, 2g, ngroup:3[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (133950) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (133970) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (134000) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (134000) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;33mW (134030) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (134130) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (134230) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (134440) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (134540) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (134640) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (134810) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (134810) mqtt_client: Client force reconnect requested[0m
+[0;33mW (135050) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (135160) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (135360) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (135460) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (135770) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (136280) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (136490) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (136590) wifi:exceed max band, 2g, ngroup:3[0m
+[0;31mE (136770) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (136770) esp-tls: Failed to open new connection[0m
+[0;31mE (136770) transport_base: Failed to open a new connection[0m
+[0;31mE (136780) mqtt_client: Error transport connect[0m
+[0;32mI (136780) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;33mW (136790) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (136900) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (137000) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (137510) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (137610) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (137720) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (137820) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (137920) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (138020) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (138120) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (138230) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (138330) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (138430) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (138530) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (138640) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (138740) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (138840) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (138950) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (139050) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (139150) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (139250) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (139290) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c39[0m
+[0;33mW (139350) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (139450) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c3a[0m
+[0;33mW (139460) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (139510) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c3b[0m
+[0;33mW (139560) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (139660) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (139760) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (139850) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (139850) mqtt_client: Client force reconnect requested[0m
+[0;33mW (139870) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (139970) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (140070) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (140160) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c3c[0m
+[0;33mW (140170) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (140230) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c3d[0m
+[0;33mW (140280) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (140330) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c3e[0m
+[0;33mW (140380) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (140480) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (140580) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (140690) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (140790) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (140890) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (141090) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c40[0m
+[0;33mW (141100) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (141160) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c41[0m
+[0;33mW (141200) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (141300) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (141400) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (141500) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (141610) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (141710) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (141810) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (141820) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c42[0m
+[0;33mW (141910) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (142000) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c44[0m
+[0;33mW (142020) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (142120) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (142220) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (142320) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (142430) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (142530) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (142630) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (142660) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c45[0m
+[0;33mW (142730) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (142750) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c46[0m
+[0;33mW (142840) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (142890) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c47[0m
+[0;33mW (142940) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (143040) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (143140) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (143250) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (143350) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (143450) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (143550) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (143660) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (143760) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (143860) wifi:exceed max band, 2g, ngroup:3[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (143960) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (143980) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (144010) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (144030) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (144030) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;33mW (144070) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (144170) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (144270) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (144370) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (144470) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (144580) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (144680) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (144780) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (144880) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (144890) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (144890) mqtt_client: Client force reconnect requested[0m
+[0;33mW (144990) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (145090) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (145190) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (145290) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (145400) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (145500) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (145600) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (145700) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (145810) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (146010) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (146110) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (146210) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (146320) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (146420) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (146520) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (146620) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (146730) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (146830) wifi:exceed max band, 2g, ngroup:3[0m
+[0;31mE (146850) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (146850) esp-tls: Failed to open new connection[0m
+[0;31mE (146850) transport_base: Failed to open a new connection[0m
+[0;31mE (146860) mqtt_client: Error transport connect[0m
+[0;32mI (146860) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;33mW (146930) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (147030) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (147140) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (147240) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (147440) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (147550) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (147650) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (147750) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (147850) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (147960) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (148060) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (148160) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (148260) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (148370) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (148470) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (148570) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (148670) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (148770) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (148880) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (148980) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (149080) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (149190) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (149290) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c48[0m
+[0;33mW (149290) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (149390) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c49[0m
+[0;33mW (149390) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (149490) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (149590) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (149700) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (149800) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (149900) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (149930) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (149930) mqtt_client: Client force reconnect requested[0m
+[0;33mW (150000) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (150110) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (150130) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c4b[0m
+[0;33mW (150210) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (150230) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c4c[0m
+[0;33mW (150310) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (150330) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c4d[0m
+[0;33mW (150410) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (150520) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (150620) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (150720) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (150820) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (150930) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (151030) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c4e[0m
+[0;33mW (151030) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (151090) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c4f[0m
+[0;33mW (151130) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (151180) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c50[0m
+[0;33mW (151230) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (151340) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (151440) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (151540) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (151640) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (151740) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (151820) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c51[0m
+[0;33mW (151850) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (151950) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c52[0m
+[0;33mW (151950) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (152060) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (152150) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (152260) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (152360) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (152460) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (152670) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c54[0m
+[0;33mW (152760) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c55[0m
+[0;33mW (152770) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (152870) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (152910) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c56[0m
+[0;33mW (152970) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (153080) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (153180) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (153280) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (153380) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (153490) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (153590) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (153690) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (153790) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (153900) wifi:exceed max band, 2g, ngroup:3[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (153980) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (154000) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (154010) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (154030) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (154030) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;33mW (154100) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (154200) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (154310) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (154410) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (154510) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (154610) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (154710) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (154820) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (154920) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (154970) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (154970) mqtt_client: Client force reconnect requested[0m
+[0;33mW (155120) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (155230) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (155330) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (155430) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (155530) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (155640) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (155740) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (155840) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (155940) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (156050) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (156150) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (156250) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (156350) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (156450) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (156560) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (156660) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (156760) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (156860) wifi:exceed max band, 2g, ngroup:3[0m
+[0;31mE (156930) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (156930) esp-tls: Failed to open new connection[0m
+[0;31mE (156930) transport_base: Failed to open a new connection[0m
+[0;31mE (156940) mqtt_client: Error transport connect[0m
+[0;32mI (156940) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;33mW (156970) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (157070) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (157170) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (157270) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (157380) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (157480) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (157580) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (157680) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (157790) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (157890) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (157990) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (158090) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (158200) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (158300) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (158400) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (158500) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (158610) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (158710) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (158810) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (158910) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (159020) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (159120) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (159220) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (159320) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (159380) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c57[0m
+[0;33mW (159420) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c58[0m
+[0;33mW (159430) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (159530) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (159560) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c59[0m
+[0;33mW (159630) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (159830) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (159940) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (160010) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (160010) mqtt_client: Client force reconnect requested[0m
+[0;33mW (160040) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (160140) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (160220) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c5a[0m
+[0;33mW (160240) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (160250) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c5b[0m
+[0;33mW (160450) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (160550) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (160760) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (160860) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (161040) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c5d[0m
+[0;33mW (161060) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (161130) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c5e[0m
+[0;33mW (161170) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (161370) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (161470) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (161680) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (161850) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c60[0m
+[0;33mW (161970) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c61[0m
+[0;33mW (161990) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (162050) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c62[0m
+[0;33mW (162090) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (162290) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (162390) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (162600) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (162700) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (162740) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c63[0m
+[0;33mW (162790) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c64[0m
+[0;33mW (162800) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (162900) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c65[0m
+[0;33mW (162910) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (163010) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (163110) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (163210) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (163320) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (163420) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (163520) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (163620) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (163730) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (163830) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (163930) wifi:exceed max band, 2g, ngroup:3[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (164000) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (164030) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (164030) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (164050) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (164050) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;33mW (164140) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (164240) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (164340) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (164440) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (164550) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (164650) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (164750) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (164850) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (164950) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (165050) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (165050) mqtt_client: Client force reconnect requested[0m
+[0;33mW (165060) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (165160) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (165260) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (165360) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (165470) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (165570) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (165670) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (165770) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (165880) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (165980) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (166180) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (166290) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (166390) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (166490) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (166590) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (166700) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (166800) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (166900) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (167000) wifi:exceed max band, 2g, ngroup:3[0m
+[0;31mE (167010) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (167010) esp-tls: Failed to open new connection[0m
+[0;31mE (167010) transport_base: Failed to open a new connection[0m
+[0;31mE (167020) mqtt_client: Error transport connect[0m
+[0;32mI (167030) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;33mW (167100) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (167210) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (167310) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (167410) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (167510) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (167620) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (167720) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (167820) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (167920) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (168030) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (168130) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (168230) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (168330) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (168440) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (168540) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (168640) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (168740) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (168850) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (168950) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (169050) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (169150) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (169260) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (169360) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (169460) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (169560) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (169670) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (169770) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (169870) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (169970) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (170070) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (170090) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (170090) mqtt_client: Client force reconnect requested[0m
+[0;33mW (170180) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (170280) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (170380) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (170480) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (170590) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (170690) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (170790) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (170890) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (171000) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (171100) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (171200) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (171410) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (171510) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (171610) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (171710) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (171820) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (171920) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (172020) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (172120) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (172220) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (172330) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (172430) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (172530) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (172630) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (172740) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (172840) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (173040) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (173150) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (173250) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (173350) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (173450) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (173560) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (173760) wifi:exceed max band, 2g, ngroup:3[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (173990) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (174030) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (174050) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (174050) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;33mW (174170) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (174270) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (174380) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (174480) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (174580) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (174680) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (174790) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (174890) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (174990) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (175090) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (175130) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (175130) mqtt_client: Client force reconnect requested[0m
+[0;33mW (175200) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (175300) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (175400) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (175500) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (175600) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (175610) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c67[0m
+[0;33mW (175690) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c68[0m
+[0;33mW (175710) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (175800) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c69[0m
+[0;33mW (175810) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (175910) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (176010) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (176120) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (176220) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (176320) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (176420) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (176430) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c6a[0m
+[0;33mW (176530) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (176560) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c6b[0m
+[0;33mW (176620) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c6c[0m
+[0;33mW (176630) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (176730) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (176830) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (176940) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (177040) wifi:exceed max band, 2g, ngroup:3[0m
+[0;31mE (177090) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (177090) esp-tls: Failed to open new connection[0m
+[0;31mE (177090) transport_base: Failed to open a new connection[0m
+[0;31mE (177100) mqtt_client: Error transport connect[0m
+[0;32mI (177100) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;33mW (177140) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (177240) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (177290) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c6d[0m
+[0;33mW (177350) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (177400) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c6e[0m
+[0;33mW (177450) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (177460) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c6f[0m
+[0;33mW (177550) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (177650) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (177750) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (177860) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (177960) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (178060) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (178160) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (178170) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c70[0m
+[0;33mW (178220) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c71[0m
+[0;33mW (178270) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (178310) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c72[0m
+[0;33mW (178370) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (178470) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (178570) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (178680) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (178880) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (178980) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (179000) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c73[0m
+[0;33mW (179060) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c74[0m
+[0;33mW (179170) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c75[0m
+[0;33mW (179190) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (179290) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (179500) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (179600) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (179700) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (179800) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (179910) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (180010) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (180110) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (180170) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (180170) mqtt_client: Client force reconnect requested[0m
+[0;33mW (180210) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (180310) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (180420) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (180520) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (180620) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (180720) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (180830) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (180930) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (181030) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (181130) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (181240) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (181340) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (181440) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (181540) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (181650) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (181750) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (181850) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (182060) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (182260) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (182360) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (182470) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (182570) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (182670) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (182870) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (182980) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (183080) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (183180) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (183280) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (183390) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (183490) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (183590) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (183800) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (183900) wifi:exceed max band, 2g, ngroup:3[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (184070) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (184100) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (184110) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (184130) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (184130) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;33mW (184210) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (184310) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (184410) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (184510) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (184620) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (184720) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (184820) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (184920) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (185030) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (185130) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (185210) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (185210) mqtt_client: Client force reconnect requested[0m
+[0;33mW (185230) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (185330) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (185440) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (185540) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (185620) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c76[0m
+[0;33mW (185640) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (185740) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (185780) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c77[0m
+[0;33mW (185800) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c78[0m
+[0;33mW (185840) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (185950) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (186050) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (186150) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (186250) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (186360) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (186460) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (186500) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c79[0m
+[0;33mW (186560) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (186560) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c7a[0m
+[0;33mW (186640) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c7b[0m
+[0;33mW (186660) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (186770) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (186870) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (186970) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (187070) wifi:exceed max band, 2g, ngroup:3[0m
+[0;31mE (187170) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (187170) esp-tls: Failed to open new connection[0m
+[0;31mE (187170) transport_base: Failed to open a new connection[0m
+[0;33mW (187180) wifi:[0;31mE (187180) mqtt_client: Error transport connect[0m[0m
+exceed max band, 2g, ngroup:3
+[0;32mI (187190) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;33mW (187280) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (187340) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c7c[0m
+[0;33mW (187380) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (187410) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c7d[0m
+[0;33mW (187480) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (187530) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c7e[0m
+[0;33mW (187590) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (187690) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (187790) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (187890) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (187990) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (188100) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (188180) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c7f[0m
+[0;33mW (188200) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (188300) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (188330) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c80[0m
+[0;33mW (188350) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c81[0m
+[0;33mW (188400) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (188510) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (188610) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (188710) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (188810) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (188920) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (189000) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c82[0m
+[0;33mW (189020) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (189090) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c83[0m
+[0;33mW (189120) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (189180) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c84[0m
+[0;33mW (189220) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (189330) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (189430) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (189530) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (189630) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (189740) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (189840) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (189940) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (190040) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (190150) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (190250) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (190250) mqtt_client: Client force reconnect requested[0m
+[0;33mW (190250) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (190350) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (190450) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (190560) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (190660) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (190760) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (190860) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (190960) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (191070) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (191170) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (191220) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c85[0m
+[0;33mW (191270) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (191370) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (191440) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c87[0m
+[0;33mW (191480) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (191580) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (191680) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (191790) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (191890) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (191990) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (192050) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c88[0m
+[0;33mW (192090) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (192170) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c89[0m
+[0;33mW (192190) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (192220) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c8a[0m
+[0;33mW (192300) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (192400) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (192600) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (192710) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (192810) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (192890) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c8b[0m
+[0;33mW (192910) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (193010) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c8c[0m
+[0;33mW (193010) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (193090) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c8d[0m
+[0;33mW (193120) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (193220) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (193320) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (193420) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (193530) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (193630) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (193730) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c8e[0m
+[0;33mW (193730) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (193830) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (193860) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c8f[0m
+[0;33mW (193900) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c90[0m
+[0;33mW (193930) wifi:exceed max band, 2g, ngroup:3[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (194030) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (194040) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (194060) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (194080) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (194080) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;33mW (194140) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (194240) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (194340) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (194450) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (194550) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (194620) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c91[0m
+[0;33mW (194650) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (194710) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c92[0m
+[0;33mW (194750) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (194850) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c93[0m
+[0;33mW (194860) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (194960) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (195060) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (195160) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (195270) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (195290) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (195290) mqtt_client: Client force reconnect requested[0m
+[0;33mW (195370) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (195470) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (195570) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (195680) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (195780) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (195880) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (195980) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (195990) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c94[0m
+[0;33mW (196090) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (196090) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c95[0m
+[0;33mW (196140) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c96[0m
+[0;33mW (196190) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (196290) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (196390) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (196490) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (196600) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (196700) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (196800) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (196830) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c97[0m
+[0;33mW (196900) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (196920) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c98[0m
+[0;33mW (196990) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c99[0m
+[0;33mW (197010) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (197110) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (197210) wifi:exceed max band, 2g, ngroup:3[0m
+[0;31mE (197250) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (197250) esp-tls: Failed to open new connection[0m
+[0;31mE (197250) transport_base: Failed to open a new connection[0m
+[0;31mE (197260) mqtt_client: Error transport connect[0m
+[0;32mI (197270) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;33mW (197310) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (197420) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (197520) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (197620) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (197680) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c9a[0m
+[0;33mW (197720) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (197740) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c9b[0m
+[0;33mW (197830) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (197860) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c9c[0m
+[0;33mW (197930) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (198030) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (198130) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (198240) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (198340) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (198440) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (198530) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c9d[0m
+[0;33mW (198540) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (198590) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c9e[0m
+[0;33mW (198650) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (198700) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000c9f[0m
+[0;33mW (198750) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (198850) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (198950) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (199050) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (199160) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (199260) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (199340) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000ca0[0m
+[0;33mW (199360) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (199460) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (199470) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000ca1[0m
+[0;33mW (199540) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000ca2[0m
+[0;33mW (199570) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (199670) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (199770) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (199870) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (199980) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (200080) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (200280) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (200330) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (200330) mqtt_client: Client force reconnect requested[0m
+[0;33mW (200390) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (200590) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (200690) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (200900) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (201000) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (201200) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (201310) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (201510) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (201610) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (201920) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (202130) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (202230) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (202430) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (202540) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (202640) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (202740) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (202840) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (202950) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (203250) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (203360) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (203460) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (203560) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (203660) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (203760) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (203870) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (203970) wifi:exceed max band, 2g, ngroup:3[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (204030) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (204050) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (204070) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (204080) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (204080) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;33mW (204170) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (204280) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (204380) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (204480) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (204580) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (204690) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (204890) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (204990) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (205100) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (205200) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (205300) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (205370) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (205370) mqtt_client: Client force reconnect requested[0m
+[0;33mW (205400) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (205510) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (205610) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (205710) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (205810) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (205920) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (205990) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000ca3[0m
+[0;33mW (206020) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (206080) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000ca4[0m
+[0;33mW (206120) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (206140) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000ca5[0m
+[0;33mW (206220) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (206330) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (206430) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (206530) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (206630) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (206730) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (206810) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000ca6[0m
+[0;33mW (206840) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (206890) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000ca7[0m
+[0;33mW (206940) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (207040) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (207050) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000ca8[0m
+[0;33mW (207140) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (207250) wifi:exceed max band, 2g, ngroup:3[0m
+[0;31mE (207330) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (207330) esp-tls: Failed to open new connection[0m
+[0;31mE (207330) transport_base: Failed to open a new connection[0m
+[0;31mE (207340) mqtt_client: Error transport connect[0m
+[0;32mI (207340) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;33mW (207350) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (207450) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (207550) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (207660) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (207690) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000ca9[0m
+[0;33mW (207760) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (207790) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000caa[0m
+[0;33mW (207830) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000cab[0m
+[0;33mW (207860) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (207960) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (208070) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (208170) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (208270) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (208370) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (208480) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (208530) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000cac[0m
+[0;33mW (208580) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (208590) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000cad[0m
+[0;33mW (208680) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (208710) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000cae[0m
+[0;33mW (208780) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (208890) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (208990) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (209090) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (209190) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (209290) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (209350) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000caf[0m
+[0;33mW (209400) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (209500) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (209600) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (209700) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (209810) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (209910) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (210010) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (210110) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (210220) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (210320) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (210410) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (210410) mqtt_client: Client force reconnect requested[0m
+[0;33mW (210420) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (210520) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (210630) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (210730) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (210830) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (210930) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (211040) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (211140) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (211240) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (211340) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (211450) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (211550) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (211650) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (211750) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (211850) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (211960) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (212060) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (212160) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (212260) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (212370) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (212570) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (212670) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (212780) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (212880) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (212980) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (213080) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (213190) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (213290) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (213390) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (213490) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (213600) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (213700) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (213800) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (213900) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (214010) wifi:exceed max band, 2g, ngroup:3[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (214050) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (214080) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (214110) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (214110) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (214110) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;33mW (214210) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (214310) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (214410) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (214520) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (214620) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (214720) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (214820) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (214930) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (215030) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (215130) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (215230) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (215340) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (215440) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (215450) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (215450) mqtt_client: Client force reconnect requested[0m
+[0;33mW (215540) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (215640) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (215750) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (215850) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (215950) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (216050) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (216160) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (216260) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (216360) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (216460) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (216570) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (216670) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (216770) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (216870) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (216970) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (217080) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (217180) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (217280) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (217380) wifi:exceed max band, 2g, ngroup:3[0m
+[0;31mE (217410) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (217410) esp-tls: Failed to open new connection[0m
+[0;31mE (217410) transport_base: Failed to open a new connection[0m
+[0;31mE (217420) mqtt_client: Error transport connect[0m
+[0;32mI (217420) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;33mW (217490) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (217590) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (217690) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (217790) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (217900) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (218000) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (218100) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (218200) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (218310) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (218410) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (218510) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (218610) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (218720) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (218820) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (218920) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (219020) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (219130) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (219230) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (219330) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (219430) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (219530) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (219640) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (219740) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (219840) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (219940) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (220050) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (220150) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (220250) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (220350) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (220460) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (220490) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (220490) mqtt_client: Client force reconnect requested[0m
+[0;33mW (220760) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (220770) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000cb3[0m
+[0;33mW (220850) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000cb4[0m
+[0;33mW (220870) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (220970) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (221010) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000cb5[0m
+[0;33mW (221070) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (221170) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (221280) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (221380) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (221480) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (221580) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (221670) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000cb6[0m
+[0;33mW (221690) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (221730) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000cb7[0m
+[0;33mW (221790) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (221810) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000cb8[0m
+[0;33mW (221890) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (221990) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (222090) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (222200) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (222300) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (222400) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (222500) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (222590) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000cb9[0m
+[0;33mW (222610) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (222700) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000cba[0m
+[0;33mW (222710) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000cbb[0m
+[0;33mW (222710) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (222810) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (222910) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (223020) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (223120) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (223220) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (223320) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (223360) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000cbc[0m
+[0;33mW (223430) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (223450) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000cbd[0m
+[0;33mW (223530) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (223590) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000cbe[0m
+[0;33mW (223630) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (223730) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (223840) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (223940) wifi:exceed max band, 2g, ngroup:3[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (224040) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (224060) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (224090) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (224110) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (224110) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;33mW (224140) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (224250) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (224320) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000cc0[0m
+[0;33mW (224350) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (224400) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000cc1[0m
+[0;33mW (224450) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (224550) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (224660) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (224760) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (224860) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (224960) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (225070) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (225170) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (225270) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (225370) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (225550) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (225550) mqtt_client: Client force reconnect requested[0m
+[0;33mW (225580) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (225680) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (225780) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (225880) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (225990) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (226090) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (226190) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (226290) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (226400) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (226500) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (226600) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (226700) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (226810) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (226910) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (227010) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (227110) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (227320) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (227420) wifi:exceed max band, 2g, ngroup:3[0m
+[0;31mE (227510) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (227510) esp-tls: Failed to open new connection[0m
+[0;31mE (227510) transport_base: Failed to open a new connection[0m
+[0;31mE (227520) mqtt_client: Error transport connect[0m
+[0;33mW (227520) wifi:[0;32mI (227530) MQTT_EXAMPLE: MQTT Disconnected from broker[0m[0m
+exceed max band, 2g, ngroup:3
+[0;33mW (227620) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (227730) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (227830) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (227930) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (228030) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (228140) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (228240) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (228340) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (228440) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (228550) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (228650) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (228750) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (228850) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (228960) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (229060) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (229160) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (229260) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (229370) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (229470) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (229570) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (229670) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (229770) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (229880) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (229980) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (230080) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (230180) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (230290) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (230390) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (230490) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (230590) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (230590) mqtt_client: Client force reconnect requested[0m
+[0;33mW (230590) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (230700) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (230770) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000cc2[0m
+[0;33mW (230800) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (230860) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000cc3[0m
+[0;33mW (231000) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (231030) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000cc4[0m
+[0;33mW (231110) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (231310) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (231410) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (231620) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (231700) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000cc5[0m
+[0;33mW (231720) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (231800) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000cc6[0m
+[0;33mW (231830) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000cc7[0m
+[0;33mW (231930) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (232030) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (232230) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (232330) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (232510) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000cc8[0m
+[0;33mW (232540) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (232560) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000cc9[0m
+[0;33mW (232850) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (232950) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (233150) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (233260) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (233330) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000ccb[0m
+[0;33mW (233360) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (233420) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000ccc[0m
+[0;33mW (233460) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (233510) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000ccd[0m
+[0;33mW (233570) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (233670) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (233770) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (233870) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (233970) wifi:exceed max band, 2g, ngroup:3[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (234080) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (234080) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (234110) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (234130) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (234130) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;33mW (234180) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (234200) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000cce[0m
+[0;33mW (234280) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (234290) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000ccf[0m
+[0;33mW (234370) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000cd0[0m
+[0;33mW (234380) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (234490) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (234590) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (234690) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (234790) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (234900) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (235000) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (235100) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (235200) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (235310) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (235410) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (235510) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (235610) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (235630) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (235630) mqtt_client: Client force reconnect requested[0m
+[0;33mW (235710) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (235820) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (235920) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (236020) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (236120) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (236230) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (236330) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (236430) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (236530) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (236640) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (236740) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (236840) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (236940) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (237050) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (237150) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (237250) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (237350) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (237460) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (237560) wifi:exceed max band, 2g, ngroup:3[0m
+[0;31mE (237590) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (237590) esp-tls: Failed to open new connection[0m
+[0;31mE (237590) transport_base: Failed to open a new connection[0m
+[0;31mE (237600) mqtt_client: Error transport connect[0m
+[0;32mI (237600) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;33mW (237660) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (237760) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (237870) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (237970) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (238070) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (238170) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (238270) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (238380) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (238480) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (238580) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (238680) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (238790) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (238890) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (238990) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (239090) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (239200) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (239300) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (239400) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (239500) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (239610) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (239710) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (239810) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (239910) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (240020) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (240120) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (240220) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (240320) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (240420) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (240530) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (240630) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (240670) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (240670) mqtt_client: Client force reconnect requested[0m
+[0;33mW (240730) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (240810) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000cd1[0m
+[0;33mW (240830) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (240890) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000cd2[0m
+[0;33mW (240940) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (240990) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000cd3[0m
+[0;33mW (241040) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (241140) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (241240) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (241350) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (241450) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (241550) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (241650) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (241740) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000cd5[0m
+[0;33mW (241760) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (241840) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000cd6[0m
+[0;33mW (241860) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (241960) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (242060) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (242170) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (242270) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (242370) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (242570) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000cd7[0m
+[0;33mW (242580) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (242590) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000cd8[0m
+[0;33mW (242680) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (242690) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000cd9[0m
+[0;33mW (242780) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (242880) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (242990) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (243090) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (243190) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (243290) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (243350) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000cda[0m
+[0;33mW (243390) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (243440) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000cdb[0m
+[0;33mW (243500) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (243520) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000cdc[0m
+[0;33mW (243600) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (243700) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (243800) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (243910) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (244010) wifi:exceed max band, 2g, ngroup:3[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (244070) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (244110) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (244110) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (244130) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (244130) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;33mW (244190) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000cdd[0m
+[0;33mW (244210) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (244320) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (244340) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000cde[0m
+[0;33mW (244390) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000cdf[0m
+[0;33mW (244420) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (244520) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (244620) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (244730) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (244830) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (244930) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (245030) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (245140) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (245240) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (245340) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (245440) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (245550) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (245650) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (245710) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (245710) mqtt_client: Client force reconnect requested[0m
+[0;33mW (245750) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (245850) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (246060) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (246160) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (246260) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (246360) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (246470) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (246570) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (246670) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (246880) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (246980) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (247080) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (247180) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (247290) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (247390) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (247490) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (247590) wifi:exceed max band, 2g, ngroup:3[0m
+[0;31mE (247670) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (247670) esp-tls: Failed to open new connection[0m
+[0;31mE (247670) transport_base: Failed to open a new connection[0m
+[0;31mE (247680) mqtt_client: Error transport connect[0m
+[0;32mI (247680) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;33mW (247700) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (247800) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (247900) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (248000) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (248100) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (248210) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (248310) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (248410) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (248510) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (248620) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (248720) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (248820) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (248920) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (249030) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (249130) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (249230) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (249330) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (249440) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (249540) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (249640) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (249740) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (249850) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (249950) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (250050) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (250150) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (250260) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (250360) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (250460) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (250560) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (250670) wifi:exceed max band, 2g, ngroup:3[0m
+[0;32mI (250750) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (250750) mqtt_client: Client force reconnect requested[0m
+[0;33mW (250770) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (250840) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000ce0[0m
+[0;33mW (250870) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (250970) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000ce1[0m
+[0;33mW (250970) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (251010) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000ce2[0m
+[0;33mW (251080) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (251180) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (251280) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (251380) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (251480) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (251590) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (251660) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000ce3[0m
+[0;33mW (251690) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (251750) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000ce4[0m
+[0;33mW (251790) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (251860) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000ce5[0m
+[0;33mW (251890) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (252000) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (252100) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (252200) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (252300) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (252410) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (252500) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000ce6[0m
+[0;33mW (252510) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (252590) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000ce7[0m
+[0;33mW (252610) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (252680) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000ce8[0m
+[0;33mW (252820) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (252920) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (253020) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (253120) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (253230) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (253330) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (253340) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000ce9[0m
+[0;33mW (253430) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (253480) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000cea[0m
+[0;33mW (253530) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (253550) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000ceb[0m
+[0;33mW (253640) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (253740) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (253840) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (253940) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (254040) wifi:exceed max band, 2g, ngroup:3[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (254070) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (254110) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (254130) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (254130) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;33mW (254240) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000cec[0m
+[0;33mW (254250) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (254270) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000ced[0m
+[0;33mW (254350) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (254380) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000cee[0m
+[0;33mW (254560) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (254660) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (254760) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (254860) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (254970) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (255070) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (255170) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (255270) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (255380) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (255480) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (255580) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (255680) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (255790) wifi:[0;32mI (255790) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m[0m
+exceed max band, 2g, ngroup:3[0;32mI (255790) mqtt_client: Client force reconnect requested[0m
+
+[0;33mW (255890) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (255990) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (256090) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (256190) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (256300) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (256400) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (256500) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (256600) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (256710) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (256810) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (256910) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (257010) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (257120) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (257220) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (257320) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (257420) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (257630) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (257730) wifi:exceed max band, 2g, ngroup:3[0m
+[0;31mE (257750) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (257750) esp-tls: Failed to open new connection[0m
+[0;31mE (257750) transport_base: Failed to open a new connection[0m
+[0;31mE (257760) mqtt_client: Error transport connect[0m
+[0;32mI (257760) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;33mW (257830) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (257940) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (258040) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (258140) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (258240) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (258350) wifi:exceed max band, 2g, ngroup:3[0m
+[0;33mW (258450) wifi:exceed max band, 2g

@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+C:/Users/CONGTHANH/OneDrive - ptit.edu.vn/Lab/24_Q4/DATN_esp_ble_mesh/esp_ble_mesh/onoff_models/onoff_client/build/CMakeFiles/bootloader
+C:/Users/CONGTHANH/OneDrive - ptit.edu.vn/Lab/24_Q4/DATN_esp_ble_mesh/esp_ble_mesh/onoff_models/onoff_client/build/CMakeFiles/bootloader.rule
+C:/Users/CONGTHANH/OneDrive - ptit.edu.vn/Lab/24_Q4/DATN_esp_ble_mesh/esp_ble_mesh/onoff_models/onoff_client/build/CMakeFiles/bootloader-complete.rule
+C:/Users/CONGTHANH/OneDrive - ptit.edu.vn/Lab/24_Q4/DATN_esp_ble_mesh/esp_ble_mesh/onoff_models/onoff_client/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+C:/Users/CONGTHANH/OneDrive - ptit.edu.vn/Lab/24_Q4/DATN_esp_ble_mesh/esp_ble_mesh/onoff_models/onoff_client/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+C:/Users/CONGTHANH/OneDrive - ptit.edu.vn/Lab/24_Q4/DATN_esp_ble_mesh/esp_ble_mesh/onoff_models/onoff_client/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+C:/Users/CONGTHANH/OneDrive - ptit.edu.vn/Lab/24_Q4/DATN_esp_ble_mesh/esp_ble_mesh/onoff_models/onoff_client/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+C:/Users/CONGTHANH/OneDrive - ptit.edu.vn/Lab/24_Q4/DATN_esp_ble_mesh/esp_ble_mesh/onoff_models/onoff_client/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+C:/Users/CONGTHANH/OneDrive - ptit.edu.vn/Lab/24_Q4/DATN_esp_ble_mesh/esp_ble_mesh/onoff_models/onoff_client/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+C:/Users/CONGTHANH/OneDrive - ptit.edu.vn/Lab/24_Q4/DATN_esp_ble_mesh/esp_ble_mesh/onoff_models/onoff_client/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

@@ -1,0 +1,1449 @@
+j5
+[0;32mI (39) booets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 25 2024 16:34:09[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 001e0000[0m
+[0;32mI (92) boot:  3 storage          WiFi data        01 02 001f0000 00010000[0m
+[0;32mI (99) boot: End of partition table[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4f9a0h (326048) map[0m
+[0;32mI (224) esp_image: segment 1: paddr=0005f9c8 vaddr=3ffbdb60 size=00650h (  1616) load[0m
+[0;32mI (224) esp_image: segment 2: paddr=00060020 vaddr=400d0020 size=12c298h (1229464) map[0m
+[0;32mI (651) esp_image: segment 3: paddr=0018c2c0 vaddr=3ffbe1b0 size=06b84h ( 27524) load[0m
+[0;32mI (661) esp_image: segment 4: paddr=00192e4c vaddr=40080000 size=1fa68h (129640) load[0m
+[0;32mI (728) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (728) boot: Disabling RNG early entropy source...[0m
+[0;32mI (741) cpu_start: Multicore app[0m
+[0;32mI (749) cpu_start: Pro cpu start user code[0m
+[0;32mI (749) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (749) app_init: Application information:[0m
+[0;32mI (752) app_init: Project name:     node_server[0m
+[0;32mI (757) app_init: App version:      1[0m
+[0;32mI (762) app_init: Compile time:     Nov 25 2024 16:33:07[0m
+[0;32mI (768) app_init: ELF file SHA256:  6bc14e8cd...[0m
+[0;32mI (773) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (778) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (782) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (787) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (792) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (800) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (805) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (811) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (818) heap_init: At 3FFD0918 len 0000F6E8 (61 KiB): DRAM[0m
+[0;32mI (824) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (830) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (837) heap_init: At 4009FA68 len 00000598 (1 KiB): IRAM[0m
+[0;32mI (844) spi_flash: detected chip: generic[0m
+[0;32mI (847) spi_flash: flash io: dio[0m
+[0;33mW (851) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (865) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (876) coexist: coex firmware version: 4482466[0m
+[0;32mI (881) main_task: Started on CPU0[0m
+[0;32mI (891) main_task: Calling app_main()[0m
+[0;32mI (891) MAIN: Initializing...[0m
+[0;32mI (921) BTDM_INIT: BT controller compile version [b022216][0m
+[0;32mI (931) BTDM_INIT: Bluetooth MAC: c0:49:ef:f9:9d:6a[0m
+[0;32mI (931) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+Bluetooth Mesh v1.1 commit: [10f7fdc1a9]
+[0;33mW (1371) BLE_MESH: bt_mesh_proxy_server_prov_disable, Already[0m
+[0;32mI (1391) MESH_SERVER: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (1391) MESH_SERVER: net_idx: 0x0000, addr: 0x0003[0m
+[0;32mI (1391) MESH_SERVER: flags: 0x00, iv_index: 0x00000000[0m
+[0;32mI (1401) MESH_SERVER: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1401) MESH_SERVER: ESP_BLE_MESH_NODE_SET_UNPROV_DEV_NAME_COMP_EVT, Name: SERVER_NODE, err_code 0[0m
+[0;33mW (1411) BLE_MESH: bt_mesh_prov_enable, Already[0m
+[0;32mI (1421) MESH_SERVER: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code -120[0m
+[0;32mI (1431) MESH_SERVER: BLE Mesh Node initialized![0m
+[0;32mI (2431) OLED: OLED initialization[0m
+[0;32mI (3541) wifi:wifi driver task: 3ffddd30, prio:23, stack:6656, core=0[0m
+[0;32mI (3551) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (3551) wifi:wifi certification version: v7.0[0m
+[0;32mI (3551) wifi:config NVS flash: enabled[0m
+[0;32mI (3551) wifi:config nano formating: disabled[0m
+[0;32mI (3551) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (3561) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (3561) wifi:Init management short buffer num: 32[0m
+[0;32mI (3571) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (3571) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (3581) wifi:Init static rx buffer num: 10[0m
+[0;32mI (3581) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (3591) wifi_init: rx ba win: 6[0m
+[0;32mI (3591) wifi_init: accept mbox: 6[0m
+[0;32mI (3591) wifi_init: tcpip mbox: 32[0m
+[0;32mI (3601) wifi_init: udp mbox: 6[0m
+[0;32mI (3601) wifi_init: tcp mbox: 6[0m
+[0;32mI (3601) wifi_init: tcp tx win: 5760[0m
+[0;32mI (3611) wifi_init: tcp rx win: 5760[0m
+[0;32mI (3611) wifi_init: tcp mss: 1440[0m
+[0;32mI (3621) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (3621) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (3631) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (3791) wifi:mode : sta (c0:49:ef:f9:9d:68)[0m
+[0;32mI (3791) wifi:enable tsf[0m
+[0;32mI (3791) MQTT_EXAMPLE: wifi_init_sta finished[0m
+[0;31mE (3801) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3801) esp-tls: Failed to open new connection[0m
+[0;31mE (3811) transport_base: Failed to open a new connection[0m
+[0;31mE (3811) mqtt_client: Error transport connect[0m
+[0;32mI (3821) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (3821) MAIN: Task initializing..[0m
+[0;32mI (3831) MAIN: Task initializing..[0m
+[0;32mI (3841) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (3841) mqtt_client: Client force reconnect requested[0m
+[0;32mI (3841) main_task: Returned from app_main()[0m
+[0;31mE (3851) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (4121) esp-tls: Failed to open new connection[0m
+[0;31mE (4121) transport_base: Failed to open a new connection[0m
+[0;32mI (4131) wifi:[0;31mE (4131) mqtt_client: Error transport connect[0m[0m
+new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0
+[0;32mI (4131) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (4141) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (4151) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (4161) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (4171) wifi:connected with esp, aid = 8, channel 1, BW20, bssid = 96:b8:6d:f9:22:ed[0m
+[0;32mI (4171) wifi:security: WPA2-PSK, phy: bgn, rssi: -79[0m
+[0;32mI (4201) wifi:pm start, type: 1[0m
+
+[0;32mI (4201) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (4251) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[0;32mI (8881) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (8881) mqtt_client: Client force reconnect requested[0m
+[0;31mE (8881) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (8891) esp-tls: Failed to open new connection[0m
+[0;31mE (8901) transport_base: Failed to open a new connection[0m
+[0;31mE (8901) mqtt_client: Error transport connect[0m
+[0;32mI (8911) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (11841) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (11871) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (11901) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (11901) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (13921) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (13921) mqtt_client: Client force reconnect requested[0m
+[0;31mE (13921) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (13931) esp-tls: Failed to open new connection[0m
+[0;31mE (13941) transport_base: Failed to open a new connection[0m
+[0;31mE (13941) mqtt_client: Error transport connect[0m
+[0;32mI (13951) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (18961) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (18961) mqtt_client: Client force reconnect requested[0m
+[0;31mE (18961) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (18971) esp-tls: Failed to open new connection[0m
+[0;31mE (18981) transport_base: Failed to open a new connection[0m
+[0;31mE (18981) mqtt_client: Error transport connect[0m
+[0;32mI (18991) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (19841) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (19881) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (19901) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (19901) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (24001) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (24001) mqtt_client: Client force reconnect requested[0m
+[0;31mE (24001) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (24011) esp-tls: Failed to open new connection[0m
+[0;31mE (24021) transport_base: Failed to open a new connection[0m
+[0;31mE (24021) mqtt_client: Error transport connect[0m
+[0;32mI (24031) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (27871) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (27901) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (27921) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (27921) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (29041) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (29041) mqtt_client: Client force reconnect requested[0m
+[0;31mE (29041) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (29051) esp-tls: Failed to open new connection[0m
+[0;31mE (29061) transport_base: Failed to open a new connection[0m
+[0;31mE (29061) mqtt_client: Error transport connect[0m
+[0;32mI (29071) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (34081) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (34081) mqtt_client: Client force reconnect requested[0m
+[0;31mE (34081) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (34091) esp-tls: Failed to open new connection[0m
+[0;31mE (34101) transport_base: Failed to open a new connection[0m
+[0;31mE (34101) mqtt_client: Error transport connect[0m
+[0;32mI (34111) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (35861) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (35901) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (35921) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (35921) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (39121) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (39121) mqtt_client: Client force reconnect requested[0m
+[0;31mE (39121) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (39131) esp-tls: Failed to open new connection[0m
+[0;31mE (39141) transport_base: Failed to open a new connection[0m
+[0;31mE (39141) mqtt_client: Error transport connect[0m
+[0;32mI (39151) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (43901) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (43921) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (43951) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (43951) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (44161) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (44161) mqtt_client: Client force reconnect requested[0m
+[0;31mE (44161) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (44171) esp-tls: Failed to open new connection[0m
+[0;31mE (44181) transport_base: Failed to open a new connection[0m
+[0;31mE (44181) mqtt_client: Error transport connect[0m
+[0;32mI (44191) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (49201) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (49201) mqtt_client: Client force reconnect requested[0m
+[0;31mE (49201) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (49211) esp-tls: Failed to open new connection[0m
+[0;31mE (49221) transport_base: Failed to open a new connection[0m
+[0;31mE (49221) mqtt_client: Error transport connect[0m
+[0;32mI (49231) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (51901) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (51931) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (51951) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (51951) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (54241) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (54241) mqtt_client: Client force reconnect requested[0m
+[0;31mE (54241) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (54251) esp-tls: Failed to open new connection[0m
+[0;31mE (54261) transport_base: Failed to open a new connection[0m
+[0;31mE (54261) mqtt_client: Error transport connect[0m
+[0;32mI (54271) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (59281) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (59281) mqtt_client: Client force reconnect requested[0m
+[0;31mE (59281) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (59291) esp-tls: Failed to open new connection[0m
+[0;31mE (59301) transport_base: Failed to open a new connection[0m
+[0;31mE (59301) mqtt_client: Error transport connect[0m
+[0;32mI (59311) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (59901) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (59931) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (59951) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (59951) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (64321) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (64321) mqtt_client: Client force reconnect requested[0m
+[0;31mE (64321) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (64331) esp-tls: Failed to open new connection[0m
+[0;31mE (64341) transport_base: Failed to open a new connection[0m
+[0;31mE (64341) mqtt_client: Error transport connect[0m
+[0;32mI (64351) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (67951) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (67971) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (67991) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (67991) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (69361) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (69361) mqtt_client: Client force reconnect requested[0m
+[0;31mE (69361) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (69371) esp-tls: Failed to open new connection[0m
+[0;31mE (69381) transport_base: Failed to open a new connection[0m
+[0;31mE (69381) mqtt_client: Error transport connect[0m
+[0;32mI (69391) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (74401) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (74401) mqtt_client: Client force reconnect requested[0m
+[0;31mE (74401) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (74411) esp-tls: Failed to open new connection[0m
+[0;31mE (74421) transport_base: Failed to open a new connection[0m
+[0;31mE (74421) mqtt_client: Error transport connect[0m
+[0;32mI (74431) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (75951) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (75971) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (76001) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (76001) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (79441) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (79441) mqtt_client: Client force reconnect requested[0m
+[0;31mE (79441) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (79451) esp-tls: Failed to open new connection[0m
+[0;31mE (79461) transport_base: Failed to open a new connection[0m
+[0;31mE (79461) mqtt_client: Error transport connect[0m
+[0;32mI (79471) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (83941) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (83981) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (84001) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (84001) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (84481) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (84481) mqtt_client: Client force reconnect requested[0m
+[0;31mE (84481) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (84491) esp-tls: Failed to open new connection[0m
+[0;31mE (84501) transport_base: Failed to open a new connection[0m
+[0;31mE (84501) mqtt_client: Error transport connect[0m
+[0;32mI (84511) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (89521) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (89521) mqtt_client: Client force reconnect requested[0m
+[0;31mE (89521) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (89531) esp-tls: Failed to open new connection[0m
+[0;31mE (89541) transport_base: Failed to open a new connection[0m
+[0;31mE (89541) mqtt_client: Error transport connect[0m
+[0;32mI (89551) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (91941) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (91981) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (92001) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (92001) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (94561) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (94561) mqtt_client: Client force reconnect requested[0m
+[0;31mE (94561) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (94571) esp-tls: Failed to open new connection[0m
+[0;31mE (94581) transport_base: Failed to open a new connection[0m
+[0;31mE (94581) mqtt_client: Error transport connect[0m
+[0;32mI (94591) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (99601) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (99601) mqtt_client: Client force reconnect requested[0m
+[0;31mE (99601) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (99611) esp-tls: Failed to open new connection[0m
+[0;31mE (99621) transport_base: Failed to open a new connection[0m
+[0;31mE (99621) mqtt_client: Error transport connect[0m
+[0;32mI (99631) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (99941) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (99981) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (100001) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (100001) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (104641) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (104641) mqtt_client: Client force reconnect requested[0m
+[0;31mE (104641) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (104651) esp-tls: Failed to open new connection[0m
+[0;31mE (104661) transport_base: Failed to open a new connection[0m
+[0;31mE (104661) mqtt_client: Error transport connect[0m
+[0;32mI (104671) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (107961) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (108001) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (108021) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (108021) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (109681) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (109681) mqtt_client: Client force reconnect requested[0m
+[0;31mE (109681) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (109691) esp-tls: Failed to open new connection[0m
+[0;31mE (109701) transport_base: Failed to open a new connection[0m
+[0;31mE (109701) mqtt_client: Error transport connect[0m
+[0;32mI (109711) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (114721) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (114721) mqtt_client: Client force reconnect requested[0m
+[0;31mE (114721) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (114731) esp-tls: Failed to open new connection[0m
+[0;31mE (114741) transport_base: Failed to open a new connection[0m
+[0;31mE (114741) mqtt_client: Error transport connect[0m
+[0;32mI (114751) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (115971) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (115991) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (116011) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (116011) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (119761) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (119761) mqtt_client: Client force reconnect requested[0m
+[0;31mE (119761) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (119771) esp-tls: Failed to open new connection[0m
+[0;31mE (119781) transport_base: Failed to open a new connection[0m
+[0;31mE (119781) mqtt_client: Error transport connect[0m
+[0;32mI (119791) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (124031) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (124061) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (124081) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (124081) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (124801) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (124801) mqtt_client: Client force reconnect requested[0m
+[0;31mE (124801) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (124811) esp-tls: Failed to open new connection[0m
+[0;31mE (124821) transport_base: Failed to open a new connection[0m
+[0;31mE (124821) mqtt_client: Error transport connect[0m
+[0;32mI (124831) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (129841) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (129841) mqtt_client: Client force reconnect requested[0m
+[0;31mE (129841) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (129851) esp-tls: Failed to open new connection[0m
+[0;31mE (129861) transport_base: Failed to open a new connection[0m
+[0;31mE (129861) mqtt_client: Error transport connect[0m
+[0;32mI (129871) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (132031) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (132061) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (132081) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (132081) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (134881) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (134881) mqtt_client: Client force reconnect requested[0m
+[0;31mE (134881) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (134891) esp-tls: Failed to open new connection[0m
+[0;31mE (134901) transport_base: Failed to open a new connection[0m
+[0;31mE (134901) mqtt_client: Error transport connect[0m
+[0;32mI (134911) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (139921) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (139921) mqtt_client: Client force reconnect requested[0m
+[0;31mE (139921) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (139931) esp-tls: Failed to open new connection[0m
+[0;31mE (139941) transport_base: Failed to open a new connection[0m
+[0;31mE (139941) mqtt_client: Error transport connect[0m
+[0;32mI (139951) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (140021) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (140061) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (140171) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (140171) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (144961) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (144961) mqtt_client: Client force reconnect requested[0m
+[0;31mE (144961) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (144971) esp-tls: Failed to open new connection[0m
+[0;31mE (144981) transport_base: Failed to open a new connection[0m
+[0;31mE (144981) mqtt_client: Error transport connect[0m
+[0;32mI (144991) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (148061) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (148091) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (148111) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (148121) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (150001) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (150001) mqtt_client: Client force reconnect requested[0m
+[0;31mE (150001) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (150011) esp-tls: Failed to open new connection[0m
+[0;31mE (150021) transport_base: Failed to open a new connection[0m
+[0;31mE (150021) mqtt_client: Error transport connect[0m
+[0;32mI (150031) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (155041) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (155041) mqtt_client: Client force reconnect requested[0m
+[0;31mE (155041) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (155051) esp-tls: Failed to open new connection[0m
+[0;31mE (155061) transport_base: Failed to open a new connection[0m
+[0;31mE (155061) mqtt_client: Error transport connect[0m
+[0;32mI (155071) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (156061) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (156081) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (156111) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (156111) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (160081) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (160081) mqtt_client: Client force reconnect requested[0m
+[0;31mE (160081) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (160091) esp-tls: Failed to open new connection[0m
+[0;31mE (160101) transport_base: Failed to open a new connection[0m
+[0;31mE (160101) mqtt_client: Error transport connect[0m
+[0;32mI (160111) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (164111) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (164131) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (164151) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (164151) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (165121) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (165121) mqtt_client: Client force reconnect requested[0m
+[0;31mE (165121) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (165131) esp-tls: Failed to open new connection[0m
+[0;31mE (165141) transport_base: Failed to open a new connection[0m
+[0;31mE (165141) mqtt_client: Error transport connect[0m
+[0;32mI (165151) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (170161) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (170161) mqtt_client: Client force reconnect requested[0m
+[0;31mE (170161) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (170171) esp-tls: Failed to open new connection[0m
+[0;31mE (170181) transport_base: Failed to open a new connection[0m
+[0;31mE (170181) mqtt_client: Error transport connect[0m
+[0;32mI (170191) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (172101) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (172131) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (172161) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (172161) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (175201) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (175201) mqtt_client: Client force reconnect requested[0m
+[0;31mE (175201) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (175211) esp-tls: Failed to open new connection[0m
+[0;31mE (175221) transport_base: Failed to open a new connection[0m
+[0;31mE (175221) mqtt_client: Error transport connect[0m
+[0;32mI (175231) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (180101) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (180221) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (180241) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (180241) mqtt_client: Client force reconnect requested[0m
+[0;31mE (180241) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (180251) esp-tls: Failed to open new connection[0m
+[0;33mW (180261) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;31mE (180261) transport_base: Failed to open a new connection[0m
+[0;32mI (180261) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;31mE (180271) mqtt_client: Error transport connect[0m
+[0;32mI (180291) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (185281) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (185281) mqtt_client: Client force reconnect requested[0m
+[0;31mE (185281) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (185291) esp-tls: Failed to open new connection[0m
+[0;31mE (185301) transport_base: Failed to open a new connection[0m
+[0;31mE (185301) mqtt_client: Error transport connect[0m
+[0;32mI (185311) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (188121) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (188141) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (188171) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (188171) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (190321) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (190321) mqtt_client: Client force reconnect requested[0m
+[0;31mE (190321) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (190331) esp-tls: Failed to open new connection[0m
+[0;31mE (190341) transport_base: Failed to open a new connection[0m
+[0;31mE (190341) mqtt_client: Error transport connect[0m
+[0;32mI (190351) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (195361) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (195361) mqtt_client: Client force reconnect requested[0m
+[0;31mE (195361) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (195371) esp-tls: Failed to open new connection[0m
+[0;31mE (195381) transport_base: Failed to open a new connection[0m
+[0;31mE (195381) mqtt_client: Error transport connect[0m
+[0;32mI (195391) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (196121) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (196141) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (196171) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (196171) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (200401) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (200401) mqtt_client: Client force reconnect requested[0m
+[0;31mE (200401) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (200411) esp-tls: Failed to open new connection[0m
+[0;31mE (200421) transport_base: Failed to open a new connection[0m
+[0;31mE (200421) mqtt_client: Error transport connect[0m
+[0;32mI (200431) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (204121) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (204161) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (204181) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (204181) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (205441) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (205441) mqtt_client: Client force reconnect requested[0m
+[0;31mE (205441) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (205451) esp-tls: Failed to open new connection[0m
+[0;31mE (205461) transport_base: Failed to open a new connection[0m
+[0;31mE (205461) mqtt_client: Error transport connect[0m
+[0;32mI (205471) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (210481) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (210481) mqtt_client: Client force reconnect requested[0m
+[0;31mE (210481) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (210491) esp-tls: Failed to open new connection[0m
+[0;31mE (210501) transport_base: Failed to open a new connection[0m
+[0;31mE (210501) mqtt_client: Error transport connect[0m
+[0;32mI (210511) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (212131) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (212161) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (212181) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (212181) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (215521) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (215521) mqtt_client: Client force reconnect requested[0m
+[0;31mE (215521) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (215531) esp-tls: Failed to open new connection[0m
+[0;31mE (215541) transport_base: Failed to open a new connection[0m
+[0;31mE (215541) mqtt_client: Error transport connect[0m
+[0;32mI (215551) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (220211) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (220241) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (220261) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (220261) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (220561) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (220561) mqtt_client: Client force reconnect requested[0m
+[0;31mE (220561) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (220571) esp-tls: Failed to open new connection[0m
+[0;31mE (220581) transport_base: Failed to open a new connection[0m
+[0;31mE (220581) mqtt_client: Error transport connect[0m
+[0;32mI (220591) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (225601) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (225601) mqtt_client: Client force reconnect requested[0m
+[0;31mE (225601) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (225611) esp-tls: Failed to open new connection[0m
+[0;31mE (225621) transport_base: Failed to open a new connection[0m
+[0;31mE (225621) mqtt_client: Error transport connect[0m
+[0;32mI (225631) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (228161) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (228181) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (228211) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (228211) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (230641) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (230641) mqtt_client: Client force reconnect requested[0m
+[0;31mE (230641) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (230651) esp-tls: Failed to open new connection[0m
+[0;31mE (230661) transport_base: Failed to open a new connection[0m
+[0;31mE (230661) mqtt_client: Error transport connect[0m
+[0;32mI (230671) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (235681) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (235681) mqtt_client: Client force reconnect requested[0m
+[0;31mE (235681) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (235691) esp-tls: Failed to open new connection[0m
+[0;31mE (235701) transport_base: Failed to open a new connection[0m
+[0;31mE (235701) mqtt_client: Error transport connect[0m
+[0;32mI (235711) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (236161) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (236181) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (236211) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (236211) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (240721) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (240721) mqtt_client: Client force reconnect requested[0m
+[0;31mE (240721) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (240731) esp-tls: Failed to open new connection[0m
+[0;31mE (240741) transport_base: Failed to open a new connection[0m
+[0;31mE (240741) mqtt_client: Error transport connect[0m
+[0;32mI (240751) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (244211) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (244231) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (244261) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (244261) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (245761) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (245761) mqtt_client: Client force reconnect requested[0m
+[0;31mE (245761) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (245771) esp-tls: Failed to open new connection[0m
+[0;31mE (245781) transport_base: Failed to open a new connection[0m
+[0;31mE (245781) mqtt_client: Error transport connect[0m
+[0;32mI (245791) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (250801) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (250801) mqtt_client: Client force reconnect requested[0m
+[0;31mE (250801) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (250811) esp-tls: Failed to open new connection[0m
+[0;31mE (250821) transport_base: Failed to open a new connection[0m
+[0;31mE (250821) mqtt_client: Error transport connect[0m
+[0;32mI (250831) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (252201) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (252241) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (252261) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (252261) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (255841) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (255841) mqtt_client: Client force reconnect requested[0m
+[0;31mE (255841) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (255851) esp-tls: Failed to open new connection[0m
+[0;31mE (255861) transport_base: Failed to open a new connection[0m
+[0;31mE (255861) mqtt_client: Error transport connect[0m
+[0;32mI (255871) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (260231) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (260261) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (260281) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (260291) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (260881) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (260881) mqtt_client: Client force reconnect requested[0m
+[0;31mE (260881) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (260891) esp-tls: Failed to open new connection[0m
+[0;31mE (260901) transport_base: Failed to open a new connection[0m
+[0;31mE (260901) mqtt_client: Error transport connect[0m
+[0;32mI (260911) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (265921) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (265921) mqtt_client: Client force reconnect requested[0m
+[0;31mE (265921) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (265931) esp-tls: Failed to open new connection[0m
+[0;31mE (265941) transport_base: Failed to open a new connection[0m
+[0;31mE (265941) mqtt_client: Error transport connect[0m
+[0;32mI (265951) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (268221) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (268261) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (268281) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (268281) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (270961) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (270961) mqtt_client: Client force reconnect requested[0m
+[0;31mE (270961) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (270971) esp-tls: Failed to open new connection[0m
+[0;31mE (270981) transport_base: Failed to open a new connection[0m
+[0;31mE (270981) mqtt_client: Error transport connect[0m
+[0;32mI (270991) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (276001) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (276001) mqtt_client: Client force reconnect requested[0m
+[0;31mE (276001) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (276011) esp-tls: Failed to open new connection[0m
+[0;31mE (276021) transport_base: Failed to open a new connection[0m
+[0;31mE (276021) mqtt_client: Error transport connect[0m
+[0;32mI (276031) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (276221) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (276261) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (276281) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (276281) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (281041) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (281041) mqtt_client: Client force reconnect requested[0m
+[0;31mE (281041) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (281051) esp-tls: Failed to open new connection[0m
+[0;31mE (281061) transport_base: Failed to open a new connection[0m
+[0;31mE (281061) mqtt_client: Error transport connect[0m
+[0;32mI (281071) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (284241) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (284261) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (284291) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (284291) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (286081) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (286081) mqtt_client: Client force reconnect requested[0m
+[0;31mE (286081) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (286091) esp-tls: Failed to open new connection[0m
+[0;31mE (286101) transport_base: Failed to open a new connection[0m
+[0;31mE (286101) mqtt_client: Error transport connect[0m
+[0;32mI (286111) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (291121) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (291121) mqtt_client: Client force reconnect requested[0m
+[0;31mE (291121) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (291131) esp-tls: Failed to open new connection[0m
+[0;31mE (291141) transport_base: Failed to open a new connection[0m
+[0;31mE (291141) mqtt_client: Error transport connect[0m
+[0;32mI (291151) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (292241) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (292271) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (292291) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (292291) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (296161) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (296161) mqtt_client: Client force reconnect requested[0m
+[0;31mE (296161) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (296171) esp-tls: Failed to open new connection[0m
+[0;31mE (296181) transport_base: Failed to open a new connection[0m
+[0;31mE (296181) mqtt_client: Error transport connect[0m
+[0;32mI (296191) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (300261) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (300281) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (300311) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (300311) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (301201) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (301201) mqtt_client: Client force reconnect requested[0m
+[0;31mE (301201) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (301211) esp-tls: Failed to open new connection[0m
+[0;31mE (301221) transport_base: Failed to open a new connection[0m
+[0;31mE (301221) mqtt_client: Error transport connect[0m
+[0;32mI (301231) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (306241) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (306241) mqtt_client: Client force reconnect requested[0m
+[0;31mE (306241) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (306251) esp-tls: Failed to open new connection[0m
+[0;31mE (306261) transport_base: Failed to open a new connection[0m
+[0;31mE (306261) mqtt_client: Error transport connect[0m
+[0;32mI (306271) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (308261) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (308291) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (308311) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (308321) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (311281) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (311281) mqtt_client: Client force reconnect requested[0m
+[0;31mE (311281) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (311291) esp-tls: Failed to open new connection[0m
+[0;31mE (311301) transport_base: Failed to open a new connection[0m
+[0;31mE (311301) mqtt_client: Error transport connect[0m
+[0;32mI (311311) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (316261) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (316291) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (316311) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (316311) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (316321) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (316321) mqtt_client: Client force reconnect requested[0m
+[0;31mE (316331) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (316341) esp-tls: Failed to open new connection[0m
+[0;31mE (316351) transport_base: Failed to open a new connection[0m
+[0;31mE (316351) mqtt_client: Error transport connect[0m
+[0;32mI (316361) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (321371) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (321371) mqtt_client: Client force reconnect requested[0m
+[0;31mE (321371) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (321381) esp-tls: Failed to open new connection[0m
+[0;31mE (321391) transport_base: Failed to open a new connection[0m
+[0;31mE (321391) mqtt_client: Error transport connect[0m
+[0;32mI (321401) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (324281) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (324321) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (324341) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (324341) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (326411) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (326411) mqtt_client: Client force reconnect requested[0m
+[0;31mE (326411) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (326421) esp-tls: Failed to open new connection[0m
+[0;31mE (326431) transport_base: Failed to open a new connection[0m
+[0;31mE (326431) mqtt_client: Error transport connect[0m
+[0;32mI (326441) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (331451) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (331451) mqtt_client: Client force reconnect requested[0m
+[0;31mE (331451) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (331461) esp-tls: Failed to open new connection[0m
+[0;31mE (331471) transport_base: Failed to open a new connection[0m
+[0;31mE (331471) mqtt_client: Error transport connect[0m
+[0;32mI (331481) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (332281) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (332321) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (332341) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (332341) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (336491) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (336491) mqtt_client: Client force reconnect requested[0m
+[0;31mE (336491) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (336501) esp-tls: Failed to open new connection[0m
+[0;31mE (336511) transport_base: Failed to open a new connection[0m
+[0;31mE (336511) mqtt_client: Error transport connect[0m
+[0;32mI (336521) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (340311) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (340341) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (340361) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (340371) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (341531) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (341531) mqtt_client: Client force reconnect requested[0m
+[0;31mE (341531) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (341541) esp-tls: Failed to open new connection[0m
+[0;31mE (341551) transport_base: Failed to open a new connection[0m
+[0;31mE (341551) mqtt_client: Error transport connect[0m
+[0;32mI (341561) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (346571) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (346571) mqtt_client: Client force reconnect requested[0m
+[0;31mE (346571) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (346581) esp-tls: Failed to open new connection[0m
+[0;31mE (346591) transport_base: Failed to open a new connection[0m
+[0;31mE (346591) mqtt_client: Error transport connect[0m
+[0;32mI (346601) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (348301) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (348341) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (348361) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (348361) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (351611) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (351611) mqtt_client: Client force reconnect requested[0m
+[0;31mE (351611) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (351621) esp-tls: Failed to open new connection[0m
+[0;31mE (351631) transport_base: Failed to open a new connection[0m
+[0;31mE (351631) mqtt_client: Error transport connect[0m
+[0;32mI (351641) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (356301) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (356331) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (356351) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (356351) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (356651) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (356651) mqtt_client: Client force reconnect requested[0m
+[0;31mE (356651) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (356661) esp-tls: Failed to open new connection[0m
+[0;31mE (356671) transport_base: Failed to open a new connection[0m
+[0;31mE (356671) mqtt_client: Error transport connect[0m
+[0;32mI (356681) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (361691) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (361691) mqtt_client: Client force reconnect requested[0m
+[0;31mE (361691) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (361701) esp-tls: Failed to open new connection[0m
+[0;31mE (361711) transport_base: Failed to open a new connection[0m
+[0;31mE (361711) mqtt_client: Error transport connect[0m
+[0;32mI (361721) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (364341) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (364381) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (364401) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (364401) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (366731) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (366731) mqtt_client: Client force reconnect requested[0m
+[0;31mE (366731) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (366741) esp-tls: Failed to open new connection[0m
+[0;31mE (366751) transport_base: Failed to open a new connection[0m
+[0;31mE (366751) mqtt_client: Error transport connect[0m
+[0;32mI (366761) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (371771) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (371771) mqtt_client: Client force reconnect requested[0m
+[0;31mE (371771) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (371781) esp-tls: Failed to open new connection[0m
+[0;31mE (371791) transport_base: Failed to open a new connection[0m
+[0;31mE (371791) mqtt_client: Error transport connect[0m
+[0;32mI (371801) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (372351) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (372381) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (372401) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (372401) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (376811) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (376811) mqtt_client: Client force reconnect requested[0m
+[0;31mE (376811) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (376821) esp-tls: Failed to open new connection[0m
+[0;31mE (376831) transport_base: Failed to open a new connection[0m
+[0;31mE (376831) mqtt_client: Error transport connect[0m
+[0;32mI (376841) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (380391) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (380411) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (380431) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (380431) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (381851) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (381851) mqtt_client: Client force reconnect requested[0m
+[0;31mE (381851) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (381861) esp-tls: Failed to open new connection[0m
+[0;31mE (381871) transport_base: Failed to open a new connection[0m
+[0;31mE (381881) mqtt_client: Error transport connect[0m
+[0;32mI (381881) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (386891) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (386891) mqtt_client: Client force reconnect requested[0m
+[0;31mE (386891) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (386901) esp-tls: Failed to open new connection[0m
+[0;31mE (386911) transport_base: Failed to open a new connection[0m
+[0;31mE (386911) mqtt_client: Error transport connect[0m
+[0;32mI (386921) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (388391) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (388411) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (388441) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (388441) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (391931) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (391931) mqtt_client: Client force reconnect requested[0m
+[0;31mE (391931) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (391941) esp-tls: Failed to open new connection[0m
+[0;31mE (391951) transport_base: Failed to open a new connection[0m
+[0;31mE (391951) mqtt_client: Error transport connect[0m
+[0;32mI (391961) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (396381) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (396421) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (396441) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (396441) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (396971) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (396971) mqtt_client: Client force reconnect requested[0m
+[0;31mE (396971) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (396981) esp-tls: Failed to open new connection[0m
+[0;31mE (396991) transport_base: Failed to open a new connection[0m
+[0;31mE (396991) mqtt_client: Error transport connect[0m
+[0;32mI (397001) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (402011) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (402011) mqtt_client: Client force reconnect requested[0m
+[0;31mE (402011) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (402021) esp-tls: Failed to open new connection[0m
+[0;31mE (402031) transport_base: Failed to open a new connection[0m
+[0;31mE (402031) mqtt_client: Error transport connect[0m
+[0;32mI (402041) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (404441) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (404471) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (404491) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (404491) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (407051) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (407051) mqtt_client: Client force reconnect requested[0m
+[0;31mE (407051) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (407061) esp-tls: Failed to open new connection[0m
+[0;31mE (407071) transport_base: Failed to open a new connection[0m
+[0;31mE (407071) mqtt_client: Error transport connect[0m
+[0;32mI (407081) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (412091) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (412091) mqtt_client: Client force reconnect requested[0m
+[0;31mE (412091) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (412101) esp-tls: Failed to open new connection[0m
+[0;31mE (412111) transport_base: Failed to open a new connection[0m
+[0;31mE (412111) mqtt_client: Error transport connect[0m
+[0;32mI (412121) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (412441) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (412461) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (412491) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (412491) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (417131) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (417131) mqtt_client: Client force reconnect requested[0m
+[0;31mE (417131) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (417141) esp-tls: Failed to open new connection[0m
+[0;31mE (417151) transport_base: Failed to open a new connection[0m
+[0;31mE (417151) mqtt_client: Error transport connect[0m
+[0;32mI (417161) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (420441) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (420481) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (420501) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (420501) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (422171) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (422171) mqtt_client: Client force reconnect requested[0m
+[0;31mE (422171) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (422181) esp-tls: Failed to open new connection[0m
+[0;31mE (422191) transport_base: Failed to open a new connection[0m
+[0;31mE (422191) mqtt_client: Error transport connect[0m
+[0;32mI (422201) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (427211) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (427211) mqtt_client: Client force reconnect requested[0m
+[0;31mE (427211) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (427221) esp-tls: Failed to open new connection[0m
+[0;31mE (427231) transport_base: Failed to open a new connection[0m
+[0;31mE (427231) mqtt_client: Error transport connect[0m
+[0;32mI (427241) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (428441) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (428481) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (428501) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (428501) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (432251) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (432251) mqtt_client: Client force reconnect requested[0m
+[0;31mE (432251) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (432261) esp-tls: Failed to open new connection[0m
+[0;31mE (432271) transport_base: Failed to open a new connection[0m
+[0;31mE (432271) mqtt_client: Error transport connect[0m
+[0;32mI (432281) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (436441) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (436481) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (436501) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (436501) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (437291) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (437291) mqtt_client: Client force reconnect requested[0m
+[0;31mE (437291) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (437301) esp-tls: Failed to open new connection[0m
+[0;31mE (437311) transport_base: Failed to open a new connection[0m
+[0;31mE (437311) mqtt_client: Error transport connect[0m
+[0;32mI (437321) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (442331) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (442331) mqtt_client: Client force reconnect requested[0m
+[0;31mE (442331) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (442341) esp-tls: Failed to open new connection[0m
+[0;31mE (442351) transport_base: Failed to open a new connection[0m
+[0;31mE (442351) mqtt_client: Error transport connect[0m
+[0;32mI (442361) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (444481) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (444501) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (444531) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (444531) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (447371) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (447371) mqtt_client: Client force reconnect requested[0m
+[0;31mE (447371) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (447381) esp-tls: Failed to open new connection[0m
+[0;31mE (447391) transport_base: Failed to open a new connection[0m
+[0;31mE (447391) mqtt_client: Error transport connect[0m
+[0;32mI (447401) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (452411) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (452411) mqtt_client: Client force reconnect requested[0m
+[0;31mE (452411) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (452421) esp-tls: Failed to open new connection[0m
+[0;31mE (452431) transport_base: Failed to open a new connection[0m
+[0;31mE (452431) mqtt_client: Error transport connect[0m
+[0;32mI (452441) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (452481) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (452511) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (452531) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (452531) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (457451) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (457451) mqtt_client: Client force reconnect requested[0m
+[0;31mE (457451) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (457461) esp-tls: Failed to open new connection[0m
+[0;31mE (457471) transport_base: Failed to open a new connection[0m
+[0;31mE (457471) mqtt_client: Error transport connect[0m
+[0;32mI (457481) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (460541) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (460571) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (460591) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (460591) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (462491) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (462491) mqtt_client: Client force reconnect requested[0m
+[0;31mE (462491) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (462501) esp-tls: Failed to open new connection[0m
+[0;31mE (462511) transport_base: Failed to open a new connection[0m
+[0;31mE (462511) mqtt_client: Error transport connect[0m
+[0;32mI (462521) MQTT_EXAMPLE: MQTT Disconnected from broker[0m

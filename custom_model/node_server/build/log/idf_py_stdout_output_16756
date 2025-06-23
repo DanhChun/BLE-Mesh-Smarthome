@@ -1,0 +1,2642 @@
+�+ښ�j%�(39) boot.esp32ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 25 2024 16:34:09[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 001e0000[0m
+[0;32mI (92) boot:  3 storage          WiFi data        01 02 001f0000 00010000[0m
+[0;32mI (99) boot: End of partition table[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=605c8h (394696) map[0m
+[0;32mI (247) esp_image: segment 1: paddr=000705f0 vaddr=3ffbdb60 size=071d4h ( 29140) load[0m
+[0;32mI (258) esp_image: segment 2: paddr=000777cc vaddr=40080000 size=0884ch ( 34892) load[0m
+[0;32mI (272) esp_image: segment 3: paddr=00080020 vaddr=400d0020 size=12c690h (1230480) map[0m
+[0;32mI (694) esp_image: segment 4: paddr=001ac6b8 vaddr=4008884c size=1721ch ( 94748) load[0m
+[0;32mI (747) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (748) boot: Disabling RNG early entropy source...[0m
+[0;32mI (760) cpu_start: Multicore app[0m
+[0;32mI (768) cpu_start: Pro cpu start user code[0m
+[0;32mI (768) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (768) app_init: Application information:[0m
+[0;32mI (771) app_init: Project name:     node_server[0m
+[0;32mI (776) app_init: App version:      1[0m
+[0;32mI (781) app_init: Compile time:     Nov 25 2024 16:33:07[0m
+[0;32mI (787) app_init: ELF file SHA256:  10fd3c7c5...[0m
+[0;32mI (792) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (797) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (802) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (806) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (812) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (819) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (825) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (831) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (837) heap_init: At 3FFD0AC0 len 0000F540 (61 KiB): DRAM[0m
+[0;32mI (843) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (849) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (856) heap_init: At 4009FA68 len 00000598 (1 KiB): IRAM[0m
+[0;32mI (864) spi_flash: detected chip: generic[0m
+[0;32mI (866) spi_flash: flash io: dio[0m
+[0;33mW (870) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (884) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (895) coexist: coex firmware version: 4482466[0m
+[0;32mI (900) main_task: Started on CPU0[0m
+[0;32mI (910) main_task: Calling app_main()[0m
+[0;32mI (910) MAIN: Initializing...[0m
+[0;32mI (950) BTDM_INIT: BT controller compile version [b022216][0m
+[0;32mI (950) BTDM_INIT: Bluetooth MAC: c0:49:ef:f9:9d:6a[0m
+[0;32mI (950) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+Bluetooth Mesh v1.1 commit: [10f7fdc1a9]
+[0;33mW (1390) BLE_MESH: bt_mesh_proxy_server_prov_disable, Already[0m
+[0;32mI (1410) MESH_SERVER: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (1410) MESH_SERVER: net_idx: 0x0000, addr: 0x0003[0m
+[0;32mI (1410) MESH_SERVER: flags: 0x00, iv_index: 0x00000000[0m
+[0;32mI (1420) MESH_SERVER: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1420) MESH_SERVER: ESP_BLE_MESH_NODE_SET_UNPROV_DEV_NAME_COMP_EVT, Name: SERVER_NODE, err_code 0[0m
+[0;33mW (1430) BLE_MESH: bt_mesh_prov_enable, Already[0m
+[0;32mI (1440) MESH_SERVER: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code -120[0m
+[0;32mI (1450) MESH_SERVER: BLE Mesh Node initialized![0m
+[0;32mI (2450) OLED: OLED initialization[0m
+[0;32mI (3560) wifi:wifi driver task: 3ffdde4c, prio:23, stack:6656, core=0[0m
+[0;32mI (3570) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (3570) wifi:wifi certification version: v7.0[0m
+[0;32mI (3570) wifi:config NVS flash: enabled[0m
+[0;32mI (3570) wifi:config nano formating: disabled[0m
+[0;32mI (3580) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (3580) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (3580) wifi:Init management short buffer num: 32[0m
+[0;32mI (3590) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (3590) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (3600) wifi:Init static rx buffer num: 10[0m
+[0;32mI (3600) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (3610) wifi_init: rx ba win: 6[0m
+[0;32mI (3610) wifi_init: accept mbox: 6[0m
+[0;32mI (3610) wifi_init: tcpip mbox: 32[0m
+[0;32mI (3620) wifi_init: udp mbox: 6[0m
+[0;32mI (3620) wifi_init: tcp mbox: 6[0m
+[0;32mI (3620) wifi_init: tcp tx win: 5760[0m
+[0;32mI (3630) wifi_init: tcp rx win: 5760[0m
+[0;32mI (3630) wifi_init: tcp mss: 1440[0m
+[0;32mI (3640) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (3640) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (3650) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (3660) wifi:mode : sta (c0:49:ef:f9:9d:68)[0m
+[0;32mI (3660) wifi:enable tsf[0m
+[0;32mI (3660) MQTT_EXAMPLE: wifi_init_sta finished[0m
+[0;31mE (3670) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3680) esp-tls: Failed to open new connection[0m
+[0;31mE (3680) transport_base: Failed to open a new connection[0m
+[0;31mE (3690) mqtt_client: Error transport connect[0m
+[0;32mI (3700) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (3700) MAIN: Task initializing..[0m
+[0;32mI (3710) MAIN: Task initializing..[0m
+[0;32mI (3720) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (3720) mqtt_client: Client force reconnect requested[0m
+[0;32mI (3720) main_task: Returned from app_main()[0m
+[0;31mE (3720) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3740) esp-tls: Failed to open new connection[0m
+[0;31mE (3750) transport_base: Failed to open a new connection[0m
+[0;31mE (3750) mqtt_client: Error transport connect[0m
+[0;32mI (3760) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (8490) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (8490) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m
+[0;32mI (8760) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (8760) mqtt_client: Client force reconnect requested[0m
+[0;31mE (8760) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (8770) esp-tls: Failed to open new connection[0m
+[0;31mE (8780) transport_base: Failed to open a new connection[0m
+[0;31mE (8780) mqtt_client: Error transport connect[0m
+[0;32mI (8790) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (13310) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (13320) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (13720) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (13760) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (13780) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (13780) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (13800) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (13800) mqtt_client: Client force reconnect requested[0m
+[0;31mE (13800) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (13810) esp-tls: Failed to open new connection[0m
+[0;31mE (13820) transport_base: Failed to open a new connection[0m
+[0;31mE (13820) mqtt_client: Error transport connect[0m
+[0;32mI (13830) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (18150) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (18150) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m
+[0;32mI (18840) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (18840) mqtt_client: Client force reconnect requested[0m
+[0;31mE (18840) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (18850) esp-tls: Failed to open new connection[0m
+[0;31mE (18860) transport_base: Failed to open a new connection[0m
+[0;31mE (18860) mqtt_client: Error transport connect[0m
+[0;32mI (18870) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (22970) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (22970) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (23720) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (23760) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (23780) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (23780) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (23880) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (23880) mqtt_client: Client force reconnect requested[0m
+[0;31mE (23880) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (23890) esp-tls: Failed to open new connection[0m
+[0;31mE (23900) transport_base: Failed to open a new connection[0m
+[0;31mE (23900) mqtt_client: Error transport connect[0m
+[0;32mI (23910) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (27850) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (27850) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m
+[0;32mI (28920) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (28920) mqtt_client: Client force reconnect requested[0m
+[0;31mE (28920) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (28930) esp-tls: Failed to open new connection[0m
+[0;31mE (28940) transport_base: Failed to open a new connection[0m
+[0;31mE (28940) mqtt_client: Error transport connect[0m
+[0;32mI (28950) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (32680) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (32680) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (33740) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (33760) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (33790) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (33790) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (33960) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (33960) mqtt_client: Client force reconnect requested[0m
+[0;31mE (33960) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (33970) esp-tls: Failed to open new connection[0m
+[0;31mE (33980) transport_base: Failed to open a new connection[0m
+[0;31mE (33980) mqtt_client: Error transport connect[0m
+[0;32mI (33990) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (37510) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (37510) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m
+[0;32mI (39000) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (39000) mqtt_client: Client force reconnect requested[0m
+[0;31mE (39000) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (39010) esp-tls: Failed to open new connection[0m
+[0;31mE (39020) transport_base: Failed to open a new connection[0m
+[0;31mE (39020) mqtt_client: Error transport connect[0m
+[0;32mI (39030) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (42340) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (42350) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (43740) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (43760) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (43790) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (43790) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (44040) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (44040) mqtt_client: Client force reconnect requested[0m
+[0;31mE (44040) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (44050) esp-tls: Failed to open new connection[0m
+[0;31mE (44060) transport_base: Failed to open a new connection[0m
+[0;31mE (44060) mqtt_client: Error transport connect[0m
+[0;32mI (44070) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (47170) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (47180) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m
+[0;31mE (47390) MAIN: Failed to update OLED[0m
+[0;31mE (47590) MAIN: Failed to update OLED[0m
+[0;31mE (47790) MAIN: Failed to update OLED[0m
+[0;31mE (47990) MAIN: Failed to update OLED[0m
+[0;31mE (48190) MAIN: Failed to update OLED[0m
+[0;31mE (48390) MAIN: Failed to update OLED[0m
+[0;31mE (48590) MAIN: Failed to update OLED[0m
+[0;32mI (49080) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (49080) mqtt_client: Client force reconnect requested[0m
+[0;31mE (49080) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (49090) esp-tls: Failed to open new connection[0m
+[0;31mE (49100) transport_base: Failed to open a new connection[0m
+[0;31mE (49100) mqtt_client: Error transport connect[0m
+[0;32mI (49110) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;31mE (49490) MAIN: Failed to update OLED[0m
+[0;31mE (49690) MAIN: Failed to update OLED[0m
+[0;31mE (49890) MAIN: Failed to update OLED[0m
+[0;31mE (50090) MAIN: Failed to update OLED[0m
+[0;31mE (50290) MAIN: Failed to update OLED[0m
+[0;31mE (50490) MAIN: Failed to update OLED[0m
+[0;31mE (50690) MAIN: Failed to update OLED[0m
+[0;31mE (50890) MAIN: Failed to update OLED[0m
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+1150 mmu set 00020000, pos 00020000
+1150 mmu set 00030000, pos 00030000
+1150 mmu set 00040000, pos 00040000
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:-245
+1150 mmu set 00010000, pos 00010000
+1150 mmu set 00020000, pos 00020000
+1150 mmu set 00030000, pos 00030000
+1150 mmu set 00040000, pos 00040000
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:-245
+1150 mmu set 00010000, pos 00010000
+1150 mmu set 00020000, pos 00020000
+1150 mmu set 00030000, pos 00030000
+1150 mmu set 00040000, pos 00040000
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:-245
+1150 mmu set 00010000, pos 00010000
+1150 mmu set 00020000, pos 00020000
+1150 mmu set 00030000, pos 00030000
+1150 mmu set 00040000, pos 00040000
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:-245
+1150 mmu set 00010000, pos 00010000
+1150 mmu set 00020000, pos 00020000
+1150 mmu set 00030000, pos 00030000
+1150 mmu set 00040000, pos 00040000
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:-245
+1150 mmu set 00010000, pos 00010000
+1150 mmu set 00020000, pos 00020000
+1150 mmu set 00030000, pos 00030000
+1150 mmu set 00040000, pos 00040000
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:-245
+1150 mmu set 00010000, pos 00010000
+1150 mmu set 00020000, pos 00020000
+1150 mmu set 00030000, pos 00030000
+1150 mmu set 00040000, pos 00040000
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0xffffffff,len:-1
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0xffffffff,len:-1
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0xffffffff,len:-1
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0xffffffff,len:-1
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0xffffffff,len:-1
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0xffffffff,len:-1
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0xffffffff,len:-1
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0xffffffff,len:-1
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0xffffffff,len:-1
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:-245
+1150 mmu set 00010000, pos 00010000
+1150 mmu set 00020000, pos 00020000
+1150 mmu set 00030000, pos 00030000
+1150 mmu set 00040000, pos 00040000
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0xffffffff,len:-1
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+csum err:0xf0!=0xb7
+ets_main.c 384 
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:-245
+1150 mmu set 00010000, pos 00010000
+1150 mmu set 00020000, pos 00020000
+1150 mmu set 00030000, pos 00030000
+1150 mmu set 00040000, pos 00040000
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:-245
+1150 mmu set 00010000, pos 00010000
+1150 mmu set 00020000, pos 00020000
+1150 mmu set 00030000, pos 00030000
+1150 mmu set 00040000, pos 00040000
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:-245
+1150 mmu set 00010000, pos 00010000
+1150 mmu set 00020000, pos 00020000
+1150 mmu set 00030000, pos 00030000
+1150 mmu set 00040000, pos 00040000
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:-245
+1150 mmu set 00010000, pos 00010000
+1150 mmu set 00020000, pos 00020000
+1150 mmu set 00030000, pos 00030000
+1150 mmu set 00040000, pos 00040000
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0xffffffff,len:-1
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0xffffffff,len:-1
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (32) boot: compile time Nov 25 2024 16:34:09[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;31mE (59) flash_parts: partition 0 invalid magic number 0xf04[0m
+[0;31mE (65) boot: Failed to verify partition table[0m
+[0;31mE (70) boot: load partition table error![0m
+ets Jul 29 2019 12:21:46
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (60) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Nov 25 2024 16:34:09[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (65) boot: chip revision: v3.0[0m
+[0;32mI (69) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (74) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (78) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (83) boot: Enabling RNG early entropy source...[0m
+[0;31mE (88) flash_parts: partition 0 invalid magic number 0x4f04[0m
+[0;31mE (94) boot: Failed to verify partition table[0m
+[0;31mE (99) boot: load partition table error![0m
+ets Jul 29 2019 12:21:46
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:-13959168
+1150 mmu set 00010000, pos 00010000
+1150 mmu set 00020000, pos 00020000
+1150 mmu set 00030000, pos 00030000
+1150 mmu set 00040000, pos 00040000
+load:0xffffffff,len:-1
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:-13959168
+1150 mmu set 00010000, pos 00010000
+1150 mmu set 00020000, pos 00020000
+1150 mmu set 00030000, pos 00030000
+1150 mmu set 00040000, pos 00040000
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:-13959168
+1150 mmu set 00010000, pos 00010000
+1150 mmu set 00020000, pos 00020000
+1150 mmu set 00030000, pos 00030000
+1150 mmu set 00040000, pos 00040000
+load:0xffffffff,len:-1
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (62) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (62) boot: compile time Nov 25 2024 16:34:09[0m
+[0;32mI (62) boot: Multicore bootloader[0m
+[0;32mI (67) boot: chip revision: v3.0[0m
+[0;32mI (70) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (80) boot.esp32: SPI Flash Size : 2MB[0m
+[0;33mW (84) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (89) boot.esp32: WDT reset info: PRO CPU PC=0x40079a29[0m
+[0;33mW (95) boot.esp32: WDT reset info: APP CPU PC=0xdb8c0c8f (waiti mode)[0m
+[0;32mI (103) boot: Enabling RNG early entropy source...[0m
+[0;32mI (108) boot: Partition Table:[0m
+[0;32mI (112) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (119) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (127) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (134) boot:  2 factory          factory app      00 00 00010000 001e0000[0m
+[0;32mI (142) boot:  3 storage          WiFi data        01 02 001f0000 00010000[0m
+[0;32mI (149) boot: End of partition table[0m
+[0;32mI (154) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=605c8h (394696) map[0m
+[0;32mI (297) esp_image: segment 1: paddr=000705f0 vaddr=3ffbdb60 size=071d4h ( 29140) load[0m
+[0;32mI (308) esp_image: segment 2: paddr=000777cc vaddr=40080000 size=0884ch ( 34892) load[0m
+[0;32mI (322) esp_image: segment 3: paddr=00080020 vaddr=400d0020 size=12c690h (1230480) map[0m
+[0;32mI (744) esp_image: segment 4: paddr=001ac6b8 vaddr=4008884c size=1721ch ( 94748) load[0m
+[0;31mE (781) esp_image: Checksum failed. Calculated 0xb6 read 0x82[0m
+[0;31mE (781) boot: Factory app partition is not bootable[0m
+[0;31mE (782) boot: No bootable app partitions in the partition table[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (60) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (60) boot: compile time Nov 25 2024 16:34:09[0m
+[0;32mI (60) boot: Multicore bootloader[0m
+[0;32mI (65) boot: chip revision: v3.0[0m
+[0;32mI (69) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (74) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (78) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (83) boot: Enabling RNG early entropy source...[0m
+[0;32mI (88) boot: Partition Table:[0m
+[0;32mI (92) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (99) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (106) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (114) boot:  2 factory          factory app      00 00 00010000 001e0000[0m
+[0;32mI (122) boot:  3 storage          WiFi data        01 02 001f0000 00010000[0m
+[0;32mI (129) boot: End of partition table[0m
+[0;32mI (133) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=605c8h (394696) map[0m
+[0;32mI (277) esp_image: segment 1: paddr=000705f0 vaddr=3ffbdb60 size=071d4h ( 29140) load[0m
+[0;32mI (288) esp_image: segment 2: paddr=000777cc vaddr=40080000 size=0884ch ( 34892) load[0m
+[0;32mI (302) esp_image: segment 3: paddr=00080020 vaddr=400d0020 size=12c690h (1230480) map[0m
+[0;32mI (724) esp_image: segment 4: paddr=001ac6b8 vaddr=4008884c size=1721ch ( 94748) load[0m
+[0;32mI (778) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (778) boot: Disabling RNG early entropy source...[0m
+[0;32mI (790) cpu_start: Multicore app[0m
+[0;32mI (798) cpu_start: Pro cpu start user code[0m
+[0;32mI (798) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (798) app_init: Application information:[0m
+[0;32mI (801) app_init: Project name:     node_server[0m
+[0;32mI (806) app_init: App version:      1[0m
+[0;32mI (811) app_init: Compile time:     Nov 25 2024 16:33:07[0m
+[0;32mI (817) app_init: ELF file SHA256:  10fd3c7c5...[0m
+[0;32mI (822) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (827) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (832) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (837) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (842) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (849) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (855) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (861) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (867) heap_init: At 3FFD0AC0 len 0000F540 (61 KiB): DRAM[0m
+[0;32mI (873) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (879) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (886) heap_init: At 4009FA68 len 00000598 (1 KiB): IRAM[0m
+[0;32mI (894) spi_flash: detected chip: generic[0m
+[0;32mI (897) spi_flash: flash io: dio[0m
+[0;33mW (901) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (914) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (925) coexist: coex firmware version: 4482466[0m
+[0;32mI (930) main_task: Started on CPU0[0m
+[0;32mI (940) main_task: Calling app_main()[0m
+[0;32mI (940) MAIN: Initializing...[0m
+[0;32mI (980) BTDM_INIT: BT controller compile version [b022216][0m
+[0;32mI (980) BTDM_INIT: Bluetooth MAC: c0:49:ef:f9:9d:6a[0m
+[0;32mI (980) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+Bluetooth Mesh v1.1 commit: [10f7fdc1a9]
+[0;33mW (1420) BLE_MESH: bt_mesh_proxy_server_prov_disable, Already[0m
+[0;32mI (1440) MESH_SERVER: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (1440) MESH_SERVER: net_idx: 0x0000, addr: 0x0003[0m
+[0;32mI (1440) MESH_SERVER: flags: 0x00, iv_index: 0x00000000[0m
+[0;32mI (1450) MESH_SERVER: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1460) MESH_SERVER: ESP_BLE_MESH_NODE_SET_UNPROV_DEV_NAME_COMP_EVT, Name: SERVER_NODE, err_code 0[0m
+[0;33mW (1470) BLE_MESH: bt_mesh_prov_enable, Already[0m
+[0;32mI (1470) MESH_SERVER: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code -120[0m
+[0;32mI (1480) MESH_SERVER: BLE Mesh Node initialized![0m
+[0;32mI (2480) OLED: OLED initialization[0m
+[0;32mI (3500) wifi:wifi driver task: 3ffdde4c, prio:23, stack:6656, core=0[0m
+[0;32mI (3510) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (3510) wifi:wifi certification version: v7.0[0m
+[0;32mI (3510) wifi:config NVS flash: enabled[0m
+[0;32mI (3510) wifi:config nano formating: disabled[0m
+[0;32mI (3520) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (3520) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (3520) wifi:Init management short buffer num: 32[0m
+[0;32mI (3530) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (3530) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (3540) wifi:Init static rx buffer num: 10[0m
+[0;32mI (3540) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (3550) wifi_init: rx ba win: 6[0m
+[0;32mI (3550) wifi_init: accept mbox: 6[0m
+[0;32mI (3550) wifi_init: tcpip mbox: 32[0m
+[0;32mI (3560) wifi_init: udp mbox: 6[0m
+[0;32mI (3560) wifi_init: tcp mbox: 6[0m
+[0;32mI (3560) wifi_init: tcp tx win: 5760[0m
+[0;32mI (3570) wifi_init: tcp rx win: 5760[0m
+[0;32mI (3570) wifi_init: tcp mss: 1440[0m
+[0;32mI (3580) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (3580) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (3590) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (3600) wifi:mode : sta (c0:49:ef:f9:9d:68)[0m
+[0;32mI (3600) wifi:enable tsf[0m
+[0;32mI (3600) MQTT_EXAMPLE: wifi_init_sta finished[0m
+[0;31mE (3610) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3620) esp-tls: Failed to open new connection[0m
+[0;31mE (3630) transport_base: Failed to open a new connection[0m
+[0;31mE (3630) mqtt_client: Error transport connect[0m
+[0;32mI (3640) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (3640) MAIN: Task initializing..[0m
+[0;32mI (3650) MAIN: Task initializing..[0m
+[0;31mE (3660) MAIN: Failed to update OLED[0m
+[0;32mI (3660) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (3660) mqtt_client: Client force reconnect requested[0m
+[0;32mI (3670) main_task: Returned from app_main()[0m
+[0;31mE (3670) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3680) esp-tls: Failed to open new connection[0m
+[0;31mE (3690) transport_base: Failed to open a new connection[0m
+[0;31mE (3700) mqtt_client: Error transport connect[0m
+[0;32mI (3700) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;31mE (3860) MAIN: Failed to update OLED[0m
+[0;31mE (4060) MAIN: Failed to update OLED[0m
+[0;31mE (4260) MAIN: Failed to update OLED[0m
+[0;31mE (4460) MAIN: Failed to update OLED[0m
+[0;31mE (4660) MAIN: Failed to update OLED[0m
+[0;31mE (4860) MAIN: Failed to update OLED[0m
+[0;31mE (5060) MAIN: Failed to update OLED[0m
+[0;31mE (5260) MAIN: Failed to update OLED[0m
+[0;31mE (5460) MAIN: Failed to update OLED[0m
+[0;31mE (5660) MAIN: Failed to update OLED[0m
+[0;31mE (5860) MAIN: Failed to update OLED[0m
+[0;31mE (6060) MAIN: Failed to update OLED[0m
+[0;31mE (6260) MAIN: Failed to update OLED[0m
+[0;31mE (6460) MAIN: Failed to update OLED[0m
+[0;31mE (6660) MAIN: Failed to update OLED[0m
+[0;31mE (6860) MAIN: Failed to update OLED[0m
+[0;31mE (7060) MAIN: Failed to update OLED[0m
+[0;31mE (7260) MAIN: Failed to update OLED[0m
+[0;31mE (7460) MAIN: Failed to update OLED[0m
+[0;31mE (7660) MAIN: Failed to update OLED[0m
+[0;31mE (7860) MAIN: Failed to update OLED[0m
+[0;31mE (8060) MAIN: Failed to update OLED[0m
+[0;31mE (8260) MAIN: Failed to update OLED[0m
+[0;32mI (8430) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (8430) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m
+[0;31mE (8460) MAIN: Failed to update OLED[0m
+[0;31mE (8660) MAIN: Failed to update OLED[0m
+[0;32mI (8710) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (8710) mqtt_client: Client force reconnect requested[0m
+[0;31mE (8710) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (8720) esp-tls: Failed to open new connection[0m
+[0;31mE (8730) transport_base: Failed to open a new connection[0m
+[0;31mE (8730) mqtt_client: Error transport connect[0m
+[0;32mI (8740) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;31mE (8860) MAIN: Failed to update OLED[0m
+[0;31mE (9060) MAIN: Failed to update OLED[0m
+[0;31mE (9260) MAIN: Failed to update OLED[0m
+[0;31mE (9460) MAIN: Failed to update OLED[0m
+[0;31mE (9660) MAIN: Failed to update OLED[0m
+[0;31mE (9860) MAIN: Failed to update OLED[0m
+[0;31mE (10060) MAIN: Failed to update OLED[0m
+[0;31mE (10260) MAIN: Failed to update OLED[0m
+[0;31mE (10460) MAIN: Failed to update OLED[0m
+[0;31mE (10660) MAIN: Failed to update OLED[0m
+[0;31mE (10860) MAIN: Failed to update OLED[0m
+[0;31mE (11060) MAIN: Failed to update OLED[0m
+[0;31mE (11260) MAIN: Failed to update OLED[0m
+[0;31mE (11460) MAIN: Failed to update OLED[0m
+[0;31mE (11660) MAIN: Failed to update OLED[0m
+[0;31mE (11860) MAIN: Failed to update OLED[0m
+[0;31mE (12060) MAIN: Failed to update OLED[0m
+[0;31mE (12260) MAIN: Failed to update OLED[0m
+[0;31mE (12460) MAIN: Failed to update OLED[0m
+[0;31mE (12660) MAIN: Failed to update OLED[0m
+[0;31mE (12860) MAIN: Failed to update OLED[0m
+[0;31mE (13060) MAIN: Failed to update OLED[0m
+[0;32mI (13260) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (13260) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m
+[0;31mE (13270) MAIN: Failed to update OLED[0m
+[0;31mE (13470) MAIN: Failed to update OLED[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (13670) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;31mE (13670) MAIN: Failed to update OLED[0m
+[0;33mW (13690) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (13720) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (13720) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (13750) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (13750) mqtt_client: Client force reconnect requested[0m
+[0;31mE (13750) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (13760) esp-tls: Failed to open new connection[0m
+[0;31mE (13770) transport_base: Failed to open a new connection[0m
+[0;31mE (13770) mqtt_client: Error transport connect[0m
+[0;32mI (13780) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;31mE (13870) MAIN: Failed to update OLED[0m
+[0;31mE (14070) MAIN: Failed to update OLED[0m
+[0;31mE (14270) MAIN: Failed to update OLED[0m
+[0;31mE (14470) MAIN: Failed to update OLED[0m
+[0;31mE (14670) MAIN: Failed to update OLED[0m
+[0;31mE (14870) MAIN: Failed to update OLED[0m
+[0;31mE (15070) MAIN: Failed to update OLED[0m
+[0;31mE (15270) MAIN: Failed to update OLED[0m
+[0;31mE (15470) MAIN: Failed to update OLED[0m
+[0;31mE (15670) MAIN: Failed to update OLED[0m
+[0;31mE (15870) MAIN: Failed to update OLED[0m
+[0;31mE (16070) MAIN: Failed to update OLED[0m
+[0;31mE (16270) MAIN: Failed to update OLED[0m
+[0;31mE (16470) MAIN: Failed to update OLED[0m
+[0;31mE (16670) MAIN: Failed to update OLED[0m
+[0;31mE (16870) MAIN: Failed to update OLED[0m
+[0;31mE (17070) MAIN: Failed to update OLED[0m
+[0;31mE (17270) MAIN: Failed to update OLED[0m
+[0;31mE (17470) MAIN: Failed to update OLED[0m
+[0;31mE (17670) MAIN: Failed to update OLED[0m
+[0;31mE (17870) MAIN: Failed to update OLED[0m
+[0;31mE (18070) MAIN: Failed to update OLED[0m
+[0;32mI (18090) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (18090) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m
+[0;31mE (18270) MAIN: Failed to update OLED[0m
+[0;31mE (18470) MAIN: Failed to update OLED[0m
+[0;31mE (18670) MAIN: Failed to update OLED[0m
+[0;32mI (18790) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (18790) mqtt_client: Client force reconnect requested[0m
+[0;31mE (18790) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (18800) esp-tls: Failed to open new connection[0m
+[0;31mE (18810) transport_base: Failed to open a new connection[0m
+[0;31mE (18810) mqtt_client: Error transport connect[0m
+[0;32mI (18820) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;31mE (18870) MAIN: Failed to update OLED[0m
+[0;31mE (19070) MAIN: Failed to update OLED[0m
+[0;31mE (19270) MAIN: Failed to update OLED[0m
+[0;31mE (19470) MAIN: Failed to update OLED[0m
+[0;31mE (19670) MAIN: Failed to update OLED[0m
+[0;31mE (19870) MAIN: Failed to update OLED[0m
+[0;31mE (20070) MAIN: Failed to update OLED[0m
+[0;31mE (20270) MAIN: Failed to update OLED[0m
+[0;31mE (20470) MAIN: Failed to update OLED[0m
+[0;31mE (20670) MAIN: Failed to update OLED[0m
+[0;31mE (20870) MAIN: Failed to update OLED[0m
+[0;31mE (21070) MAIN: Failed to update OLED[0m
+[0;31mE (21270) MAIN: Failed to update OLED[0m
+[0;31mE (21470) MAIN: Failed to update OLED[0m
+[0;31mE (21670) MAIN: Failed to update OLED[0m
+[0;31mE (21870) MAIN: Failed to update OLED[0m
+[0;31mE (22070) MAIN: Failed to update OLED[0m
+[0;31mE (22270) MAIN: Failed to update OLED[0m
+[0;31mE (22470) MAIN: Failed to update OLED[0m
+[0;31mE (22670) MAIN: Failed to update OLED[0m
+[0;31mE (22870) MAIN: Failed to update OLED[0m
+[0;32mI (22920) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (22920) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m
+[0;31mE (23070) MAIN: Failed to update OLED[0m
+[0;31mE (23270) MAIN: Failed to update OLED[0m
+[0;31mE (23470) MAIN: Failed to update OLED[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (23670) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;31mE (23670) MAIN: Failed to update OLED[0m
+[0;33mW (23690) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (23720) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (23720) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (23830) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (23830) mqtt_client: Client force reconnect requested[0m
+[0;31mE (23830) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (23840) esp-tls: Failed to open new connection[0m
+[0;31mE (23850) transport_base: Failed to open a new connection[0m
+[0;31mE (23850) mqtt_client: Error transport connect[0m
+[0;32mI (23860) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;31mE (23870) MAIN: Failed to update OLED[0m
+[0;31mE (24070) MAIN: Failed to update OLED[0m
+[0;31mE (24270) MAIN: Failed to update OLED[0m
+[0;31mE (24470) MAIN: Failed to update OLED[0m
+[0;31mE (24670) MAIN: Failed to update OLED[0m
+[0;31mE (24870) MAIN: Failed to update OLED[0m
+[0;31mE (25080) MAIN: Failed to update OLED[0m
+[0;31mE (25280) MAIN: Failed to update OLED[0m
+[0;31mE (25480) MAIN: Failed to update OLED[0m
+[0;31mE (25680) MAIN: Failed to update OLED[0m
+[0;31mE (25880) MAIN: Failed to update OLED[0m
+[0;31mE (26080) MAIN: Failed to update OLED[0m
+[0;31mE (26280) MAIN: Failed to update OLED[0m
+[0;31mE (26480) MAIN: Failed to update OLED[0m
+[0;31mE (26680) MAIN: Failed to update OLED[0m
+[0;31mE (26880) MAIN: Failed to update OLED[0m
+[0;31mE (27080) MAIN: Failed to update OLED[0m
+[0;31mE (27280) MAIN: Failed to update OLED[0m
+[0;31mE (27480) MAIN: Failed to update OLED[0m
+[0;31mE (27680) MAIN: Failed to update OLED[0m
+[0;32mI (27790) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (27790) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m
+[0;31mE (27880) MAIN: Failed to update OLED[0m
+[0;31mE (28080) MAIN: Failed to update OLED[0m
+[0;31mE (28280) MAIN: Failed to update OLED[0m
+[0;31mE (28480) MAIN: Failed to update OLED[0m
+[0;31mE (28680) MAIN: Failed to update OLED[0m
+[0;32mI (28870) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (28870) mqtt_client: Client force reconnect requested[0m
+[0;31mE (28870) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (28880) esp-tls: Failed to open new connection[0m
+[0;31mE (28880) MAIN: Failed to update OLED[0m
+[0;31mE (28890) transport_base: Failed to open a new connection[0m
+[0;31mE (28900) mqtt_client: Error transport connect[0m
+[0;32mI (28900) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;31mE (29090) MAIN: Failed to update OLED[0m
+[0;31mE (29290) MAIN: Failed to update OLED[0m
+[0;31mE (29490) MAIN: Failed to update OLED[0m
+[0;31mE (29690) MAIN: Failed to update OLED[0m
+[0;31mE (29890) MAIN: Failed to update OLED[0m
+[0;31mE (30090) MAIN: Failed to update OLED[0m
+[0;31mE (30290) MAIN: Failed to update OLED[0m
+[0;31mE (30490) MAIN: Failed to update OLED[0m
+[0;31mE (30690) MAIN: Failed to update OLED[0m
+[0;31mE (30890) MAIN: Failed to update OLED[0m
+[0;31mE (31090) MAIN: Failed to update OLED[0m
+[0;31mE (31290) MAIN: Failed to update OLED[0m
+[0;31mE (31490) MAIN: Failed to update OLED[0m
+[0;31mE (31690) MAIN: Failed to update OLED[0m
+[0;31mE (31890) MAIN: Failed to update OLED[0m
+[0;31mE (32090) MAIN: Failed to update OLED[0m
+[0;31mE (32290) MAIN: Failed to update OLED[0m
+[0;31mE (32490) MAIN: Failed to update OLED[0m
+[0;32mI (32620) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (32620) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m
+[0;31mE (32690) MAIN: Failed to update OLED[0m
+[0;31mE (32890) MAIN: Failed to update OLED[0m
+[0;31mE (33090) MAIN: Failed to update OLED[0m
+[0;31mE (33290) MAIN: Failed to update OLED[0m
+[0;31mE (33490) MAIN: Failed to update OLED[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;31mE (33690) MAIN: Failed to update OLED[0m
+[0;33mW (33710) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (33740) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (33760) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (33760) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;31mE (33890) MAIN: Failed to update OLED[0m
+[0;32mI (33910) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (33910) mqtt_client: Client force reconnect requested[0m
+[0;31mE (33910) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (33920) esp-tls: Failed to open new connection[0m
+[0;31mE (33930) transport_base: Failed to open a new connection[0m
+[0;31mE (33930) mqtt_client: Error transport connect[0m
+[0;32mI (33940) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;31mE (34090) MAIN: Failed to update OLED[0m
+[0;31mE (34290) MAIN: Failed to update OLED[0m
+[0;31mE (34490) MAIN: Failed to update OLED[0m
+[0;31mE (34690) MAIN: Failed to update OLED[0m
+[0;31mE (34890) MAIN: Failed to update OLED[0m
+[0;31mE (35090) MAIN: Failed to update OLED[0m
+[0;31mE (35290) MAIN: Failed to update OLED[0m
+[0;31mE (35490) MAIN: Failed to update OLED[0m
+[0;31mE (35690) MAIN: Failed to update OLED[0m
+[0;31mE (35890) MAIN: Failed to update OLED[0m
+[0;31mE (36090) MAIN: Failed to update OLED[0m
+[0;31mE (36290) MAIN: Failed to update OLED[0m
+[0;31mE (36490) MAIN: Failed to update OLED[0m
+[0;31mE (36690) MAIN: Failed to update OLED[0m
+[0;31mE (36890) MAIN: Failed to update OLED[0m
+[0;31mE (37090) MAIN: Failed to update OLED[0m
+[0;31mE (37290) MAIN: Failed to update OLED[0m
+[0;32mI (37450) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (37450) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m
+[0;31mE (37490) MAIN: Failed to update OLED[0m
+[0;31mE (37690) MAIN: Failed to update OLED[0m
+[0;31mE (37890) MAIN: Failed to update OLED[0m
+[0;31mE (38090) MAIN: Failed to update OLED[0m
+[0;31mE (38290) MAIN: Failed to update OLED[0m
+[0;31mE (38490) MAIN: Failed to update OLED[0m
+[0;31mE (38690) MAIN: Failed to update OLED[0m
+[0;31mE (38890) MAIN: Failed to update OLED[0m
+[0;32mI (38950) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (38950) mqtt_client: Client force reconnect requested[0m
+[0;31mE (38950) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (38960) esp-tls: Failed to open new connection[0m
+[0;31mE (38970) transport_base: Failed to open a new connection[0m
+[0;31mE (38970) mqtt_client: Error transport connect[0m
+[0;32mI (38980) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;31mE (39090) MAIN: Failed to update OLED[0m
+[0;31mE (39290) MAIN: Failed to update OLED[0m
+[0;31mE (39490) MAIN: Failed to update OLED[0m
+[0;31mE (39690) MAIN: Failed to update OLED[0m
+[0;31mE (39890) MAIN: Failed to update OLED[0m
+[0;31mE (40090) MAIN: Failed to update OLED[0m
+[0;31mE (40290) MAIN: Failed to update OLED[0m
+[0;31mE (40490) MAIN: Failed to update OLED[0m
+[0;31mE (40690) MAIN: Failed to update OLED[0m
+[0;31mE (40890) MAIN: Failed to update OLED[0m
+[0;31mE (41090) MAIN: Failed to update OLED[0m
+[0;31mE (41290) MAIN: Failed to update OLED[0m
+[0;31mE (41490) MAIN: Failed to update OLED[0m
+[0;31mE (41690) MAIN: Failed to update OLED[0m
+[0;31mE (41890) MAIN: Failed to update OLED[0m
+[0;31mE (42090) MAIN: Failed to update OLED[0m
+[0;32mI (42280) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (42280) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m
+[0;31mE (42290) MAIN: Failed to update OLED[0m
+[0;31mE (42490) MAIN: Failed to update OLED[0m
+[0;31mE (42690) MAIN: Failed to update OLED[0m
+[0;31mE (42890) MAIN: Failed to update OLED[0m
+[0;31mE (43090) MAIN: Failed to update OLED[0m
+[0;31mE (43290) MAIN: Failed to update OLED[0m
+[0;31mE (43490) MAIN: Failed to update OLED[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;31mE (43690) MAIN: Failed to update OLED[0m
+[0;33mW (43710) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (43740) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (43760) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (43760) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;31mE (43890) MAIN: Failed to update OLED[0m
+[0;32mI (43990) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (43990) mqtt_client: Client force reconnect requested[0m
+[0;31mE (43990) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (44000) esp-tls: Failed to open new connection[0m
+[0;31mE (44010) transport_base: Failed to open a new connection[0m
+[0;31mE (44010) mqtt_client: Error transport connect[0m
+[0;32mI (44020) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;31mE (44090) MAIN: Failed to update OLED[0m
+[0;31mE (44290) MAIN: Failed to update OLED[0m
+[0;31mE (44490) MAIN: Failed to update OLED[0m
+[0;31mE (44690) MAIN: Failed to update OLED[0m
+[0;31mE (44890) MAIN: Failed to update OLED[0m
+[0;31mE (45100) MAIN: Failed to update OLED[0m
+[0;31mE (45300) MAIN: Failed to update OLED[0m
+[0;31mE (45500) MAIN: Failed to update OLED[0m
+[0;31mE (45700) MAIN: Failed to update OLED[0m
+[0;31mE (45900) MAIN: Failed to update OLED[0m
+[0;31mE (46100) MAIN: Failed to update OLED[0m
+[0;31mE (46300) MAIN: Failed to update OLED[0m
+[0;31mE (46500) MAIN: Failed to update OLED[0m
+[0;31mE (46700) MAIN: Failed to update OLED[0m
+[0;31mE (46900) MAIN: Failed to update OLED[0m
+[0;31mE (47100) MAIN: Failed to update OLED[0m
+[0;32mI (47110) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (47110) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m
+[0;31mE (47300) MAIN: Failed to update OLED[0m
+[0;31mE (47500) MAIN: Failed to update OLED[0m
+[0;31mE (47700) MAIN: Failed to update OLED[0m
+[0;31mE (47900) MAIN: Failed to update OLED[0m
+[0;31mE (48100) MAIN: Failed to update OLED[0m
+[0;31mE (48300) MAIN: Failed to update OLED[0m
+[0;31mE (48500) MAIN: Failed to update OLED[0m
+[0;31mE (48700) MAIN: Failed to update OLED[0m
+[0;31mE (48900) MAIN: Failed to update OLED[0m
+[0;32mI (49030) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (49030) mqtt_client: Client force reconnect requested[0m
+[0;31mE (49030) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (49040) esp-tls: Failed to open new connection[0m
+[0;31mE (49050) transport_base: Failed to open a new connection[0m
+[0;31mE (49050) mqtt_client: Error transport connect[0m
+[0;32mI (49060) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;31mE (49100) MAIN: Failed to update OLED[0m
+[0;31mE (49300) MAIN: Failed to update OLED[0m
+[0;31mE (49500) MAIN: Failed to update OLED[0m
+[0;31mE (49700) MAIN: Failed to update OLED[0m
+[0;31mE (49900) MAIN: Failed to update OLED[0m
+[0;31mE (50100) MAIN: Failed to update OLED[0m
+[0;31mE (50300) MAIN: Failed to update OLED[0m
+[0;31mE (50500) MAIN: Failed to update OLED[0m
+[0;31mE (50700) MAIN: Failed to update OLED[0m
+[0;31mE (50900) MAIN: Failed to update OLED[0m
+[0;31mE (51100) MAIN: Failed to update OLED[0m
+[0;31mE (51300) MAIN: Failed to update OLED[0m
+[0;31mE (51500) MAIN: Failed to update OLED[0m
+[0;31mE (51700) MAIN: Failed to update OLED[0m
+[0;31mE (51900) MAIN: Failed to update OLED[0m
+[0;32mI (51940) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (51940) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m
+[0;31mE (52100) MAIN: Failed to update OLED[0m
+[0;31mE (52300) MAIN: Failed to update OLED[0m
+[0;31mE (52500) MAIN: Failed to update OLED[0m
+[0;31mE (52700) MAIN: Failed to update OLED[0m
+[0;31mE (52900) MAIN: Failed to update OLED[0m
+[0;31mE (53100) MAIN: Failed to update OLED[0m
+[0;31mE (53300) MAIN: Failed to update OLED[0m
+[0;31mE (53500) MAIN: Failed to update OLED[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;31mE (53700) MAIN: Failed to update OLED[0m
+[0;33mW (53710) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (53730) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (53760) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (53760) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;31mE (53900) MAIN: Failed to update OLED[0m
+[0;32mI (54120) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (54120) mqtt_client: Client force reconnect requested[0m
+[0;31mE (54130) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (54130) MAIN: Failed to update OLED[0m
+[0;31mE (54140) esp-tls: Failed to open new connection[0m
+[0;31mE (54150) transport_base: Failed to open a new connection[0m
+[0;31mE (54150) mqtt_client: Error transport connect[0m
+[0;32mI (54160) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;31mE (54340) MAIN: Failed to update OLED[0m
+[0;31mE (54540) MAIN: Failed to update OLED[0m
+[0;31mE (54740) MAIN: Failed to update OLED[0m
+[0;31mE (54940) MAIN: Failed to update OLED[0m
+[0;31mE (55140) MAIN: Failed to update OLED[0m
+[0;31mE (55340) MAIN: Failed to update OLED[0m
+[0;31mE (55540) MAIN: Failed to update OLED[0m
+[0;31mE (55740) MAIN: Failed to update OLED[0m
+[0;31mE (55940) MAIN: Failed to update OLED[0m
+[0;31mE (56140) MAIN: Failed to update OLED[0m
+[0;31mE (56340) MAIN: Failed to update OLED[0m
+[0;31mE (56540) MAIN: Failed to update OLED[0m
+[0;31mE (56740) MAIN: Failed to update OLED[0m
+[0;32mI (56770) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (56780) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m
+[0;31mE (56940) MAIN: Failed to update OLED[0m
+[0;31mE (57140) MAIN: Failed to update OLED[0m
+[0;31mE (57340) MAIN: Failed to update OLED[0m
+[0;31mE (57540) MAIN: Failed to update OLED[0m
+[0;31mE (57740) MAIN: Failed to update OLED[0m
+[0;31mE (57940) MAIN: Failed to update OLED[0m
+[0;31mE (58140) MAIN: Failed to update OLED[0m
+[0;31mE (58340) MAIN: Failed to update OLED[0m
+[0;31mE (58540) MAIN: Failed to update OLED[0m
+[0;31mE (58740) MAIN: Failed to update OLED[0m
+[0;31mE (58940) MAIN: Failed to update OLED[0m
+[0;31mE (59140) MAIN: Failed to update OLED[0m
+[0;32mI (59160) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (59160) mqtt_client: Client force reconnect requested[0m
+[0;31mE (59160) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (59170) esp-tls: Failed to open new connection[0m
+[0;31mE (59180) transport_base: Failed to open a new connection[0m
+[0;31mE (59180) mqtt_client: Error transport connect[0m
+[0;32mI (59190) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;31mE (59340) MAIN: Failed to update OLED[0m
+[0;31mE (59540) MAIN: Failed to update OLED[0m
+[0;31mE (59740) MAIN: Failed to update OLED[0m
+[0;31mE (59940) MAIN: Failed to update OLED[0m
+[0;31mE (60140) MAIN: Failed to update OLED[0m
+[0;31mE (60340) MAIN: Failed to update OLED[0m
+[0;32mI (61600) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (61600) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (63730) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (63770) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (63790) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (63790) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (64200) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (64200) mqtt_client: Client force reconnect requested[0m
+[0;31mE (64200) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (64210) esp-tls: Failed to open new connection[0m
+[0;31mE (64220) transport_base: Failed to open a new connection[0m
+[0;31mE (64220) mqtt_client: Error transport connect[0m
+[0;32mI (64230) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (66440) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (66440) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m
+[0;32mI (69240) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (69240) mqtt_client: Client force reconnect requested[0m
+[0;31mE (69240) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (69250) esp-tls: Failed to open new connection[0m
+[0;31mE (69260) transport_base: Failed to open a new connection[0m
+[0;31mE (69260) mqtt_client: Error transport connect[0m
+[0;32mI (69270) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (71260) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (71270) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (73740) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (73770) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (73790) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (73790) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (74280) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (74280) mqtt_client: Client force reconnect requested[0m
+[0;31mE (74280) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (74290) esp-tls: Failed to open new connection[0m
+[0;31mE (74300) transport_base: Failed to open a new connection[0m
+[0;31mE (74300) mqtt_client: Error transport connect[0m
+[0;32mI (74310) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (76090) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (76100) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m
+[0;32mI (79320) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (79320) mqtt_client: Client force reconnect requested[0m
+[0;31mE (79320) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (79330) esp-tls: Failed to open new connection[0m
+[0;31mE (79340) transport_base: Failed to open a new connection[0m
+[0;31mE (79340) mqtt_client: Error transport connect[0m
+[0;32mI (79350) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (80930) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (80940) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (83770) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (83810) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (83830) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (83830) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (84360) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (84360) mqtt_client: Client force reconnect requested[0m
+[0;31mE (84360) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (84370) esp-tls: Failed to open new connection[0m
+[0;31mE (84380) transport_base: Failed to open a new connection[0m
+[0;31mE (84380) mqtt_client: Error transport connect[0m
+[0;32mI (84390) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (85760) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (85760) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m
+[0;32mI (89400) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (89400) mqtt_client: Client force reconnect requested[0m
+[0;31mE (89400) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (89410) esp-tls: Failed to open new connection[0m
+[0;31mE (89420) transport_base: Failed to open a new connection[0m
+[0;31mE (89420) mqtt_client: Error transport connect[0m
+[0;32mI (89430) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (90590) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (90590) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (93780) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (93800) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (93830) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (93830) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (94440) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (94440) mqtt_client: Client force reconnect requested[0m
+[0;31mE (94440) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (94450) esp-tls: Failed to open new connection[0m
+[0;31mE (94460) transport_base: Failed to open a new connection[0m
+[0;31mE (94460) mqtt_client: Er

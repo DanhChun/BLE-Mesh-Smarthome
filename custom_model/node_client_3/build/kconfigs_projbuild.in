@@ -1,0 +1,6 @@
+source "C:/Users/ASUS/esp/v5.3.1/esp-idf/components/bootloader/Kconfig.projbuild"
+source "C:/Users/ASUS/esp/v5.3.1/esp-idf/components/esp_app_format/Kconfig.projbuild"
+source "C:/Users/ASUS/esp/v5.3.1/esp-idf/components/esp_rom/Kconfig.projbuild"
+source "C:/Users/ASUS/esp/v5.3.1/esp-idf/components/esptool_py/Kconfig.projbuild"
+source "C:/Users/ASUS/esp/v5.3.1/esp-idf/components/partition_table/Kconfig.projbuild"
+source "D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_client_3/main/Kconfig.projbuild"

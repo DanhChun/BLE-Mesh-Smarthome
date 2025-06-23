@@ -1,0 +1,147 @@
+[1/16] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D "D:\Study\PTIT\Do an tot nghiep\project_BLE_Mesh\ESP-IDF_BLE_MEsh\esp_ble_mesh\custom_model\node_server\build\bootloader\esp-idf\esptool_py" && d:\Study\ESP-IDF_VSC\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Users/ASUS/esp/v5.3.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 "D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_server/build/bootloader/bootloader.bin""
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
+[2/14] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/message.c.obj
+[3/14] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/mesh_device_app.c.obj
+[4/14] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/oled.c.obj
+[5/14] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+[6/14] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/mesh_server.c.obj
+D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_server/main/mesh_server.c: In function 'ble_mesh_custom_sensor_server_model_message_status':
+D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_server/main/mesh_server.c:443:5: warning: 'send_rel' is deprecated [-Wdeprecated-declarations]
+  443 |     ctx.send_rel = false;
+      |     ^~~
+In file included from D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_server/main/header.h:8,
+                 from D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_server/main/mesh_server.h:14,
+                 from D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_server/main/mesh_server.c:11:
+C:/Users/ASUS/esp/v5.3.1/esp-idf/components/bt/esp_ble_mesh/api/esp_ble_mesh_defs.h:625:14: note: declared here
+  625 |     uint8_t  send_rel:1 __attribute__((deprecated));
+      |              ^~~~~~~~
+[7/14] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/mesh_client.c.obj
+D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_server/main/mesh_client.c: In function 'ble_mesh_custom_sensor_client_model_message_set':
+D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_server/main/mesh_client.c:439:5: warning: 'send_rel' is deprecated [-Wdeprecated-declarations]
+  439 |     ctx.send_rel = false;
+      |     ^~~
+In file included from D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_server/main/header.h:8,
+                 from D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_server/main/mesh_client.h:14,
+                 from D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_server/main/mesh_client.c:11:
+C:/Users/ASUS/esp/v5.3.1/esp-idf/components/bt/esp_ble_mesh/api/esp_ble_mesh_defs.h:625:14: note: declared here
+  625 |     uint8_t  send_rel:1 __attribute__((deprecated));
+      |              ^~~~~~~~
+D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_server/main/mesh_client.c: In function 'ble_mesh_custom_sensor_client_model_message_get':
+D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_server/main/mesh_client.c:463:5: warning: 'send_rel' is deprecated [-Wdeprecated-declarations]
+  463 |     ctx.send_rel = false;
+      |     ^~~
+C:/Users/ASUS/esp/v5.3.1/esp-idf/components/bt/esp_ble_mesh/api/esp_ble_mesh_defs.h:625:14: note: declared here
+  625 |     uint8_t  send_rel:1 __attribute__((deprecated));
+      |              ^~~~~~~~
+[8/14] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/app_mqtt.c.obj
+[9/14] Linking C static library esp-idf\main\libmain.a
+[10/14] Generating ld/sections.ld
+[11/14] Linking CXX executable node_server.elf
+[12/14] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_server/build/node_server.bin
+[13/14] cmd.exe /C "cd /D "D:\Study\PTIT\Do an tot nghiep\project_BLE_Mesh\ESP-IDF_BLE_MEsh\esp_ble_mesh\custom_model\node_server\build\esp-idf\esptool_py" && d:\Study\ESP-IDF_VSC\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Users/ASUS/esp/v5.3.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app "D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_server/build/partition_table/partition-table.bin" "D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_server/build/node_server.bin""
+node_server.bin binary size 0x1b38d0 bytes. Smallest app partition is 0x1e0000 bytes. 0x2c730 bytes (9%) free.
+[13/14] cmd.exe /C "cd /D C:\Users\ASUS\esp\v5.3.1\esp-idf\components\esptool_py && D:\Study\ESP-IDF_VSC\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/Users/ASUS/esp/v5.3.1/esp-idf -D SERIAL_TOOL=d:/Study/ESP-IDF_VSC/python_env/idf5.3_py3.11_env/Scripts/python.exe;;C:/Users/ASUS/esp/v5.3.1/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;writesptool.py --chip esp32 -p COM3 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 node_server.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.1
+Serial port COM3
+Connecting....
+Chip is ESP32-D0WD-V3 (revision v3.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: c0:49:ef:f9:9d:68
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x001c3fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 26752 bytes to 16354...
+Writing at 0x00001000... (100 %)
+Wrote 26752 bytes (16354 compressed) at 0x00001000 in 0.9 seconds (effective 243.9 kbit/s)...
+Hash of data verified.
+Compressed 1784016 bytes to 1073339...
+Writing at 0x00010000... (1 %)
+Writing at 0x0001e829... (3 %)
+Writing at 0x00031904... (4 %)
+Writing at 0x00040551... (6 %)
+Writing at 0x0004b04a... (7 %)
+Writing at 0x0004faa1... (9 %)
+Writing at 0x0005491a... (10 %)
+Writing at 0x00059d10... (12 %)
+Writing at 0x0005fede... (13 %)
+Writing at 0x00064f8b... (15 %)
+Writing at 0x0006e900... (16 %)
+Writing at 0x0007a350... (18 %)
+Writing at 0x0007fc3d... (19 %)
+Writing at 0x00085a20... (21 %)
+Writing at 0x0008b8d5... (22 %)
+Writing at 0x00091749... (24 %)
+Writing at 0x0009729a... (25 %)
+Writing at 0x0009cd12... (27 %)
+Writing at 0x000a2904... (28 %)
+Writing at 0x000a9103... (30 %)
+Writing at 0x000af17c... (31 %)
+Writing at 0x000b58fb... (33 %)
+Writing at 0x000bbcfc... (34 %)
+Writing at 0x000c1e7d... (36 %)
+Writing at 0x000c8859... (37 %)
+Writing at 0x000d00de... (39 %)
+Writing at 0x000d64e3... (40 %)
+Writing at 0x000dc8f1... (42 %)
+Writing at 0x000e288b... (43 %)
+Writing at 0x000e8a86... (45 %)
+Writing at 0x000eeb47... (46 %)
+Writing at 0x000f50e9... (48 %)
+Writing at 0x000fb32a... (50 %)
+Writing at 0x0010138b... (51 %)
+Writing at 0x00106e06... (53 %)
+Writing at 0x0010d051... (54 %)
+Writing at 0x00113301... (56 %)
+Writing at 0x001190e8... (57 %)
+Writing at 0x0011ee40... (59 %)
+Writing at 0x00124087... (60 %)
+Writing at 0x00129462... (62 %)
+Writing at 0x0012e9ff... (63 %)
+Writing at 0x00133ded... (65 %)
+Writing at 0x001394e7... (66 %)
+Writing at 0x0013ed73... (68 %)
+Writing at 0x00144ba3... (69 %)
+Writing at 0x0014a54e... (71 %)
+Writing at 0x001501a4... (72 %)
+Writing at 0x00155daa... (74 %)
+Writing at 0x0015b864... (75 %)
+Writing at 0x001611e7... (77 %)
+Writing at 0x00166fc9... (78 %)
+Writing at 0x0016cb18... (80 %)
+Writing at 0x00172a5c... (81 %)
+Writing at 0x00178d27... (83 %)
+Writing at 0x0017ebf4... (84 %)
+Writing at 0x00184b87... (86 %)
+Writing at 0x0018b370... (87 %)
+Writing at 0x00190bf9... (89 %)
+Writing at 0x0019a4c7... (90 %)
+Writing at 0x001a3ac4... (92 %)
+Writing at 0x001a99e9... (93 %)
+Writing at 0x001af58e... (95 %)
+Writing at 0x001b51c7... (96 %)
+Writing at 0x001bb583... (98 %)
+Writing at 0x001c082a... (100 %)
+Wrote 1784016 bytes (1073339 compressed) at 0x00010000 in 25.3 seconds (effective 563.8 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 119...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (119 compressed) at 0x00008000 in 0.1 seconds (effective 292.6 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+e_flash;@flash_args -D "WORKING_DIRECTORY=D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_server/build" -P C:/Users/ASUS/esp/v5.3.1/esp-idf/components/esptool_py/run_serial_tool.cmake"

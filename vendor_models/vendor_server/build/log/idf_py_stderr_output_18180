@@ -1,0 +1,49 @@
+CMake Error at D:/Study/ESP-IDF/Espressif/frameworks/esp-idf-v5.3.1/tools/cmake/build.cmake:552 (message):
+  Traceback (most recent call last):
+
+    File "<frozen runpy>", line 198, in _run_module_as_main
+    File "<frozen runpy>", line 88, in _run_code
+    File "D:\Study\ESP-IDF\Espressif\python_env\idf5.3_py3.11_env\Lib\site-packages\idf_component_manager\prepare_components\__main__.py", line 6, in <module>
+      main()
+    File "D:\Study\ESP-IDF\Espressif\python_env\idf5.3_py3.11_env\Lib\site-packages\idf_component_manager\prepare_components\prepare.py", line 130, in main
+      args.func(args)
+    File "D:\Study\ESP-IDF\Espressif\python_env\idf5.3_py3.11_env\Lib\site-packages\idf_component_manager\prepare_components\prepare.py", line 29, in prepare_dep_dirs
+      ).prepare_dep_dirs(
+        ^^^^^^^^^^^^^^^^^
+    File "D:\Study\ESP-IDF\Espressif\python_env\idf5.3_py3.11_env\Lib\site-packages\idf_component_manager\core.py", line 98, in wrapper
+      return func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "D:\Study\ESP-IDF\Espressif\python_env\idf5.3_py3.11_env\Lib\site-packages\idf_component_manager\core.py", line 757, in prepare_dep_dirs
+      downloaded_components = download_project_dependencies(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "D:\Study\ESP-IDF\Espressif\python_env\idf5.3_py3.11_env\Lib\site-packages\idf_component_manager\dependencies.py", line 333, in download_project_dependencies
+      solution = solver.solve()
+                 ^^^^^^^^^^^^^^
+    File "D:\Study\ESP-IDF\Espressif\python_env\idf5.3_py3.11_env\Lib\site-packages\idf_component_manager\version_solver\version_solver.py", line 163, in solve
+      return self._solve()
+             ^^^^^^^^^^^^^
+    File "D:\Study\ESP-IDF\Espressif\python_env\idf5.3_py3.11_env\Lib\site-packages\idf_component_manager\version_solver\version_solver.py", line 116, in _solve
+      self.solve_manifest(manifest, cur_solution=cur_solution)
+    File "D:\Study\ESP-IDF\Espressif\python_env\idf5.3_py3.11_env\Lib\site-packages\idf_component_manager\version_solver\version_solver.py", line 168, in solve_manifest
+      for dep in self._dependencies_with_local_precedence(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "D:\Study\ESP-IDF\Espressif\python_env\idf5.3_py3.11_env\Lib\site-packages\idf_component_manager\version_solver\version_solver.py", line 272, in _dependencies_with_local_precedence
+      print_info(
+    File "D:\Study\ESP-IDF\Espressif\python_env\idf5.3_py3.11_env\Lib\site-packages\idf_component_manager\utils.py", line 60, in print_info
+      click.secho(message, fg=fg, bg=bg, bold=bold, underline=underline, blink=blink, **kwargs)
+    File "D:\Study\ESP-IDF\Espressif\python_env\idf5.3_py3.11_env\Lib\site-packages\click\termui.py", line 634, in secho
+      return echo(message, file=file, nl=nl, err=err, color=color)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "D:\Study\ESP-IDF\Espressif\python_env\idf5.3_py3.11_env\Lib\site-packages\click\utils.py", line 318, in echo
+      file.write(out)  # type: ignore
+      ^^^^^^^^^^^^^^^
+    File "encodings\cp1252.py", line 19, in encode
+
+  UnicodeEncodeError: 'charmap' codec can't encode characters in position
+  200-201: character maps to <undefined>
+
+Call Stack (most recent call first):
+  D:/Study/ESP-IDF/Espressif/frameworks/esp-idf-v5.3.1/tools/cmake/project.cmake:710 (idf_build_process)
+  CMakeLists.txt:6 (project)
+
+

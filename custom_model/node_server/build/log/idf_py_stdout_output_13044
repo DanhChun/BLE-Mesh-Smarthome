@@ -1,0 +1,114 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D "D:\Study\PTIT\Do an tot nghiep\project_BLE_Mesh\ESP-IDF_BLE_MEsh\esp_ble_mesh\custom_model\node_server\build\bootloader\esp-idf\esptool_py" && d:\Study\ESP-IDF_VSC\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Users/ASUS/esp/v5.3.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 "D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_server/build/bootloader/bootloader.bin""
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+[3/8] Linking C static library esp-idf\main\libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable node_server.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_server/build/node_server.bin
+[7/8] cmd.exe /C "cd /D "D:\Study\PTIT\Do an tot nghiep\project_BLE_Mesh\ESP-IDF_BLE_MEsh\esp_ble_mesh\custom_model\node_server\build\esp-idf\esptool_py" && d:\Study\ESP-IDF_VSC\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Users/ASUS/esp/v5.3.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app "D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_server/build/partition_table/partition-table.bin" "D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_server/build/node_server.bin""
+node_server.bin binary size 0x1b38d0 bytes. Smallest app partition is 0x1e0000 bytes. 0x2c730 bytes (9%) free.
+[7/8] cmd.exe /C "cd /D C:\Users\ASUS\esp\v5.3.1\esp-idf\components\esptool_py && D:\Study\ESP-IDF_VSC\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/Users/ASUS/esp/v5.3.1/esp-idf -D SERIAL_TOOL=d:/Study/ESP-IDF_VSC/python_env/idf5.3_pyesptool.py --chip esp32 -p COM3 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 node_server.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.1
+Serial port COM3
+Connecting....
+Chip is ESP32-D0WD-V3 (revision v3.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: c0:49:ef:f9:9d:68
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x001c3fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 26752 bytes to 16354...
+Writing at 0x00001000... (100 %)
+Wrote 26752 bytes (16354 compressed) at 0x00001000 in 0.9 seconds (effective 245.2 kbit/s)...
+Hash of data verified.
+Compressed 1784016 bytes to 1073337...
+Writing at 0x00010000... (1 %)
+Writing at 0x0001e830... (3 %)
+Writing at 0x00031906... (4 %)
+Writing at 0x00040555... (6 %)
+Writing at 0x0004b04b... (7 %)
+Writing at 0x0004faad... (9 %)
+Writing at 0x0005491c... (10 %)
+Writing at 0x00059d11... (12 %)
+Writing at 0x0005fee0... (13 %)
+Writing at 0x00064f8d... (15 %)
+Writing at 0x0006e900... (16 %)
+Writing at 0x0007a355... (18 %)
+Writing at 0x0007fc41... (19 %)
+Writing at 0x00085a23... (21 %)
+Writing at 0x0008b8da... (22 %)
+Writing at 0x0009174a... (24 %)
+Writing at 0x0009729b... (25 %)
+Writing at 0x0009cd13... (27 %)
+Writing at 0x000a2905... (28 %)
+Writing at 0x000a911e... (30 %)
+Writing at 0x000af17e... (31 %)
+Writing at 0x000b58fc... (33 %)
+Writing at 0x000bbcfd... (34 %)
+Writing at 0x000c1e7e... (36 %)
+Writing at 0x000c8859... (37 %)
+Writing at 0x000d00df... (39 %)
+Writing at 0x000d64e3... (40 %)
+Writing at 0x000dc8f2... (42 %)
+Writing at 0x000e288b... (43 %)
+Writing at 0x000e8a87... (45 %)
+Writing at 0x000eeb47... (46 %)
+Writing at 0x000f50e9... (48 %)
+Writing at 0x000fb32a... (50 %)
+Writing at 0x0010138b... (51 %)
+Writing at 0x00106e06... (53 %)
+Writing at 0x0010d050... (54 %)
+Writing at 0x00113301... (56 %)
+Writing at 0x001190e8... (57 %)
+Writing at 0x0011ee40... (59 %)
+Writing at 0x00124087... (60 %)
+Writing at 0x00129462... (62 %)
+Writing at 0x0012e9ff... (63 %)
+Writing at 0x00133ded... (65 %)
+Writing at 0x001394e7... (66 %)
+Writing at 0x0013ed73... (68 %)
+Writing at 0x00144ba5... (69 %)
+Writing at 0x0014a54e... (71 %)
+Writing at 0x001501a5... (72 %)
+Writing at 0x00155daa... (74 %)
+Writing at 0x0015b864... (75 %)
+Writing at 0x001611e7... (77 %)
+Writing at 0x00166fc9... (78 %)
+Writing at 0x0016cb18... (80 %)
+Writing at 0x00172a5d... (81 %)
+Writing at 0x00178d28... (83 %)
+Writing at 0x0017ebf4... (84 %)
+Writing at 0x00184b88... (86 %)
+Writing at 0x0018b375... (87 %)
+Writing at 0x00190bfa... (89 %)
+Writing at 0x0019a4d1... (90 %)
+Writing at 0x001a3ad0... (92 %)
+Writing at 0x001a99eb... (93 %)
+Writing at 0x001af591... (95 %)
+Writing at 0x001b51c9... (96 %)
+Writing at 0x001bb588... (98 %)
+Writing at 0x001c082e... (100 %)
+Wrote 1784016 bytes (1073337 compressed) at 0x00010000 in 25.9 seconds (effective 552.0 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 119...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (119 compressed) at 0x00008000 in 0.1 seconds (effective 285.4 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+3.11_env/Scripts/python.exe;;C:/Users/ASUS/esp/v5.3.1/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D "WORKING_DIRECTORY=D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_server/build" -P C:/Users/ASUS/esp/v5.3.1/esp-idf/components/esptool_py/run_serial_tool.cmake"

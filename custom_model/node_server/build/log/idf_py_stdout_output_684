@@ -1,0 +1,161 @@
+j5
+[0;32mI (39�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 25 2024 16:34:09[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 001e0000[0m
+[0;32mI (92) boot:  3 storage          WiFi data        01 02 001f0000 00010000[0m
+[0;32mI (99) boot: End of partition table[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4f9b0h (326064) map[0m
+[0;32mI (224) esp_image: segment 1: paddr=0005f9d8 vaddr=3ffbdb60 size=00640h (  1600) load[0m
+[0;32mI (224) esp_image: segment 2: paddr=00060020 vaddr=400d0020 size=12c2a0h (1229472) map[0m
+[0;32mI (651) esp_image: segment 3: paddr=0018c2c8 vaddr=3ffbe1a0 size=06b94h ( 27540) load[0m
+[0;32mI (661) esp_image: segment 4: paddr=00192e64 vaddr=40080000 size=1fa68h (129640) load[0m
+[0;32mI (728) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (728) boot: Disabling RNG early entropy source...[0m
+[0;32mI (741) cpu_start: Multicore app[0m
+[0;32mI (749) cpu_start: Pro cpu start user code[0m
+[0;32mI (749) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (749) app_init: Application information:[0m
+[0;32mI (752) app_init: Project name:     node_server[0m
+[0;32mI (757) app_init: App version:      1[0m
+[0;32mI (761) app_init: Compile time:     Nov 25 2024 16:33:07[0m
+[0;32mI (767) app_init: ELF file SHA256:  c3d2a05c4...[0m
+[0;32mI (773) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (778) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (782) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (787) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (792) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (799) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (805) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (811) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (818) heap_init: At 3FFD0918 len 0000F6E8 (61 KiB): DRAM[0m
+[0;32mI (824) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (830) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (837) heap_init: At 4009FA68 len 00000598 (1 KiB): IRAM[0m
+[0;32mI (844) spi_flash: detected chip: generic[0m
+[0;32mI (847) spi_flash: flash io: dio[0m
+[0;33mW (851) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (865) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (876) coexist: coex firmware version: 4482466[0m
+[0;32mI (881) main_task: Started on CPU0[0m
+[0;32mI (891) main_task: Calling app_main()[0m
+[0;32mI (891) MAIN: Initializing...[0m
+[0;32mI (921) BTDM_INIT: BT controller compile version [b022216][0m
+[0;32mI (931) BTDM_INIT: Bluetooth MAC: c0:49:ef:f9:9d:6a[0m
+[0;32mI (931) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+Bluetooth Mesh v1.1 commit: [10f7fdc1a9]
+[0;33mW (1361) BLE_MESH: bt_mesh_proxy_server_prov_disable, Already[0m
+[0;32mI (1381) MESH_SERVER: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (1381) MESH_SERVER: net_idx: 0x0000, addr: 0x0003[0m
+[0;32mI (1381) MESH_SERVER: flags: 0x00, iv_index: 0x00000000[0m
+[0;32mI (1391) MESH_SERVER: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1401) MESH_SERVER: ESP_BLE_MESH_NODE_SET_UNPROV_DEV_NAME_COMP_EVT, Name: SERVER_NODE, err_code 0[0m
+[0;33mW (1411) BLE_MESH: bt_mesh_prov_enable, Already[0m
+[0;32mI (1411) MESH_SERVER: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code -120[0m
+[0;32mI (1421) MESH_SERVER: BLE Mesh Node initialized![0m
+[0;32mI (2421) OLED: OLED initialization[0m
+[0;32mI (3531) wifi:wifi driver task: 3ffde970, prio:23, stack:6656, core=0[0m
+[0;32mI (3541) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (3541) wifi:wifi certification version: v7.0[0m
+[0;32mI (3541) wifi:config NVS flash: enabled[0m
+[0;32mI (3541) wifi:config nano formating: disabled[0m
+[0;32mI (3551) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (3551) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (3551) wifi:Init management short buffer num: 32[0m
+[0;32mI (3561) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (3561) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (3571) wifi:Init static rx buffer num: 10[0m
+[0;32mI (3571) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (3581) wifi_init: rx ba win: 6[0m
+[0;32mI (3581) wifi_init: accept mbox: 6[0m
+[0;32mI (3581) wifi_init: tcpip mbox: 32[0m
+[0;32mI (3591) wifi_init: udp mbox: 6[0m
+[0;32mI (3591) wifi_init: tcp mbox: 6[0m
+[0;32mI (3591) wifi_init: tcp tx win: 5760[0m
+[0;32mI (3601) wifi_init: tcp rx win: 5760[0m
+[0;32mI (3601) wifi_init: tcp mss: 1440[0m
+[0;32mI (3611) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (3611) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (3621) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (3631) wifi:mode : sta (c0:49:ef:f9:9d:68)[0m
+[0;32mI (3631) wifi:enable tsf[0m
+[0;32mI (3631) MQTT_EXAMPLE: wifi_init_sta finished[0m
+[0;32mI (3651) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3651) wifi:state: init -> auth (0xb0)[0m
+[0;31mE (3661) esp-tls: couldn't get hostname for :broker.mqtt.cool: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3661) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3671) mqtt_client: Error transport connect[0m
+[0;32mI (3671) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (3681) MAIN: Task initializing..[0m
+[0;32mI (3691) MAIN: Task initializing..[0m
+[0;32mI (3691) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (3691) mqtt_client: Client force reconnect requested[0m
+[0;32mI (3701) main_task: Returned from app_main()[0m
+[0;31mE (3701) esp-tls: couldn't get hostname for :broker.mqtt.cool: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3711) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3721) mqtt_client: Error transport connect[0m
+[0;32mI (3721) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (4651) wifi:state: auth -> init (0x200)[0m
+[0;32mI (4661) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (4661) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (4661) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m
+[0;32mI (8741) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (8741) mqtt_client: Client force reconnect requested[0m
+[0;31mE (8741) esp-tls: couldn't get hostname for :broker.mqtt.cool: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (8751) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (8751) mqtt_client: Error transport connect[0m
+[0;32mI (8761) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (9501) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (9501) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (11711) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (11741) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (11761) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (11761) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (13781) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (13781) mqtt_client: Client force reconnect requested[0m
+[0;31mE (13781) esp-tls: couldn't get hostname for :broker.mqtt.cool: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (13791) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (13791) mqtt_client: Error transport connect[0m
+[0;32mI (13801) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (14331) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (14331) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m
+[0;32mI (14371) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (14371) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (14381) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (15391) wifi:state: assoc -> init (0x2700)[0m
+[0;32mI (15401) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (15401) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (15401) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m

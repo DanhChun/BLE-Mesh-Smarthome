@@ -1,0 +1,104 @@
+�닱�����m[0m
+[0;�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 19 2024 17:30:18[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=35410h (218128) map[0m
+[0;32mI (179) esp_image: segment 1: paddr=00045438 vaddr=3ffbdb60 size=05474h ( 21620) load[0m
+[0;32mI (187) esp_image: segment 2: paddr=0004a8b4 vaddr=40080000 size=05764h ( 22372) load[0m
+[0;32mI (196) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=b3c18h (736280) map[0m
+[0;32mI (449) esp_image: segment 4: paddr=00103c40 vaddr=40085764 size=130ech ( 78060) load[0m
+[0;32mI (492) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (492) boot: Disabling RNG early entropy source...[0m
+[0;32mI (504) cpu_start: Multicore app[0m
+[0;32mI (513) cpu_start: Pro cpu start user code[0m
+[0;32mI (513) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (513) app_init: Application information:[0m
+[0;32mI (516) app_init: Project name:     node_client_2[0m
+[0;32mI (521) app_init: App version:      1[0m
+[0;32mI (525) app_init: Compile time:     Nov 19 2024 17:29:40[0m
+[0;32mI (531) app_init: ELF file SHA256:  238d00bdd...[0m
+[0;32mI (537) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (541) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (546) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (551) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (556) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (563) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (569) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (575) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (581) heap_init: At 3FFCAE10 len 000151F0 (84 KiB): DRAM[0m
+[0;32mI (588) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (594) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (600) heap_init: At 40098850 len 000077B0 (29 KiB): IRAM[0m
+[0;32mI (608) spi_flash: detected chip: generic[0m
+[0;32mI (611) spi_flash: flash io: dio[0m
+[0;33mW (615) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (628) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (640) coexist: coex firmware version: 4482466[0m
+[0;32mI (645) main_task: Started on CPU0[0m
+[0;32mI (655) main_task: Calling app_main()[0m
+[0;32mI (655) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (655) bh1750_main: BH1750 đã được khởi tạo thành công[0m
+[0;32mI (665) bh1750_main: BH1750 đang hoạt động ở chế độ đo liên tục[0m
+[0;32mI (675) MAIN: Initializing...[0m
+[0;32mI (695) BTDM_INIT: BT controller compile version [b022216][0m
+[0;32mI (695) BTDM_INIT: Bluetooth MAC: 24:dc:c3:a0:43:3e[0m
+[0;32mI (705) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+Bluetooth Mesh v1.1 commit: [10f7fdc1a9]
+[0;33mW (1155) BLE_MESH: bt_mesh_proxy_server_prov_disable, Already[0m
+[0;32mI (1175) MESH_CLIENT: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (1175) MESH_CLIENT: net_idx: 0x0000, addr: 0x0006[0m
+[0;32mI (1175) MESH_CLIENT: flags: 0x00, iv_index: 0x00000000[0m
+[0;32mI (1175) MESH_CLIENT: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1185) MESH_CLIENT: ESP_BLE_MESH_NODE_SET_UNPROV_DEV_NAME_COMP_EVT, Name: NODE_CLIENT_2, err_code 0[0m
+[0;33mW (1195) BLE_MESH: bt_mesh_prov_enable, Already[0m
+[0;32mI (1205) MESH_CLIENT: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code -120[0m
+[0;32mI (1205) MESH_CLIENT: BLE Mesh Node initialized[0m
+[0;32mI (1215) MAIN: Sensor task initializing...[0m
+[0;32mI (1215) main_task: Returned from app_main()[0m
+BH1750: 150.00 lx
+BH1750: 150.00 lx
+BH1750: 150.00 lx
+BH1750: 150.00 lx
+BH1750: 150.00 lx
+BH1750: 150.00 lx
+[0;32mI (7255) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+BH1750: 150.00 lx
+BH1750: 150.00 lx
+BH1750: 150.00 lx
+BH1750: 150.00 lx
+[0;33mW (11415) BLE_MESH: Ran out of retransmit attempts[0m
+BH1750: 150.00 lx
+BH1750: 150.00 lx
+[0;32mI (13255) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+BH1750: 150.00 lx
+BH1750: 150.00 lx
+BH1750: 150.00 lx
+BH1750: 150.00 lx
+[0;33mW (17415) BLE_MESH: Ran out of retransmit attempts[0m
+BH1750: 150.00 lx
+BH1750: 150.00 lx
+[0;32mI (19255) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+BH1750: 150.00 lx

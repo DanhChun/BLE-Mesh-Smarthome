@@ -1,0 +1,152 @@
+[1/14] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D "D:\Study\PTIT\Do an tot nghiep\project_BLE_Mesh\ESP-IDF_BLE_MEsh\esp_ble_mesh\custom_model\node_client_3\build\bootloader\esp-idf\esptool_py" && d:\Study\ESP-IDF_VSC\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Users/ASUS/esp/v5.3.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 "D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_client_3/build/bootloader/bootloader.bin""
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
+[2/12] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/mesh_device_app.c.obj
+In file included from D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_client_3/main/mesh_device_app.h:4,
+                 from D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_client_3/main/mesh_device_app.c:1:
+D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_client_3/main/header.h:31: warning: "TIME_SEND_DATA" redefined
+   31 | #define TIME_SEND_DATA 10 // seconds
+      | 
+In file included from D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_client_3/main/header.h:24:
+D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_client_3/main/common.h:28: note: this is the location of the previous definition
+   28 | #define TIME_SEND_DATA 600 // seconds
+      | 
+[3/12] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/rfid_servo.c.obj
+In file included from D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_client_3/main/rfid_servo.h:4,
+                 from D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_client_3/main/rfid_servo.c:1:
+D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_client_3/main/header.h:31: warning: "TIME_SEND_DATA" redefined
+   31 | #define TIME_SEND_DATA 10 // seconds
+      | 
+In file included from D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_client_3/main/header.h:24:
+D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_client_3/main/common.h:28: note: this is the location of the previous definition
+   28 | #define TIME_SEND_DATA 600 // seconds
+      | 
+[4/12] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+In file included from D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_client_3/main/main.c:1:
+D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_client_3/main/header.h:31: warning: "TIME_SEND_DATA" redefined
+   31 | #define TIME_SEND_DATA 10 // seconds
+      | 
+In file included from D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_client_3/main/header.h:24:
+D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_client_3/main/common.h:28: note: this is the location of the previous definition
+   28 | #define TIME_SEND_DATA 600 // seconds
+      | 
+D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_client_3/main/main.c:6:16: warning: 'ticks' defined but not used [-Wunused-variable]
+    6 | static uint8_t ticks = 0;
+      |                ^~~~~
+[5/12] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/mesh_server.c.obj
+In file included from D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_client_3/main/mesh_server.h:4,
+                 from D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_client_3/main/mesh_server.c:1:
+D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_client_3/main/header.h:31: warning: "TIME_SEND_DATA" redefined
+   31 | #define TIME_SEND_DATA 10 // seconds
+      | 
+In file included from D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_client_3/main/header.h:24:
+D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_client_3/main/common.h:28: note: this is the location of the previous definition
+   28 | #define TIME_SEND_DATA 600 // seconds
+      | 
+[6/12] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/mesh_client.c.obj
+In file included from D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_client_3/main/mesh_client.h:4,
+                 from D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_client_3/main/mesh_client.c:1:
+D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_client_3/main/header.h:31: warning: "TIME_SEND_DATA" redefined
+   31 | #define TIME_SEND_DATA 10 // seconds
+      | 
+In file included from D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_client_3/main/header.h:24:
+D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_client_3/main/common.h:28: note: this is the location of the previous definition
+   28 | #define TIME_SEND_DATA 600 // seconds
+      | 
+D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_client_3/main/mesh_client.c: In function 'ble_mesh_custom_sensor_client_model_message_set':
+D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_client_3/main/mesh_client.c:427:5: warning: 'send_rel' is deprecated [-Wdeprecated-declarations]
+  427 |     ctx.send_rel = false;
+      |     ^~~
+In file included from D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_client_3/main/header.h:8:
+C:/Users/ASUS/esp/v5.3.1/esp-idf/components/bt/esp_ble_mesh/api/esp_ble_mesh_defs.h:625:14: note: declared here
+  625 |     uint8_t  send_rel:1 __attribute__((deprecated));
+      |              ^~~~~~~~
+D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_client_3/main/mesh_client.c: In function 'ble_mesh_custom_sensor_client_model_message_get':
+D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_client_3/main/mesh_client.c:451:5: warning: 'send_rel' is deprecated [-Wdeprecated-declarations]
+  451 |     ctx.send_rel = false;
+      |     ^~~
+C:/Users/ASUS/esp/v5.3.1/esp-idf/components/bt/esp_ble_mesh/api/esp_ble_mesh_defs.h:625:14: note: declared here
+  625 |     uint8_t  send_rel:1 __attribute__((deprecated));
+      |              ^~~~~~~~
+[7/12] Linking C static library esp-idf\main\libmain.a
+[8/12] Generating ld/sections.ld
+[9/12] Linking CXX executable node_client_3.elf
+[10/12] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_client_3/build/node_client_3.bin
+[11/12] cmd.exe /C "cd /D "D:\Study\PTIT\Do an tot nghiep\project_BLE_Mesh\ESP-IDF_BLE_MEsh\esp_ble_mesh\custom_model\node_client_3\build\esp-idf\esptool_py" && d:\Study\ESP-IDF_VSC\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Users/ASUS/esp/v5.3.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app "D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_client_3/build/partition_table/partition-table.bin" "D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_client_3/build/node_client_3.bin""
+node_client_3.bin binary size 0x10bd70 bytes. Smallest app partition is 0x177000 bytes. 0x6b290 bytes (29%) free.
+[11/12] cmd.exe /C "cd /D C:\Users\ASUS\esp\v5.3.1\esp-idf\components\esptool_py && D:\Study\ESP-IDF_VSC\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/Users/ASUS/esp/v5.3.1/esp-idf -D SERIAL_TOOL=d:/Study/ESP-IDF_VSC/python_env/idf5.3_py3.11_env/Scripts/python.exe;;C:/Users/ASUS/esp/v5.3.1/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D "WORKING_DIRECTORY=D:/Study/PTIT/Do an tot nghiep/project_BLE_Mesh/ESP-IDF_BLE_MEsh/esp_ble_mesh/custom_model/node_client_3/build" -P C:/Users/ASUS/esp/v5.3.1/esp-idf/componesptool.py --chip esp32 -p COM3 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 node_client_3.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.1
+Serial port COM3
+Connecting.....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 88:13:bf:24:ae:5c
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x0011bfff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 26752 bytes to 16353...
+Writing at 0x00001000... (100 %)
+Wrote 26752 bytes (16353 compressed) at 0x00001000 in 0.8 seconds (effective 276.2 kbit/s)...
+Hash of data verified.
+Compressed 1097072 bytes to 606879...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001edcd... (5 %)
+Writing at 0x000324f7... (7 %)
+Writing at 0x0003f4d1... (10 %)
+Writing at 0x0004bd72... (13 %)
+Writing at 0x00051f05... (15 %)
+Writing at 0x00057954... (18 %)
+Writing at 0x0005da67... (21 %)
+Writing at 0x0006353a... (23 %)
+Writing at 0x00068f70... (26 %)
+Writing at 0x0006e9f9... (28 %)
+Writing at 0x000754e5... (31 %)
+Writing at 0x0007b3fc... (34 %)
+Writing at 0x00081a14... (36 %)
+Writing at 0x00087cfb... (39 %)
+Writing at 0x0008e0e6... (42 %)
+Writing at 0x000955ef... (44 %)
+Writing at 0x0009c971... (47 %)
+Writing at 0x000a2ada... (50 %)
+Writing at 0x000a8d78... (52 %)
+Writing at 0x000aebb9... (55 %)
+Writing at 0x000b4fa8... (57 %)
+Writing at 0x000bafe6... (60 %)
+Writing at 0x000c1169... (63 %)
+Writing at 0x000c751a... (65 %)
+Writing at 0x000cdb9b... (68 %)
+Writing at 0x000d39f7... (71 %)
+Writing at 0x000d9a35... (73 %)
+Writing at 0x000df50f... (76 %)
+Writing at 0x000e55c2... (78 %)
+Writing at 0x000eb897... (81 %)
+Writing at 0x000f1ccf... (84 %)
+Writing at 0x000fc239... (86 %)
+Writing at 0x00103f1a... (89 %)
+Writing at 0x00109d2f... (92 %)
+Writing at 0x0010f3fb... (94 %)
+Writing at 0x0011522e... (97 %)
+Writing at 0x0011ba3d... (100 %)
+Wrote 1097072 bytes (606879 compressed) at 0x00010000 in 15.4 seconds (effective 568.6 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 105...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (105 compressed) at 0x00008000 in 0.0 seconds (effective 502.8 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+ents/esptool_py/run_serial_tool.cmake"

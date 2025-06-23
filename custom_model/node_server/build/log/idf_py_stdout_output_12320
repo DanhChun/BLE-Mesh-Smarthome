@@ -1,0 +1,926 @@
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0m
+: 0[0l 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 25 2024 19:54:18[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=36c64h (224356) map[0m
+[0;32mI (181) esp_image: segment 1: paddr=00046c8c vaddr=3ffbdb60 size=05568h ( 21864) load[0m
+[0;32mI (190) esp_image: segment 2: paddr=0004c1fc vaddr=40080000 size=03e1ch ( 15900) load[0m
+[0;32mI (196) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=b6f94h (749460) map[0m
+[0;32mI (453) esp_image: segment 4: paddr=00106fbc vaddr=40083e1c size=14d90h ( 85392) load[0m
+[0;32mI (499) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (499) boot: Disabling RNG early entropy source...[0m
+[0;32mI (512) cpu_start: Multicore app[0m
+[0;32mI (520) cpu_start: Pro cpu start user code[0m
+[0;32mI (520) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (520) app_init: Application information:[0m
+[0;32mI (523) app_init: Project name:     node_client_3[0m
+[0;32mI (528) app_init: App version:      1[0m
+[0;32mI (533) app_init: Compile time:     Nov 25 2024 19:53:54[0m
+[0;32mI (539) app_init: ELF file SHA256:  f2994d5f0...[0m
+[0;32mI (544) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (549) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (553) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (558) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (564) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (571) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (576) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (583) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (589) heap_init: At 3FFCAF48 len 000150B8 (84 KiB): DRAM[0m
+[0;32mI (595) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (601) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (608) heap_init: At 40098BAC len 00007454 (29 KiB): IRAM[0m
+[0;32mI (616) spi_flash: detected chip: generic[0m
+[0;32mI (619) spi_flash: flash io: dio[0m
+[0;33mW (622) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (636) coexist: coex firmware version: 4482466[0m
+[0;32mI (642) main_task: Started on CPU0[0m
+[0;32mI (652) main_task: Calling app_main()[0m
+[0;31mE (652) ESP-RC522: RW test fail[0m
+[0;32mI (652) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (662) gpio: GPIO[23]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (672) gpio: GPIO[19]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (672) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (682) RFID_SERVO: Create timer and operator[0m
+[0;32mI (692) RFID_SERVO: Connect timer and operator[0m
+[0;32mI (692) RFID_SERVO: Create comparator and generator from the operator[0m
+[0;32mI (702) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (712) RFID_SERVO: Set generator action on timer and compare event[0m
+[0;32mI (722) RFID_SERVO: Enable and start timer[0m
+[0;32mI (722) MAIN: Initializing...[0m
+[0;32mI (772) BTDM_INIT: BT controller compile version [b022216][0m
+[0;32mI (782) BTDM_INIT: Bluetooth MAC: 88:13:bf:24:ae:5e[0m
+[0;32mI (782) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+Bluetooth Mesh v1.1 commit: [10f7fdc1a9]
+[0;33mW (1232) BLE_MESH: bt_mesh_proxy_server_prov_disable, Already[0m
+[0;32mI (1252) MESH_CLIENT: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (1252) MESH_CLIENT: net_idx: 0x0000, addr: 0x0009[0m
+[0;32mI (1252) MESH_CLIENT: flags: 0x00, iv_index: 0x00000000[0m
+[0;32mI (1262) MESH_CLIENT: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1262) MESH_CLIENT: ESP_BLE_MESH_NODE_SET_UNPROV_DEV_NAME_COMP_EVT, Name: NODE_CLIENT_3, err_code 0[0m
+[0;33mW (1272) BLE_MESH: bt_mesh_prov_enable, Already[0m
+[0;32mI (1282) MESH_CLIENT: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code -120[0m
+[0;32mI (1292) MESH_CLIENT: BLE Mesh Node initialized[0m
+[0;32mI (1292) MAIN: task initializing...[0m
+[0;32mI (1292) main_task: Returned from app_main()[0m
+[0;32mI (7972) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (7972) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (7972) MESH_CLIENT: 00 00 [0m
+[0;32mI (7982) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (7982) MESH_CLIENT: Door: 0[0m
+[0;32mI (11362) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (17992) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (17992) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (17992) MESH_CLIENT: 00 00 [0m
+[0;32mI (18002) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (18002) MESH_CLIENT: Door: 0[0m
+[0;32mI (21392) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (28052) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (28052) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (28052) MESH_CLIENT: 00 00 [0m
+[0;32mI (28062) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (28062) MESH_CLIENT: Door: 0[0m
+[0;32mI (31392) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (37972) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (37972) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (37972) MESH_CLIENT: 00 00 [0m
+[0;32mI (37982) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (37982) MESH_CLIENT: Door: 0[0m
+[0;32mI (41392) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (47982) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (47982) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (47982) MESH_CLIENT: 00 00 [0m
+[0;32mI (47992) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (47992) MESH_CLIENT: Door: 0[0m
+[0;32mI (51422) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (57972) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (57972) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (57972) MESH_CLIENT: 00 00 [0m
+[0;32mI (57982) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (57982) MESH_CLIENT: Door: 0[0m
+[0;32mI (61422) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+�ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p �ppp�����|���p���|�| p ���|�p| |�|� p|�|p ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0x1 (POWERON_RESET),boot:0x13 (S0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 25 2024 19:54:18[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=36c64h (224356) map[0m
+[0;32mI (181) esp_image: segment 1: paddr=00046c8c vaddr=3ffbdb60 size=05568h ( 21864) load[0m
+[0;32mI (190) esp_image: segment 2: paddr=0004c1fc vaddr=40080000 size=03e1ch ( 15900) load[0m
+[0;32mI (196) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=b6f94h (749460) map[0m
+[0;32mI (453) esp_image: segment 4: paddr=00106fbc vaddr=40083e1c size=14d90h ( 85392) load[0m
+[0;32mI (499) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (499) boot: Disabling RNG early entropy source...[0m
+[0;32mI (512) cpu_start: Multicore app[0m
+[0;32mI (520) cpu_start: Pro cpu start user code[0m
+[0;32mI (520) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (520) app_init: Application information:[0m
+[0;32mI (523) app_init: Project name:     node_client_3[0m
+[0;32mI (528) app_init: App version:      1[0m
+[0;32mI (533) app_init: Compile time:     Nov 25 2024 19:53:54[0m
+[0;32mI (539) app_init: ELF file SHA256:  f2994d5f0...[0m
+[0;32mI (544) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (549) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (553) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (558) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (564) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (571) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (576) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (583) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (589) heap_init: At 3FFCAF48 len 000150B8 (84 KiB): DRAM[0m
+[0;32mI (595) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (601) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (608) heap_init: At 40098BAC len 00007454 (29 KiB): IRAM[0m
+[0;32mI (616) spi_flash: detected chip: generic[0m
+[0;32mI (619) spi_flash: flash io: dio[0m
+[0;33mW (622) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (636) coexist: coex firmware version: 4482466[0m
+[0;32mI (642) main_task: Started on CPU0[0m
+[0;32mI (652) main_task: Calling app_main()[0m
+[0;31mE (652) ESP-RC522: RW test fail[0m
+[0;32mI (652) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (662) gpio: GPIO[23]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (672) gpio: GPIO[19]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (672) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (682) RFID_SERVO: Create timer and operator[0m
+[0;32mI (692) RFID_SERVO: Connect timer and operator[0m
+[0;32mI (692) RFID_SERVO: Create comparator and generator from the operator[0m
+[0;32mI (702) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (712) RFID_SERVO: Set generator action on timer and compare event[0m
+[0;32mI (722) RFID_SERVO: Enable and start timer[0m
+[0;32mI (722) MAIN: Initializing...[0m
+[0;32mI (772) BTDM_INIT: BT controller compile version [b022216][0m
+[0;32mI (782) BTDM_INIT: Bluetooth MAC: 88:13:bf:24:ae:5e[0m
+[0;32mI (782) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;33mW (862) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+Bluetooth Mesh v1.1 commit: [10f7fdc1a9]
+[0;33mW (1302) BLE_MESH: bt_mesh_proxy_server_prov_disable, Already[0m
+[0;32mI (1322) MESH_CLIENT: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (1322) MESH_CLIENT: net_idx: 0x0000, addr: 0x0009[0m
+[0;32mI (1322) MESH_CLIENT: flags: 0x00, iv_index: 0x00000000[0m
+[0;32mI (1332) MESH_CLIENT: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1342) MESH_CLIENT: ESP_BLE_MESH_NODE_SET_UNPROV_DEV_NAME_COMP_EVT, Name: NODE_CLIENT_3, err_code 0[0m
+[0;33mW (1352) BLE_MESH: bt_mesh_prov_enable, Already[0m
+[0;32mI (1352) MESH_CLIENT: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code -120[0m
+[0;32mI (1362) MESH_CLIENT: BLE Mesh Node initialized[0m
+[0;32mI (1362) MAIN: task initializing...[0m
+[0;32mI (1372) main_task: Returned from app_main()[0m
+[0;32mI (11442) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (14882) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (14882) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (14882) MESH_CLIENT: 00 00 [0m
+[0;32mI (14892) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (14892) MESH_CLIENT: Door: 0[0m
+[0;32mI (21462) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (25102) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (25102) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (25102) MESH_CLIENT: 00 00 [0m
+[0;32mI (25112) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (25112) MESH_CLIENT: Door: 0[0m
+[0;32mI (31462) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (34762) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (34762) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (34762) MESH_CLIENT: 00 00 [0m
+[0;32mI (34772) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (34772) MESH_CLIENT: Door: 0[0m
+[0;32mI (41462) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (45152) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (45152) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (45152) MESH_CLIENT: 00 00 [0m
+[0;32mI (45162) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (45162) MESH_CLIENT: Door: 0[0m
+[0;32mI (51492) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (54842) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (54842) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (54842) MESH_CLIENT: 00 00 [0m
+[0;32mI (54852) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (54852) MESH_CLIENT: Door: 0[0m
+[0;32mI (61492) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (64912) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (64912) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (64912) MESH_CLIENT: 00 00 [0m
+[0;32mI (64912) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (64922) MESH_CLIENT: Door: 0[0m
+[0;32mI (71512) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (75152) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (75152) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (75152) MESH_CLIENT: 00 00 [0m
+[0;32mI (75162) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (75162) MESH_CLIENT: Door: 0[0m
+[0;32mI (81512) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (85162) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (85162) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (85172) MESH_CLIENT: 00 00 [0m
+[0;32mI (85172) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (85172) MESH_CLIENT: Door: 0[0m
+[0;32mI (91532) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (95102) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (95102) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (95102) MESH_CLIENT: 00 00 [0m
+[0;32mI (95112) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (95112) MESH_CLIENT: Door: 0[0m
+[0;32mI (101532) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (105392) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (105392) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (105392) MESH_CLIENT: 00 00 [0m
+[0;32mI (105402) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (105402) MESH_CLIENT: Door: 0[0m
+[0;32mI (111592) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (114842) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (114842) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (114842) MESH_CLIENT: 00 00 [0m
+[0;32mI (114852) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (114852) MESH_CLIENT: Door: 0[0m
+[0;32mI (121552) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (124942) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (124942) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (124942) MESH_CLIENT: 00 00 [0m
+[0;32mI (124952) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (124952) MESH_CLIENT: Door: 0[0m
+[0;32mI (131552) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (134952) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (134952) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (134952) MESH_CLIENT: 00 00 [0m
+[0;32mI (134962) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (134962) MESH_CLIENT: Door: 0[0m
+[0;32mI (141582) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (144922) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (144922) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (144922) MESH_CLIENT: 00 00 [0m
+[0;32mI (144932) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (144932) MESH_CLIENT: Door: 0[0m
+[0;32mI (151582) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (154922) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (154922) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (154922) MESH_CLIENT: 00 00 [0m
+[0;32mI (154932) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (154932) MESH_CLIENT: Door: 0[0m
+[0;32mI (161602) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (165512) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (165512) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (165512) MESH_CLIENT: 00 00 [0m
+[0;32mI (165522) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (165522) MESH_CLIENT: Door: 0[0m
+[0;32mI (171602) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (174942) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (174942) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (174942) MESH_CLIENT: 00 00 [0m
+[0;32mI (174952) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (174952) MESH_CLIENT: Door: 0[0m
+[0;32mI (181632) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (184972) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (184972) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (184972) MESH_CLIENT: 00 00 [0m
+[0;32mI (184982) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (184982) MESH_CLIENT: Door: 0[0m
+[0;32mI (191632) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (195022) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (195022) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (195022) MESH_CLIENT: 00 00 [0m
+[0;32mI (195032) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (195032) MESH_CLIENT: Door: 0[0m
+[0;32mI (201652) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (205262) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (205262) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (205262) MESH_CLIENT: 00 00 [0m
+[0;32mI (205272) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (205272) MESH_CLIENT: Door: 0[0m
+[0;32mI (211652) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (215012) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (215012) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (215012) MESH_CLIENT: 00 00 [0m
+[0;32mI (215022) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (215022) MESH_CLIENT: Door: 0[0m
+[0;32mI (221712) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (225402) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (225402) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (225402) MESH_CLIENT: 00 00 [0m
+[0;32mI (225412) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (225412) MESH_CLIENT: Door: 0[0m
+[0;32mI (231682) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (235032) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (235032) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (235032) MESH_CLIENT: 00 00 [0m
+[0;32mI (235042) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (235042) MESH_CLIENT: Door: 0[0m
+[0;32mI (241742) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (245422) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (245422) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (245422) MESH_CLIENT: 00 00 [0m
+[0;32mI (245432) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (245432) MESH_CLIENT: Door: 0[0m
+[0;32mI (251702) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (255102) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (255102) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (255102) MESH_CLIENT: 00 00 [0m
+[0;32mI (255112) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (255112) MESH_CLIENT: Door: 0[0m
+[0;32mI (261702) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (265342) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (265342) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (265342) MESH_CLIENT: 00 00 [0m
+[0;32mI (265352) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (265352) MESH_CLIENT: Door: 0[0m
+[0;32mI (271732) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (275362) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (275362) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (275362) MESH_CLIENT: 00 00 [0m
+[0;32mI (275372) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (275372) MESH_CLIENT: Door: 0[0m
+[0;32mI (281732) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (285362) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (285362) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (285362) MESH_CLIENT: 00 00 [0m
+[0;32mI (285372) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (285372) MESH_CLIENT: Door: 0[0m
+[0;32mI (291732) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (295452) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (295452) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (295452) MESH_CLIENT: 00 00 [0m
+[0;32mI (295462) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (295462) MESH_CLIENT: Door: 0[0m
+[0;32mI (301752) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (305212) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (305212) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (305212) MESH_CLIENT: 00 00 [0m
+[0;32mI (305222) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (305222) MESH_CLIENT: Door: 0[0m
+[0;32mI (311752) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (315522) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (315522) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (315522) MESH_CLIENT: 00 00 [0m
+[0;32mI (315532) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (315532) MESH_CLIENT: Door: 0[0m
+[0;32mI (321772) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (326282) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (326282) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (326282) MESH_CLIENT: 00 00 [0m
+[0;32mI (326292) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (326292) MESH_CLIENT: Door: 0[0m
+[0;32mI (331772) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (335222) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (335222) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (335222) MESH_CLIENT: 00 00 [0m
+[0;32mI (335232) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (335232) MESH_CLIENT: Door: 0[0m
+[0;32mI (341772) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (345222) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (345222) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (345222) MESH_CLIENT: 00 00 [0m
+[0;32mI (345232) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (345232) MESH_CLIENT: Door: 0[0m
+[0;32mI (351792) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (355252) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (355252) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (355252) MESH_CLIENT: 00 00 [0m
+[0;32mI (355262) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (355262) MESH_CLIENT: Door: 0[0m
+[0;32mI (361792) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (365442) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (365442) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (365442) MESH_CLIENT: 00 00 [0m
+[0;32mI (365452) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (365452) MESH_CLIENT: Door: 0[0m
+[0;32mI (371852) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (375322) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (375322) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (375322) MESH_CLIENT: 00 00 [0m
+[0;32mI (375332) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (375332) MESH_CLIENT: Door: 0[0m
+[0;32mI (381812) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (385252) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (385252) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (385252) MESH_CLIENT: 00 00 [0m
+[0;32mI (385262) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (385262) MESH_CLIENT: Door: 0[0m
+[0;32mI (391812) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (395262) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (395262) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (395262) MESH_CLIENT: 00 00 [0m
+[0;32mI (395272) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (395272) MESH_CLIENT: Door: 0[0m
+[0;32mI (401832) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (405282) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (405282) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (405282) MESH_CLIENT: 00 00 [0m
+[0;32mI (405292) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (405292) MESH_CLIENT: Door: 0[0m
+[0;32mI (411832) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (415292) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (415292) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (415292) MESH_CLIENT: 00 00 [0m
+[0;32mI (415302) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (415302) MESH_CLIENT: Door: 0[0m
+[0;32mI (421862) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (425342) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (425342) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (425342) MESH_CLIENT: 00 00 [0m
+[0;32mI (425352) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (425352) MESH_CLIENT: Door: 0[0m
+[0;32mI (431862) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (435352) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (435352) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (435352) MESH_CLIENT: 00 00 [0m
+[0;32mI (435362) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (435362) MESH_CLIENT: Door: 0[0m
+[0;32mI (441882) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (445562) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (445562) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (445562) MESH_CLIENT: 00 00 [0m
+[0;32mI (445572) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (445572) MESH_CLIENT: Door: 0[0m
+[0;32mI (451882) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (455442) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (455442) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (455442) MESH_CLIENT: 00 00 [0m
+[0;32mI (455452) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (455452) MESH_CLIENT: Door: 0[0m
+[0;32mI (461912) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (465582) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (465582) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (465582) MESH_CLIENT: 00 00 [0m
+[0;32mI (465592) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (465592) MESH_CLIENT: Door: 0[0m
+[0;32mI (471912) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (475632) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (475632) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (475632) MESH_CLIENT: 00 00 [0m
+[0;32mI (475642) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (475642) MESH_CLIENT: Door: 0[0m
+[0;32mI (481932) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (486042) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (486042) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (486042) MESH_CLIENT: 00 00 [0m
+[0;32mI (486052) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (486052) MESH_CLIENT: Door: 0[0m
+[0;32mI (491932) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (495812) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (495812) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (495812) MESH_CLIENT: 00 00 [0m
+[0;32mI (495822) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (495822) MESH_CLIENT: Door: 0[0m
+[0;32mI (501932) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (505902) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (505902) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (505902) MESH_CLIENT: 00 00 [0m
+[0;32mI (505912) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (505912) MESH_CLIENT: Door: 0[0m
+[0;32mI (511952) MESH_CLIENT: Mensagem 0xc102e5 enviada com sucesso![0m
+[0;32mI (515562) MESH_CLIENT: OP_STATUS -- Mensagem recebida: 0xc202e5[0m
+[0;32mI (515562) MESH_CLIENT: 00 00 00 00 80 4f 00 00 80 4f 00 00 00 80 4f 00 [0m
+[0;32mI (515562) MESH_CLIENT: 00 00 [0m
+[0;32mI (515572) MESH_CLIENT: Device Number: 0[0m
+[0;32mI (515572) MESH_CLIENT: Door: 0[0m

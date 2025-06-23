@@ -1,0 +1,2978 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 25 2024 16:34:09[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 001e0000[0m
+[0;32mI (92) boot:  3 storage          WiFi data        01 02 001f0000 00010000[0m
+[0;32mI (99) boot: End of partition table[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=605c8h (394696) map[0m
+[0;32mI (247) esp_image: segment 1: paddr=000705f0 vaddr=3ffbdb60 size=071d4h ( 29140) load[0m
+[0;32mI (258) esp_image: segment 2: paddr=000777cc vaddr=40080000 size=0884ch ( 34892) load[0m
+[0;32mI (272) esp_image: segment 3: paddr=00080020 vaddr=400d0020 size=12c690h (1230480) map[0m
+[0;32mI (694) esp_image: segment 4: paddr=001ac6b8 vaddr=4008884c size=1721ch ( 94748) load[0m
+[0;32mI (747) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (748) boot: Disabling RNG early entropy source...[0m
+[0;32mI (760) cpu_start: Multicore app[0m
+[0;32mI (768) cpu_start: Pro cpu start user code[0m
+[0;32mI (768) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (768) app_init: Application information:[0m
+[0;32mI (771) app_init: Project name:     node_server[0m
+[0;32mI (776) app_init: App version:      1[0m
+[0;32mI (781) app_init: Compile time:     Nov 25 2024 16:33:07[0m
+[0;32mI (787) app_init: ELF file SHA256:  10fd3c7c5...[0m
+[0;32mI (792) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (797) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (802) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (806) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (812) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (819) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (825) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (831) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (837) heap_init: At 3FFD0AC0 len 0000F540 (61 KiB): DRAM[0m
+[0;32mI (843) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (849) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (856) heap_init: At 4009FA68 len 00000598 (1 KiB): IRAM[0m
+[0;32mI (864) spi_flash: detected chip: generic[0m
+[0;32mI (866) spi_flash: flash io: dio[0m
+[0;33mW (870) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (884) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (895) coexist: coex firmware version: 4482466[0m
+[0;32mI (900) main_task: Started on CPU0[0m
+[0;32mI (910) main_task: Calling app_main()[0m
+[0;32mI (910) MAIN: Initializing...[0m
+[0;32mI (950) BTDM_INIT: BT controller compile version [b022216][0m
+[0;32mI (950) BTDM_INIT: Bluetooth MAC: c0:49:ef:f9:9d:6a[0m
+[0;32mI (950) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+Bluetooth Mesh v1.1 commit: [10f7fdc1a9]
+[0;33mW (1400) BLE_MESH: bt_mesh_proxy_server_prov_disable, Already[0m
+[0;32mI (1420) MESH_SERVER: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (1420) MESH_SERVER: net_idx: 0x0000, addr: 0x0003[0m
+[0;32mI (1420) MESH_SERVER: flags: 0x00, iv_index: 0x00000000[0m
+[0;32mI (1430) MESH_SERVER: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1440) MESH_SERVER: ESP_BLE_MESH_NODE_SET_UNPROV_DEV_NAME_COMP_EVT, Name: SERVER_NODE, err_code 0[0m
+[0;33mW (1450) BLE_MESH: bt_mesh_prov_enable, Already[0m
+[0;32mI (1450) MESH_SERVER: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code -120[0m
+[0;32mI (1460) MESH_SERVER: BLE Mesh Node initialized![0m
+[0;32mI (2460) OLED: OLED initialization[0m
+[0;32mI (3570) wifi:wifi driver task: 3ffdde4c, prio:23, stack:6656, core=0[0m
+[0;32mI (3580) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (3580) wifi:wifi certification version: v7.0[0m
+[0;32mI (3580) wifi:config NVS flash: enabled[0m
+[0;32mI (3580) wifi:config nano formating: disabled[0m
+[0;32mI (3590) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (3590) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (3590) wifi:Init management short buffer num: 32[0m
+[0;32mI (3600) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (3600) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (3610) wifi:Init static rx buffer num: 10[0m
+[0;32mI (3610) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (3620) wifi_init: rx ba win: 6[0m
+[0;32mI (3620) wifi_init: accept mbox: 6[0m
+[0;32mI (3620) wifi_init: tcpip mbox: 32[0m
+[0;32mI (3630) wifi_init: udp mbox: 6[0m
+[0;32mI (3630) wifi_init: tcp mbox: 6[0m
+[0;32mI (3630) wifi_init: tcp tx win: 5760[0m
+[0;32mI (3640) wifi_init: tcp rx win: 5760[0m
+[0;32mI (3640) wifi_init: tcp mss: 1440[0m
+[0;32mI (3650) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (3650) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (3660) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (3670) wifi:mode : sta (c0:49:ef:f9:9d:68)[0m
+[0;32mI (3670) wifi:enable tsf[0m
+[0;32mI (3670) MQTT_EXAMPLE: wifi_init_sta finished[0m
+[0;31mE (3680) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3690) esp-tls: Failed to open new connection[0m
+[0;32mI (3690) wifi:[0;31mE (3690) transport_base: Failed to open a new connection[0m[0m
+new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[0;31mE (3700) mqtt_client: Error transport connect[0m
+[0;32mI (3710) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3710) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (3690) MAIN: Task initializing..[0m
+[0;32mI (3690) MAIN: Task initializing..[0m
+[0;32mI (3700) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (3740) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3740) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3760) esp-tls: Failed to open new connection[0m
+[0;31mE (3760) transport_base: Failed to open a new connection[0m
+[0;31mE (3770) mqtt_client: Error transport connect[0m
+[0;32mI (3770) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (3700) main_task: Returned from app_main()[0m
+[0;32mI (5640) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (5650) wifi:Association refused temporarily time 196, comeback time 296 (TUs)[0m
+[0;32mI (5960) wifi:state: assoc -> auth (0xb0)[0m
+[0;32mI (7000) wifi:state: auth -> init (0x200)[0m
+[0;32mI (7010) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (7010) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (7010) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m
+[0;32mI (8780) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (8780) mqtt_client: Client force reconnect requested[0m
+[0;31mE (8780) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (8790) esp-tls: Failed to open new connection[0m
+[0;31mE (8800) transport_base: Failed to open a new connection[0m
+[0;31mE (8800) mqtt_client: Error transport connect[0m
+[0;32mI (8810) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;33mW (10060) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000476[0m
+[0;33mW (10120) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000477[0m
+[0;33mW (10880) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000479[0m
+[0;33mW (11010) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00047a[0m
+[0;33mW (11060) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00047b[0m
+[0;33mW (11740) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00047c[0m
+[0;33mW (11810) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00047d[0m
+[0;32mI (11840) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (11840) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m
+[0;32mI (11850) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (11860) wifi:state: init -> auth (0xb0)[0m
+[0;33mW (12890) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00047e[0m
+[0;33mW (12890) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00047f[0m
+[0;33mW (12900) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000480[0m
+[0;33mW (12900) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000481[0m
+[0;33mW (13550) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000483[0m
+[0;33mW (13600) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000484[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (13750) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (13770) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (13860) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (13860) mqtt_client: Client force reconnect requested[0m
+[0;31mE (13870) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (13880) esp-tls: Failed to open new connection[0m
+[0;31mE (13880) transport_base: Failed to open a new connection[0m
+[0;31mE (13890) mqtt_client: Error transport connect[0m
+[0;33mW (13890) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (13900) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (13900) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (16890) wifi:state: auth -> init (0x200)[0m
+[0;32mI (16900) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (16900) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (16900) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m
+[0;32mI (18910) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (18910) mqtt_client: Client force reconnect requested[0m
+[0;31mE (18910) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (18920) esp-tls: Failed to open new connection[0m
+[0;31mE (18930) transport_base: Failed to open a new connection[0m
+[0;31mE (18930) mqtt_client: Error transport connect[0m
+[0;32mI (18940) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;33mW (20180) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000486[0m
+[0;33mW (20220) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000487[0m
+[0;33mW (20920) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000488[0m
+[0;33mW (20970) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000489[0m
+[0;32mI (21730) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (21730) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m
+[0;32mI (21810) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (21810) wifi:state: init -> auth (0xb0)[0m
+[0;33mW (22860) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00048c[0m
+[0;33mW (22860) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00048d[0m
+[0;33mW (22870) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00048e[0m
+[0;33mW (22870) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00048f[0m
+[0;33mW (22880) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000490[0m
+[0;33mW (23640) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000491[0m
+[0;33mW (23640) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000492[0m
+[0;33mW (23640) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000493[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (23770) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (23810) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (23830) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (23830) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (23950) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (23950) mqtt_client: Client force reconnect requested[0m
+[0;31mE (23950) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (23960) esp-tls: Failed to open new connection[0m
+[0;31mE (23970) transport_base: Failed to open a new connection[0m
+[0;31mE (23970) mqtt_client: Error transport connect[0m
+[0;32mI (23980) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (25630) wifi:state: auth -> init (0x200)[0m
+[0;32mI (25650) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (25650) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (25650) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m
+[0;32mI (28990) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (28990) mqtt_client: Client force reconnect requested[0m
+[0;31mE (28990) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (29000) esp-tls: Failed to open new connection[0m
+[0;31mE (29010) transport_base: Failed to open a new connection[0m
+[0;31mE (29010) mqtt_client: Error transport connect[0m
+[0;32mI (29020) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;33mW (30140) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000494[0m
+[0;33mW (30180) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000495[0m
+[0;32mI (30480) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (30480) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m
+[0;32mI (30500) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (30500) wifi:state: init -> auth (0xb0)[0m
+[0;33mW (31530) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000497[0m
+[0;33mW (31530) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000498[0m
+[0;33mW (31540) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000499[0m
+[0;33mW (32350) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00049a[0m
+[0;33mW (32350) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00049b[0m
+[0;33mW (32350) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00049c[0m
+[0;33mW (32840) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00049f[0m
+[0;33mW (33500) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004a0[0m
+[0;33mW (33730) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004a2[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (33770) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (33810) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (33830) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (33830) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (34030) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (34030) mqtt_client: Client force reconnect requested[0m
+[0;31mE (34030) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (34040) esp-tls: Failed to open new connection[0m
+[0;31mE (34050) transport_base: Failed to open a new connection[0m
+[0;31mE (34050) mqtt_client: Error transport connect[0m
+[0;32mI (34060) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (34350) wifi:state: auth -> init (0x200)[0m
+[0;32mI (34440) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (34440) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (34440) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m
+[0;32mI (39070) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (39070) mqtt_client: Client force reconnect requested[0m
+[0;31mE (39070) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (39080) esp-tls: Failed to open new connection[0m
+[0;31mE (39090) transport_base: Failed to open a new connection[0m
+[0;31mE (39090) mqtt_client: Error transport connect[0m
+[0;32mI (39100) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (39290) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (39290) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m
+[0;32mI (39320) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (39320) wifi:state: init -> auth (0xb0)[0m
+[0;33mW (40360) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004a3[0m
+[0;33mW (40360) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004a4[0m
+[0;33mW (40360) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004a5[0m
+[0;33mW (41160) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004a6[0m
+[0;33mW (41160) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004a7[0m
+[0;33mW (41160) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004a8[0m
+[0;33mW (41820) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004a9[0m
+[0;33mW (41860) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004aa[0m
+[0;33mW (42780) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004ad[0m
+[0;33mW (42800) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004ae[0m
+[0;32mI (43150) wifi:state: auth -> init (0x200)[0m
+[0;32mI (43160) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (43160) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (43160) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m
+[0;33mW (43540) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004af[0m
+[0;33mW (43600) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004b0[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (43790) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (43830) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (43850) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (43850) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (44110) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (44110) mqtt_client: Client force reconnect requested[0m
+[0;31mE (44110) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (44120) esp-tls: Failed to open new connection[0m
+[0;31mE (44130) transport_base: Failed to open a new connection[0m
+[0;31mE (44130) mqtt_client: Error transport connect[0m
+[0;32mI (44140) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (48000) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (48000) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m
+[0;32mI (48030) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (48030) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (49150) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (49150) mqtt_client: Client force reconnect requested[0m
+[0;31mE (49150) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (49160) esp-tls: Failed to open new connection[0m
+[0;31mE (49170) transport_base: Failed to open a new connection[0m
+[0;31mE (49170) mqtt_client: Error transport connect[0m
+[0;32mI (49180) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (49860) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (49870) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (49930) wifi:connected with Thuy, aid = 3, channel 6, BW20, bssid = 4a:a1:fd:0f:5f:e2[0m
+[0;32mI (49930) wifi:security: WPA3-SAE, phy: bgn, rssi: -80[0m
+[0;32mI (49940) wifi:pm start, type: 1[0m
+
+[0;32mI (49940) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (49970) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;33mW (50180) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004b2[0m
+[0;33mW (50190) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004b3[0m
+[0;33mW (50330) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004b4[0m
+[0;32mI (50950) esp_netif_handlers: sta ip: 172.20.10.3, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (50950) MQTT_EXAMPLE: got ip:172.20.10.3[0m
+[0;33mW (50950) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004b5[0m
+[0;33mW (51100) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004b6[0m
+[0;33mW (51220) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004b7[0m
+[0;33mW (51800) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004b8[0m
+[0;33mW (51920) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004b9[0m
+[0;33mW (51980) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004ba[0m
+[0;33mW (52700) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004bb[0m
+[0;33mW (52790) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004bc[0m
+[0;33mW (52850) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004bd[0m
+[0;33mW (53510) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004be[0m
+[0;32mI (53560) wifi:<ba-add>idx:0 (ifx:0, 4a:a1:fd:0f:5f:e2), tid:0, ssn:582, winSize:64[0m
+[0;33mW (53620) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004bf[0m
+[0;33mW (53740) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004c0[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (53790) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (53830) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (53850) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (53850) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (54190) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (54190) mqtt_client: Client force reconnect requested[0m
+[0;32mI (59230) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (59230) mqtt_client: Client force reconnect requested[0m
+[0;33mW (60130) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004c1[0m
+[0;33mW (60240) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004c2[0m
+[0;33mW (60320) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004c3[0m
+[0;33mW (60980) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004c4[0m
+[0;33mW (61100) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004c5[0m
+[0;33mW (61220) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004c6[0m
+[0;33mW (61820) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004c7[0m
+[0;33mW (61940) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004c8[0m
+[0;33mW (62000) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004c9[0m
+[0;33mW (62740) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004ca[0m
+[0;33mW (62760) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004cb[0m
+[0;33mW (62900) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004cc[0m
+[0;33mW (63520) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004cd[0m
+[0;33mW (63630) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004ce[0m
+[0;33mW (63700) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004cf[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (63800) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (63830) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (63850) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (63850) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (63850) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (64270) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (64270) mqtt_client: Client force reconnect requested[0m
+[0;32mI (68450) MQTT_EXAMPLE: MQTT Connected to broker[0m
+[0;32mI (69960) MQTT_EXAMPLE: MQTT Subscribed to topic: homePod/6332f122-db2a-4ad2-9792-7998524fdaf5/controlDevice[0m
+[0;33mW (70140) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004d0[0m
+[0;33mW (70240) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004d1[0m
+[0;33mW (70340) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004d2[0m
+[0;33mW (70980) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004d3[0m
+[0;33mW (71120) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004d4[0m
+[0;33mW (71160) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004d5[0m
+[0;33mW (71870) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004d6[0m
+[0;33mW (71920) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004d7[0m
+[0;33mW (72030) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004d8[0m
+[0;33mW (72670) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004d9[0m
+[0;33mW (72840) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004da[0m
+[0;33mW (72870) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004db[0m
+[0;33mW (73510) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004dc[0m
+[0;33mW (73600) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004dd[0m
+[0;33mW (73700) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004de[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (73800) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (73800) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (73830) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (73860) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (73860) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (78800) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (80160) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004df[0m
+[0;33mW (80260) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004e0[0m
+[0;33mW (80350) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004e1[0m
+[0;33mW (81020) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004e2[0m
+[0;33mW (81120) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004e3[0m
+[0;33mW (81240) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004e4[0m
+[0;33mW (81870) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004e5[0m
+[0;33mW (81960) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004e6[0m
+[0;33mW (82060) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004e7[0m
+[0;33mW (82720) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004e8[0m
+[0;33mW (82820) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004e9[0m
+[0;33mW (82900) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004ea[0m
+[0;33mW (83610) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004eb[0m
+[0;33mW (83680) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004ec[0m
+[0;33mW (83740) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004ed[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;32mI (83850) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (83870) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (83890) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (83920) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (83920) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (88850) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (90180) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004ee[0m
+[0;33mW (90280) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004ef[0m
+[0;33mW (90400) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004f0[0m
+[0;33mW (91100) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004f1[0m
+[0;33mW (91140) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004f2[0m
+[0;33mW (91220) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004f3[0m
+[0;33mW (91880) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004f4[0m
+[0;33mW (91970) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004f5[0m
+[0;33mW (92100) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004f6[0m
+[0;33mW (92730) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004f7[0m
+[0;33mW (92820) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004f8[0m
+[0;33mW (92920) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004f9[0m
+[0;33mW (93580) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004fa[0m
+[0;33mW (93660) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004fb[0m
+[0;33mW (93750) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004fc[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (93810) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (93840) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (93850) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (93860) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (93860) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (98850) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (100200) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004fd[0m
+[0;33mW (100360) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004fe[0m
+[0;33mW (100440) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0004ff[0m
+[0;33mW (101050) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000500[0m
+[0;33mW (101140) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000501[0m
+[0;33mW (101260) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000502[0m
+[0;33mW (101910) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000503[0m
+[0;33mW (101980) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000504[0m
+[0;33mW (102080) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000505[0m
+[0;33mW (102740) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000506[0m
+[0;33mW (102840) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000507[0m
+[0;33mW (102970) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000508[0m
+[0;33mW (103580) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000509[0m
+[0;33mW (103680) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00050a[0m
+[0;33mW (103760) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00050b[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (103810) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (103840) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (103860) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (103860) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (103860) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (103860) MQTT_EXAMPLE: MQTT Received Message:[0m
+[0;32mI (103880) MQTT_EXAMPLE: Topic: homePod/6332f122-db2a-4ad2-9792-7998524fdaf5/controlDevice[0m
+[0;32mI (103890) MQTT_EXAMPLE: Data: {"door":0,"relay_2":0,"relay_1":0}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (103960) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (103980) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (104090) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (104090) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (108900) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;32mI (109980) MQTT_EXAMPLE: MQTT Received Message:[0m
+[0;32mI (109980) MQTT_EXAMPLE: Topic: homePod/6332f122-db2a-4ad2-9792-7998524fdaf5/controlDevice[0m
+[0;32mI (109990) MQTT_EXAMPLE: Data: {"door": 1}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 1
+[0;33mW (110030) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (110050) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (110080) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (110080) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;33mW (110320) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00050c[0m
+[0;33mW (110360) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00050d[0m
+[0;33mW (110450) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00050e[0m
+[0;32mI (113950) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;32mI (118950) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 1
+[0;33mW (120050) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (120090) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (120110) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (120110) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;33mW (121910) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00050f[0m
+[0;33mW (122000) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000510[0m
+[0;33mW (122100) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000511[0m
+[0;33mW (122720) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000512[0m
+[0;33mW (122820) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000513[0m
+[0;33mW (122920) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000514[0m
+[0;33mW (123560) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000515[0m
+[0;33mW (123780) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000517[0m
+[0;32mI (123950) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (124420) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000518[0m
+[0;33mW (124500) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000519[0m
+[0;33mW (124590) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00051a[0m
+[0;33mW (125260) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00051b[0m
+[0;33mW (125380) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00051c[0m
+[0;33mW (125520) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00051d[0m
+[0;32mI (128950) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 1
+[0;33mW (130060) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (130090) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (130110) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (130110) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;33mW (131930) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00051e[0m
+[0;33mW (131980) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00051f[0m
+[0;33mW (132070) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000520[0m
+[0;33mW (132740) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000521[0m
+[0;33mW (132820) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000522[0m
+[0;33mW (132910) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000523[0m
+[0;33mW (133580) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000524[0m
+[0;33mW (133680) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000525[0m
+[0;33mW (133760) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000526[0m
+[0;32mI (133960) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (134420) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000527[0m
+[0;33mW (134520) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000528[0m
+[0;33mW (134640) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000529[0m
+[0;32mI (138960) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 1
+[0;33mW (140140) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (140170) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (140190) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (140190) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (144000) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;32mI (149000) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 1
+[0;33mW (150090) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (150120) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (150140) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (150140) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;33mW (151770) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00052a[0m
+[0;33mW (151900) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00052b[0m
+[0;33mW (151960) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00052c[0m
+[0;33mW (152620) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00052d[0m
+[0;33mW (152720) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00052e[0m
+[0;33mW (152800) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00052f[0m
+[0;33mW (153460) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000530[0m
+[0;33mW (153550) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000531[0m
+[0;33mW (153680) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000532[0m
+[0;32mI (154000) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (154310) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000533[0m
+[0;33mW (154400) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000534[0m
+[0;33mW (154520) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000535[0m
+[0;32mI (159000) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 1
+[0;33mW (160090) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (160120) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (160140) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (160140) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (164030) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;32mI (169030) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 1
+[0;33mW (170110) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (170150) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (170170) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (170170) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (174030) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;32mI (179030) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 1
+[0;33mW (180110) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (180150) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (180170) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (180170) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;33mW (181900) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000536[0m
+[0;33mW (182000) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000537[0m
+[0;33mW (182060) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000538[0m
+[0;33mW (182720) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000539[0m
+[0;33mW (182820) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00053a[0m
+[0;33mW (182930) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00053b[0m
+[0;33mW (183570) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00053c[0m
+[0;33mW (183680) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00053d[0m
+[0;33mW (183770) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00053e[0m
+[0;32mI (184050) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (184410) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00053f[0m
+[0;33mW (184500) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000540[0m
+[0;33mW (184590) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000541[0m
+[0;32mI (189050) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 1
+[0;33mW (190160) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (190190) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (190210) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (190210) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (194050) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;32mI (199060) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 1
+[0;33mW (200160) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (200190) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (200210) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (200210) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;33mW (201990) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000542[0m
+[0;33mW (202080) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000543[0m
+[0;33mW (202160) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000544[0m
+[0;33mW (202860) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000545[0m
+[0;33mW (202910) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000546[0m
+[0;33mW (203000) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000547[0m
+[0;33mW (203710) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000548[0m
+[0;33mW (203760) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000549[0m
+[0;33mW (203860) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00054a[0m
+[0;32mI (204060) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;32mI (204090) MQTT_EXAMPLE: MQTT Received Message:[0m
+[0;32mI (204090) MQTT_EXAMPLE: Topic: homePod/6332f122-db2a-4ad2-9792-7998524fdaf5/controlDevice[0m
+[0;32mI (204090) MQTT_EXAMPLE: Data: {"door":0,"relay_2":0,"relay_1":0}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (204240) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (204270) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (204290) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (204300) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (209100) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;32mI (214110) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (214190) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (214210) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (214240) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (214250) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;33mW (216000) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00054e[0m
+[0;33mW (216100) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00054f[0m
+[0;33mW (216220) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000550[0m
+[0;33mW (216850) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000551[0m
+[0;33mW (216940) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000552[0m
+[0;33mW (217040) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000553[0m
+[0;33mW (217700) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000554[0m
+[0;33mW (217780) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000555[0m
+[0;33mW (218600) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000557[0m
+[0;33mW (218650) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000558[0m
+[0;33mW (218740) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000559[0m
+[0;32mI (219110) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (219380) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00055a[0m
+[0;33mW (219480) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00055b[0m
+[0;33mW (219590) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00055c[0m
+[0;32mI (224110) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (224190) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (224220) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (224240) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (224240) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;33mW (226040) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00055d[0m
+[0;33mW (226120) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00055e[0m
+[0;33mW (226240) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00055f[0m
+[0;33mW (226880) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000560[0m
+[0;33mW (226990) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000561[0m
+[0;33mW (227060) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000562[0m
+[0;33mW (227720) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000563[0m
+[0;33mW (227820) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000564[0m
+[0;33mW (227900) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000565[0m
+[0;33mW (228570) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000566[0m
+[0;33mW (228660) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000567[0m
+[0;33mW (228780) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000568[0m
+[0;32mI (229160) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;32mI (234160) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (234210) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (234230) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (234260) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (234260) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (239160) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;32mI (244160) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (244210) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (244240) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (244260) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (244260) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+Hh�ښ�j%�(39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 001e0000[0m
+[0;32mI (92) boot:  3 storage          WiFi data        01 02 001f0000 00010000[0m
+[0;32mI (99) boot: End of partition table[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=605c8h (394696) map[0m
+[0;32mI (247) esp_image: segment 1: paddr=000705f0 vaddr=3ffbdb60 size=071d4h ( 29140) load[0m
+[0;32mI (258) esp_image: segment 2: paddr=000777cc vaddr=40080000 size=0884ch ( 34892) load[0m
+[0;32mI (272) esp_image: segment 3: paddr=00080020 vaddr=400d0020 size=12c690h (1230480) map[0m
+[0;32mI (694) esp_image: segment 4: paddr=001ac6b8 vaddr=4008884c size=1721ch ( 94748) load[0m
+[0;32mI (747) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (748) boot: Disabling RNG early entropy source...[0m
+[0;32mI (760) cpu_start: Multicore app[0m
+[0;32mI (768) cpu_start: Pro cpu start user code[0m
+[0;32mI (768) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (768) app_init: Application information:[0m
+[0;32mI (771) app_init: Project name:     node_server[0m
+[0;32mI (776) app_init: App version:      1[0m
+[0;32mI (781) app_init: Compile time:     Nov 25 2024 16:33:07[0m
+[0;32mI (787) app_init: ELF file SHA256:  10fd3c7c5...[0m
+[0;32mI (792) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (797) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (801) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (806) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (812) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (819) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (825) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (831) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (837) heap_init: At 3FFD0AC0 len 0000F540 (61 KiB): DRAM[0m
+[0;32mI (843) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (849) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (856) heap_init: At 4009FA68 len 00000598 (1 KiB): IRAM[0m
+[0;32mI (864) spi_flash: detected chip: generic[0m
+[0;32mI (866) spi_flash: flash io: dio[0m
+[0;33mW (870) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (884) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (895) coexist: coex firmware version: 4482466[0m
+[0;32mI (900) main_task: Started on CPU0[0m
+[0;32mI (910) main_task: Calling app_main()[0m
+[0;32mI (910) MAIN: Initializing...[0m
+[0;32mI (940) BTDM_INIT: BT controller compile version [b022216][0m
+[0;32mI (950) BTDM_INIT: Bluetooth MAC: c0:49:ef:f9:9d:6a[0m
+[0;32mI (950) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+Bluetooth Mesh v1.1 commit: [10f7fdc1a9]
+[0;33mW (1390) BLE_MESH: bt_mesh_proxy_server_prov_disable, Already[0m
+[0;32mI (1410) MESH_SERVER: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (1410) MESH_SERVER: net_idx: 0x0000, addr: 0x0003[0m
+[0;32mI (1410) MESH_SERVER: flags: 0x00, iv_index: 0x00000000[0m
+[0;32mI (1420) MESH_SERVER: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1430) MESH_SERVER: ESP_BLE_MESH_NODE_SET_UNPROV_DEV_NAME_COMP_EVT, Name: SERVER_NODE, err_code 0[0m
+[0;33mW (1430) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0005e9[0m
+[0;33mW (1440) BLE_MESH: bt_mesh_prov_enable, Already[0m
+[0;32mI (1450) MESH_SERVER: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code -120[0m
+[0;32mI (1460) MESH_SERVER: BLE Mesh Node initialized![0m
+[0;33mW (2070) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0005ea[0m
+[0;33mW (2150) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0005eb[0m
+[0;33mW (2270) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0005ec[0m
+[0;32mI (2460) OLED: OLED initialization[0m
+[0;33mW (2910) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0005ed[0m
+[0;33mW (2990) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0005ee[0m
+[0;33mW (3110) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0005ef[0m
+[0;32mI (3570) wifi:wifi driver task: 3ffdde4c, prio:23, stack:6656, core=0[0m
+[0;32mI (3580) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (3580) wifi:wifi certification version: v7.0[0m
+[0;32mI (3580) wifi:config NVS flash: enabled[0m
+[0;32mI (3580) wifi:config nano formating: disabled[0m
+[0;32mI (3590) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (3590) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (3590) wifi:Init management short buffer num: 32[0m
+[0;32mI (3600) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (3600) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (3610) wifi:Init static rx buffer num: 10[0m
+[0;32mI (3610) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (3620) wifi_init: rx ba win: 6[0m
+[0;32mI (3620) wifi_init: accept mbox: 6[0m
+[0;32mI (3620) wifi_init: tcpip mbox: 32[0m
+[0;32mI (3630) wifi_init: udp mbox: 6[0m
+[0;32mI (3630) wifi_init: tcp mbox: 6[0m
+[0;32mI (3630) wifi_init: tcp tx win: 5760[0m
+[0;32mI (3640) wifi_init: tcp rx win: 5760[0m
+[0;32mI (3640) wifi_init: tcp mss: 1440[0m
+[0;32mI (3650) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (3650) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (3660) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (3670) wifi:mode : sta (c0:49:ef:f9:9d:68)[0m
+[0;32mI (3680) wifi:enable tsf[0m
+[0;32mI (3680) MQTT_EXAMPLE: wifi_init_sta finished[0m
+[0;31mE (3690) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3690) esp-tls: Failed to open new connection[0m
+[0;31mE (3690) transport_base: Failed to open a new connection[0m
+[0;31mE (3700) mqtt_client: Error transport connect[0m
+[0;32mI (3710) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (3710) MAIN: Task initializing..[0m
+[0;32mI (3720) MAIN: Task initializing..[0m
+[0;32mI (3720) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3730) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (4860) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (4860) mqtt_client: Client force reconnect requested[0m
+[0;32mI (4860) main_task: Returned from app_main()[0m
+[0;31mE (4870) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (4880) esp-tls: Failed to open new connection[0m
+[0;31mE (4890) transport_base: Failed to open a new connection[0m
+[0;31mE (4890) mqtt_client: Error transport connect[0m
+[0;32mI (4900) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (7640) wifi:state: auth -> init (0x200)[0m
+[0;32mI (7650) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (7650) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (7650) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m
+[0;33mW (9730) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0005f1[0m
+[0;33mW (9790) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0005f2[0m
+[0;32mI (9900) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (9900) mqtt_client: Client force reconnect requested[0m
+[0;31mE (9900) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (9910) esp-tls: Failed to open new connection[0m
+[0;31mE (9920) transport_base: Failed to open a new connection[0m
+[0;31mE (9920) mqtt_client: Error transport connect[0m
+[0;32mI (9930) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;33mW (10450) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0005f3[0m
+[0;33mW (10550) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0005f4[0m
+[0;33mW (10700) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0005f5[0m
+[0;33mW (11450) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0005f7[0m
+[0;33mW (11490) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0005f8[0m
+[0;33mW (12150) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0005f9[0m
+[0;33mW (12230) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0005fa[0m
+[0;33mW (12370) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0005fb[0m
+[0;32mI (12480) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (12480) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m
+[0;32mI (12530) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (12530) wifi:state: init -> auth (0xb0)[0m
+[0;33mW (13580) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0005fc[0m
+[0;33mW (13580) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0005fd[0m
+[0;33mW (13590) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0005fe[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (14400) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (14420) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (14450) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (14450) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (14940) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (14940) mqtt_client: Client force reconnect requested[0m
+[0;31mE (14940) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (14950) esp-tls: Failed to open new connection[0m
+[0;31mE (14960) transport_base: Failed to open a new connection[0m
+[0;31mE (14960) mqtt_client: Error transport connect[0m
+[0;32mI (14970) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (16380) wifi:state: auth -> init (0x200)[0m
+[0;32mI (16390) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (16390) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (16390) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m
+[0;33mW (19690) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000600[0m
+[0;33mW (19750) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000601[0m
+[0;32mI (19980) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (19980) mqtt_client: Client force reconnect requested[0m
+[0;31mE (19980) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (19990) esp-tls: Failed to open new connection[0m
+[0;31mE (20000) transport_base: Failed to open a new connection[0m
+[0;31mE (20000) mqtt_client: Error transport connect[0m
+[0;32mI (20010) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;33mW (20410) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000602[0m
+[0;33mW (20630) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000604[0m
+[0;32mI (21220) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (21220) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m
+[0;32mI (21230) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (21230) wifi:state: init -> auth (0xb0)[0m
+[0;33mW (22280) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000605[0m
+[0;33mW (22280) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000606[0m
+[0;33mW (22280) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000607[0m
+[0;33mW (22290) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000608[0m
+[0;33mW (22300) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000609[0m
+[0;33mW (23070) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00060b[0m
+[0;33mW (23070) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00060c[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (23750) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (23780) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (23800) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (23800) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (25020) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (25020) mqtt_client: Client force reconnect requested[0m
+[0;31mE (25020) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (25030) esp-tls: Failed to open new connection[0m
+[0;31mE (25040) transport_base: Failed to open a new connection[0m
+[0;31mE (25040) mqtt_client: Error transport connect[0m
+[0;32mI (25050) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (25060) wifi:state: auth -> init (0x200)[0m
+[0;32mI (25080) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (25080) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (25080) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m
+[0;33mW (29590) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00060e[0m
+[0;33mW (29850) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000610[0m
+[0;32mI (29910) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (29910) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m
+[0;32mI (29920) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (29920) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (30060) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (30060) mqtt_client: Client force reconnect requested[0m
+[0;31mE (30060) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (30070) esp-tls: Failed to open new connection[0m
+[0;31mE (30080) transport_base: Failed to open a new connection[0m
+[0;31mE (30080) mqtt_client: Error transport connect[0m
+[0;32mI (30090) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;33mW (30990) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000611[0m
+[0;33mW (30990) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000612[0m
+[0;33mW (30990) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000613[0m
+[0;33mW (31780) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000614[0m
+[0;33mW (31780) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000615[0m
+[0;33mW (31780) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000616[0m
+[0;33mW (32210) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000618[0m
+[0;33mW (32950) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00061a[0m
+[0;33mW (33150) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00061c[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (33760) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (33780) wifi:state: auth -> init (0x200)[0m
+[0;32mI (33800) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (33800) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (33800) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m
+[0;33mW (33810) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (33840) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (33840) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (35100) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (35100) mqtt_client: Client force reconnect requested[0m
+[0;31mE (35100) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (35110) esp-tls: Failed to open new connection[0m
+[0;31mE (35120) transport_base: Failed to open a new connection[0m
+[0;31mE (35120) mqtt_client: Error transport connect[0m
+[0;32mI (35130) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (38630) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (38640) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m
+[0;32mI (38650) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (38650) wifi:state: init -> auth (0xb0)[0m
+[0;33mW (39700) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00061d[0m
+[0;33mW (39700) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00061e[0m
+[0;32mI (40140) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (40140) mqtt_client: Client force reconnect requested[0m
+[0;31mE (40140) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (40150) esp-tls: Failed to open new connection[0m
+[0;31mE (40160) transport_base: Failed to open a new connection[0m
+[0;31mE (40160) mqtt_client: Error transport connect[0m
+[0;32mI (40170) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;33mW (40500) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000620[0m
+[0;33mW (40700) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000622[0m
+[0;33mW (41410) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000624[0m
+[0;33mW (42150) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000626[0m
+[0;33mW (42410) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000628[0m
+[0;32mI (42500) wifi:state: auth -> init (0x200)[0m
+[0;32mI (42510) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (42510) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (42510) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m
+[0;33mW (42990) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000629[0m
+[0;33mW (43150) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00062a[0m
+[0;33mW (43190) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00062b[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (43760) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (43790) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (43820) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (43820) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (45180) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (45180) mqtt_client: Client force reconnect requested[0m
+[0;31mE (45180) esp-tls: couldn't get hostname for :897e4e4bd28b411ba2464a4019281121.s1.eu.hivemq.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (45190) esp-tls: Failed to open new connection[0m
+[0;31mE (45200) transport_base: Failed to open a new connection[0m
+[0;31mE (45200) mqtt_client: Error transport connect[0m
+[0;32mI (45210) MQTT_EXAMPLE: MQTT Disconnected from broker[0m
+[0;32mI (47350) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (47350) MQTT_EXAMPLE: WiFi disconnected, trying to reconnect...[0m
+[0;32mI (47440) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (47450) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (49270) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (49280) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (49320) wifi:connected with Thuy, aid = 2, channel 6, BW20, bssid = 02:33:40:a3:cb:58[0m
+[0;32mI (49330) wifi:security: WPA3-SAE, phy: bgn, rssi: -80[0m
+[0;32mI (49330) wifi:pm start, type: 1[0m
+
+[0;32mI (49330) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (49390) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;33mW (49670) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00062c[0m
+[0;33mW (49770) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00062d[0m
+[0;33mW (49830) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00062e[0m
+[0;32mI (50220) MQTT_EXAMPLE: MQTT disconnected, attempting to reconnect...[0m
+[0;32mI (50220) mqtt_client: Client force reconnect requested[0m
+[0;32mI (50340) esp_netif_handlers: sta ip: 172.20.10.3, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (50340) MQTT_EXAMPLE: got ip:172.20.10.3[0m
+[0;33mW (50490) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00062f[0m
+[0;33mW (50550) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000630[0m
+[0;33mW (50690) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000631[0m
+[0;32mI (51230) wifi:<ba-add>idx:0 (ifx:0, 02:33:40:a3:cb:58), tid:0, ssn:2, winSize:64[0m
+[0;33mW (51310) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000632[0m
+[0;33mW (51470) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000633[0m
+[0;33mW (51490) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000634[0m
+[0;33mW (52210) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000635[0m
+[0;33mW (52310) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000636[0m
+[0;33mW (52460) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000637[0m
+[0;32mI (52510) esp-x509-crt-bundle: Certificate validated[0m
+[0;33mW (53050) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000638[0m
+[0;33mW (53150) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000639[0m
+[0;33mW (53250) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00063a[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (53770) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (53900) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (53940) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (53940) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (54320) MQTT_EXAMPLE: MQTT Connected to broker[0m
+[0;32mI (54720) MQTT_EXAMPLE: MQTT Subscribed to topic: homePod/6332f122-db2a-4ad2-9792-7998524fdaf5/controlDevice[0m
+[0;33mW (59680) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00063b[0m
+[0;33mW (59750) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00063c[0m
+[0;32mI (59860) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (59870) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00063d[0m
+[0;33mW (60530) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00063e[0m
+[0;33mW (60610) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00063f[0m
+[0;33mW (60690) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000640[0m
+[0;33mW (61350) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000641[0m
+[0;33mW (61450) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000642[0m
+[0;33mW (62270) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000644[0m
+[0;33mW (62300) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000645[0m
+[0;33mW (62380) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000646[0m
+[0;33mW (63030) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000647[0m
+[0;33mW (63150) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000648[0m
+[0;33mW (63230) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000649[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (63790) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (63820) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (63840) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (63840) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (64870) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (69770) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00064a[0m
+[0;33mW (69790) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00064b[0m
+[0;32mI (69870) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (69950) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00064c[0m
+[0;33mW (70570) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00064d[0m
+[0;33mW (70670) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00064e[0m
+[0;33mW (70710) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00064f[0m
+[0;33mW (71370) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000650[0m
+[0;33mW (71490) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000651[0m
+[0;33mW (71550) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000652[0m
+[0;33mW (72210) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000653[0m
+[0;33mW (72300) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000654[0m
+[0;33mW (72390) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000655[0m
+[0;33mW (73050) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000656[0m
+[0;33mW (73170) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000657[0m
+[0;33mW (73230) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000658[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (73780) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (73820) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (73840) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (73840) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (74890) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (79770) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000659[0m
+[0;33mW (79890) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00065a[0m
+[0;33mW (79890) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00065b[0m
+[0;32mI (79900) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (80590) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00065c[0m
+[0;33mW (80650) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00065d[0m
+[0;33mW (80730) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00065e[0m
+[0;33mW (81390) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00065f[0m
+[0;33mW (81490) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000660[0m
+[0;33mW (81570) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000661[0m
+[0;33mW (82230) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000662[0m
+[0;33mW (82330) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000663[0m
+[0;33mW (82410) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000664[0m
+[0;33mW (83070) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000665[0m
+[0;33mW (83170) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000666[0m
+[0;33mW (83250) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000667[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (83800) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (83820) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (83850) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (83850) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (84900) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (89710) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000668[0m
+[0;33mW (89810) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000669[0m
+[0;32mI (89900) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (89910) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00066a[0m
+[0;33mW (90570) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00066b[0m
+[0;33mW (90690) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00066c[0m
+[0;33mW (90750) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00066d[0m
+[0;33mW (91550) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00066f[0m
+[0;33mW (91610) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000670[0m
+[0;33mW (92250) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000671[0m
+[0;33mW (92330) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000672[0m
+[0;33mW (92420) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000673[0m
+[0;33mW (93090) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000674[0m
+[0;33mW (93190) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000675[0m
+[0;33mW (93270) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000676[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (93800) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (93830) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (93850) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (93850) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (94970) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (99750) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000677[0m
+[0;33mW (99850) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000678[0m
+[0;32mI (99970) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (99980) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000679[0m
+[0;33mW (100630) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00067a[0m
+[0;33mW (100750) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00067b[0m
+[0;33mW (100800) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00067c[0m
+[0;33mW (101450) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00067d[0m
+[0;33mW (101550) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00067e[0m
+[0;33mW (101650) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00067f[0m
+[0;33mW (102310) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000680[0m
+[0;33mW (102400) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000681[0m
+[0;33mW (102490) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000682[0m
+[0;33mW (103150) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000683[0m
+[0;33mW (103230) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000684[0m
+[0;33mW (103330) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000685[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (103830) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (103860) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (103880) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (103880) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (104970) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (109770) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000686[0m
+[0;33mW (109870) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000687[0m
+[0;33mW (109960) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000688[0m
+[0;32mI (109970) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (110710) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00068a[0m
+[0;33mW (110810) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00068b[0m
+[0;33mW (111460) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00068c[0m
+[0;33mW (111600) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00068d[0m
+[0;33mW (111650) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00068e[0m
+[0;33mW (112330) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00068f[0m
+[0;33mW (112390) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000690[0m
+[0;33mW (112510) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000691[0m
+[0;33mW (113140) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000692[0m
+[0;33mW (113250) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000693[0m
+[0;33mW (113340) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000694[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (113820) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (113860) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (113880) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (113880) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (114970) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (119810) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000695[0m
+[0;33mW (119890) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000696[0m
+[0;32mI (119970) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (120010) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000697[0m
+[0;33mW (120650) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000698[0m
+[0;33mW (120730) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000699[0m
+[0;33mW (120830) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00069a[0m
+[0;33mW (121570) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00069c[0m
+[0;33mW (121670) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00069d[0m
+[0;33mW (122330) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00069e[0m
+[0;33mW (122490) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00069f[0m
+[0;33mW (122530) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006a0[0m
+[0;33mW (123170) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006a1[0m
+[0;33mW (123250) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006a2[0m
+[0;33mW (123350) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006a3[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (123820) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (123950) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (123980) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (123980) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (125000) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (129830) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006a4[0m
+[0;33mW (129950) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006a5[0m
+[0;32mI (130000) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (130050) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006a6[0m
+[0;33mW (130770) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006a8[0m
+[0;33mW (130930) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006a9[0m
+[0;33mW (131540) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006aa[0m
+[0;33mW (131610) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006ab[0m
+[0;33mW (131690) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006ac[0m
+[0;33mW (132410) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006ad[0m
+[0;33mW (132470) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006ae[0m
+[0;33mW (132530) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006af[0m
+[0;33mW (133190) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006b0[0m
+[0;33mW (133290) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006b1[0m
+[0;33mW (133370) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006b2[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (133840) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (133870) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (133890) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (133890) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (135000) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (139930) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006b3[0m
+[0;33mW (139980) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006b4[0m
+[0;32mI (140000) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (140120) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006b5[0m
+[0;33mW (140810) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006b6[0m
+[0;33mW (140840) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006b7[0m
+[0;33mW (140910) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006b8[0m
+[0;33mW (141610) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006b9[0m
+[0;33mW (141670) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006ba[0m
+[0;33mW (141790) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006bb[0m
+[0;33mW (142450) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006bc[0m
+[0;33mW (142590) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006be[0m
+[0;33mW (143290) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006bf[0m
+[0;33mW (143350) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006c0[0m
+[0;33mW (143430) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006c1[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (143840) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (143870) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (143890) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (143890) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (145020) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (149870) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006c2[0m
+[0;33mW (149970) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006c3[0m
+[0;32mI (150020) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (150110) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006c4[0m
+[0;33mW (150770) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006c5[0m
+[0;33mW (150850) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006c6[0m
+[0;33mW (150970) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006c7[0m
+[0;33mW (151640) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006c8[0m
+[0;33mW (151710) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006c9[0m
+[0;33mW (151850) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006ca[0m
+[0;33mW (152490) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006cb[0m
+[0;33mW (152550) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006cc[0m
+[0;33mW (152710) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006cd[0m
+[0;33mW (153330) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006ce[0m
+[0;33mW (153410) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006cf[0m
+[0;33mW (153470) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006d0[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (153850) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (153880) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (153900) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (153900) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (155020) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (159950) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006d1[0m
+[0;32mI (160020) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (160040) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006d2[0m
+[0;33mW (160750) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006d4[0m
+[0;33mW (160890) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006d5[0m
+[0;33mW (160930) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006d6[0m
+[0;33mW (161590) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006d7[0m
+[0;33mW (161670) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006d8[0m
+[0;33mW (161770) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006d9[0m
+[0;33mW (162440) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006da[0m
+[0;33mW (162570) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006db[0m
+[0;33mW (162610) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006dc[0m
+[0;33mW (163330) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006dd[0m
+[0;33mW (163410) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006de[0m
+[0;33mW (163510) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006df[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (163840) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (163880) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (163900) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (163900) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (165070) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (169930) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006e0[0m
+[0;33mW (170050) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006e1[0m
+[0;32mI (170070) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (170120) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006e2[0m
+[0;33mW (170830) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006e3[0m
+[0;33mW (170910) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006e4[0m
+[0;33mW (171010) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006e5[0m
+[0;33mW (171630) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006e6[0m
+[0;33mW (171720) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006e7[0m
+[0;33mW (171790) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006e8[0m
+[0;33mW (172450) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006e9[0m
+[0;33mW (172550) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006ea[0m
+[0;33mW (172630) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006eb[0m
+[0;33mW (173300) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006ec[0m
+[0;33mW (173390) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006ed[0m
+[0;33mW (173530) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006ee[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (173860) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (173880) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (173910) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (173910) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (175070) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (179970) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006ef[0m
+[0;32mI (180070) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (180130) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006f0[0m
+[0;33mW (180160) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006f1[0m
+[0;33mW (180950) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006f3[0m
+[0;33mW (181040) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006f4[0m
+[0;33mW (181670) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006f5[0m
+[0;33mW (181760) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006f6[0m
+[0;33mW (181830) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006f7[0m
+[0;33mW (182490) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006f8[0m
+[0;33mW (182630) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006f9[0m
+[0;33mW (182670) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006fa[0m
+[0;33mW (183390) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006fb[0m
+[0;33mW (183450) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006fc[0m
+[0;33mW (183510) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006fd[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (183860) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (183880) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (183910) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (183910) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (185070) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (190010) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006fe[0m
+[0;32mI (190080) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (190170) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x0006ff[0m
+[0;33mW (190270) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000700[0m
+[0;33mW (190890) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000701[0m
+[0;33mW (190970) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000702[0m
+[0;33mW (191060) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000703[0m
+[0;33mW (191680) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000704[0m
+[0;33mW (191770) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000705[0m
+[0;33mW (191890) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000706[0m
+[0;33mW (192550) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000707[0m
+[0;33mW (192610) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000708[0m
+[0;33mW (192750) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000709[0m
+[0;33mW (193390) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00070a[0m
+[0;33mW (193450) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00070b[0m
+[0;33mW (193610) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00070c[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (193860) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (193980) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (194010) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (194010) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (195110) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (199990) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00070d[0m
+[0;33mW (200090) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00070e[0m
+[0;32mI (200110) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (200230) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00070f[0m
+[0;33mW (200930) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000710[0m
+[0;33mW (201010) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000711[0m
+[0;33mW (201120) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000712[0m
+[0;33mW (201740) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000713[0m
+[0;33mW (201830) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000714[0m
+[0;33mW (201950) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000715[0m
+[0;33mW (202610) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000716[0m
+[0;33mW (202670) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000717[0m
+[0;33mW (202770) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000718[0m
+[0;33mW (203420) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000719[0m
+[0;33mW (203530) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00071a[0m
+[0;33mW (203630) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00071b[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (203870) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (203900) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (203920) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (203920) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (205110) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (210030) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00071c[0m
+[0;32mI (210110) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (210130) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00071d[0m
+[0;33mW (210230) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00071e[0m
+[0;33mW (210860) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00071f[0m
+[0;33mW (210950) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000720[0m
+[0;33mW (211060) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000721[0m
+[0;33mW (211720) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000722[0m
+[0;33mW (211790) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000723[0m
+[0;33mW (211930) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000724[0m
+[0;33mW (212550) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000725[0m
+[0;33mW (212630) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000726[0m
+[0;33mW (212730) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000727[0m
+[0;33mW (213390) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000728[0m
+[0;33mW (213490) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000729[0m
+[0;33mW (213570) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00072a[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (213860) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (213900) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (213920) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (213920) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (215140) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (220050) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00072b[0m
+[0;32mI (220140) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (220150) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00072c[0m
+[0;33mW (220270) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00072d[0m
+[0;33mW (220910) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00072e[0m
+[0;33mW (220990) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00072f[0m
+[0;33mW (221110) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000730[0m
+[0;33mW (221750) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000731[0m
+[0;33mW (221840) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000732[0m
+[0;33mW (221950) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000733[0m
+[0;33mW (222590) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000734[0m
+[0;33mW (222730) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000735[0m
+[0;33mW (222790) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000736[0m
+[0;33mW (223430) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000737[0m
+[0;33mW (223510) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000738[0m
+[0;33mW (223630) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000739[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (223890) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (223920) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (223940) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (223940) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (225140) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (230070) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00073a[0m
+[0;32mI (230140) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (230230) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00073b[0m
+[0;33mW (230310) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00073c[0m
+[0;33mW (230930) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00073d[0m
+[0;33mW (231010) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00073e[0m
+[0;33mW (231130) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00073f[0m
+[0;33mW (231770) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000740[0m
+[0;33mW (231850) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000741[0m
+[0;33mW (231970) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000742[0m
+[0;33mW (232610) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000743[0m
+[0;33mW (232740) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000744[0m
+[0;33mW (232790) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000745[0m
+[0;33mW (233450) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000746[0m
+[0;33mW (233530) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000747[0m
+[0;33mW (233630) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000748[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (233880) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (233920) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (233940) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (233940) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (235190) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (240110) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000749[0m
+[0;32mI (240190) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (240250) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00074a[0m
+[0;33mW (240350) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00074b[0m
+[0;33mW (240950) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00074c[0m
+[0;33mW (241040) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00074d[0m
+[0;33mW (241130) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00074e[0m
+[0;33mW (241790) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00074f[0m
+[0;33mW (241890) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000750[0m
+[0;33mW (241990) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000751[0m
+[0;33mW (242630) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000752[0m
+[0;33mW (242730) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000753[0m
+[0;33mW (242810) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000754[0m
+[0;33mW (243470) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000755[0m
+[0;33mW (243570) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000756[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (243900) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (243920) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (243950) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (243950) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (245190) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (250110) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000758[0m
+[0;32mI (250190) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (250290) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00075a[0m
+[0;33mW (250950) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00075b[0m
+[0;33mW (251050) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00075c[0m
+[0;33mW (251150) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00075d[0m
+[0;33mW (251810) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00075e[0m
+[0;33mW (251890) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00075f[0m
+[0;33mW (251990) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000760[0m
+[0;33mW (252650) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000761[0m
+[0;33mW (252730) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000762[0m
+[0;33mW (252820) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000763[0m
+[0;33mW (253510) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000764[0m
+[0;33mW (253570) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000765[0m
+[0;33mW (253660) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000766[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 0
+Brightness: 4294967296.000000
+Relay 2: 0
+RFID: 255
+Door: 0
+[0;33mW (253900) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (253920) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (253950) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (253950) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (255200) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (260150) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000767[0m
+[0;32mI (260200) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (260230) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000768[0m
+[0;33mW (260310) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000769[0m
+[0;32mI (260550) MQTT_EXAMPLE: MQTT Received Message:[0m
+[0;32mI (260550) MQTT_EXAMPLE: Topic: homePod/6332f122-db2a-4ad2-9792-7998524fdaf5/controlDevice[0m
+[0;32mI (260550) MQTT_EXAMPLE: Data: {"door": 1}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 248
+Brightness: 4294967296.000000
+Relay 2: 169
+RFID: 255
+Door: 1
+[0;33mW (260600) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (260720) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (260750) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (260750) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;33mW (260980) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00076a[0m
+[0;33mW (261150) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00076b[0m
+[0;33mW (261160) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00076c[0m
+[0;32mI (265250) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;32mI (270250) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 248
+Brightness: 4294967296.000000
+Relay 2: 169
+RFID: 255
+Door: 1
+[0;33mW (270610) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (270640) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (270660) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (270660) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;33mW (272610) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00076d[0m
+[0;33mW (272690) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00076e[0m
+[0;33mW (272780) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00076f[0m
+[0;33mW (273470) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000770[0m
+[0;33mW (273550) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000771[0m
+[0;33mW (273630) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000772[0m
+[0;33mW (274330) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000773[0m
+[0;33mW (274390) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000774[0m
+[0;33mW (274490) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000775[0m
+[0;33mW (275140) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000776[0m
+[0;32mI (275250) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (275270) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000777[0m
+[0;33mW (275370) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000778[0m
+[0;32mI (280250) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 248
+Brightness: 4294967296.000000
+Relay 2: 169
+RFID: 255
+Door: 1
+[0;33mW (280610) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (280640) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (280660) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (280660) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (285270) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;32mI (290270) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 248
+Brightness: 4294967296.000000
+Relay 2: 169
+RFID: 255
+Door: 1
+[0;33mW (290660) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (290700) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (290720) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (290720) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;33mW (292580) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000779[0m
+[0;33mW (292630) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00077a[0m
+[0;33mW (292710) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00077b[0m
+[0;33mW (293370) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00077c[0m
+[0;33mW (293470) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00077d[0m
+[0;33mW (293550) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00077e[0m
+[0;33mW (294210) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00077f[0m
+[0;33mW (294310) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000780[0m
+[0;33mW (294410) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000781[0m
+[0;33mW (295070) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000782[0m
+[0;33mW (295230) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000783[0m
+[0;33mW (295250) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000784[0m
+[0;32mI (295270) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;32mI (300270) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 248
+Brightness: 4294967296.000000
+Relay 2: 169
+RFID: 255
+Door: 1
+[0;33mW (300660) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (300690) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (300720) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (300720) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (305290) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;32mI (310290) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 248
+Brightness: 4294967296.000000
+Relay 2: 169
+RFID: 255
+Door: 1
+[0;33mW (310680) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (310700) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (310730) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (310730) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;33mW (312430) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000785[0m
+[0;33mW (312530) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000786[0m
+[0;33mW (312650) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000787[0m
+[0;33mW (313250) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000788[0m
+[0;33mW (313350) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000789[0m
+[0;33mW (313430) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00078a[0m
+[0;33mW (314090) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00078b[0m
+[0;33mW (314180) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00078c[0m
+[0;33mW (314270) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00078d[0m
+[0;33mW (314990) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x00078e[0m
+[0;33mW (315190) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000790[0m
+[0;32mI (315290) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;33mW (315810) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000791[0m
+[0;33mW (315930) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000792[0m
+[0;33mW (316010) BLE_MESH: Replay: src 0x0009 dst 0x0003 seq 0x000793[0m
+[0;32mI (320290) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 248
+Brightness: 4294967296.000000
+Relay 2: 169
+RFID: 255
+Door: 1
+[0;33mW (320680) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (320710) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (320730) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (320730) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (325290) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;32mI (330290) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 248
+Brightness: 4294967296.000000
+Relay 2: 169
+RFID: 255
+Door: 1
+[0;33mW (330680) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (330800) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (330830) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (330830) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (335330) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;32mI (340330) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 248
+Brightness: 4294967296.000000
+Relay 2: 169
+RFID: 255
+Door: 1
+[0;33mW (340680) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (340720) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (340740) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (340740) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (345330) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;32mI (350340) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 248
+Brightness: 4294967296.000000
+Relay 2: 169
+RFID: 255
+Door: 1
+[0;33mW (350680) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (350720) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (350740) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (350740) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (355360) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;32mI (360360) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 248
+Brightness: 4294967296.000000
+Relay 2: 169
+RFID: 255
+Door: 1
+[0;33mW (360700) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (360740) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (360760) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (360760) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (365360) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;32mI (370360) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 248
+Brightness: 4294967296.000000
+Relay 2: 169
+RFID: 255
+Door: 1
+[0;33mW (370700) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (370740) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (370760) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (370760) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (375400) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;32mI (380400) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 248
+Brightness: 4294967296.000000
+Relay 2: 169
+RFID: 255
+Door: 1
+[0;33mW (380760) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (380780) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (380810) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (380810) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (385400) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;32mI (390400) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 248
+Brightness: 4294967296.000000
+Relay 2: 169
+RFID: 255
+Door: 1
+[0;33mW (390760) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (390780) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (390810) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (390810) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (395410) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;32mI (400410) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 248
+Brightness: 4294967296.000000
+Relay 2: 169
+RFID: 255
+Door: 1
+[0;33mW (400760) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (400840) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (400880) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (400880) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (405430) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;32mI (410440) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 248
+Brightness: 4294967296.000000
+Relay 2: 169
+RFID: 255
+Door: 1
+[0;33mW (410760) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (410780) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (410810) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (410810) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (415440) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;32mI (420440) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 248
+Brightness: 4294967296.000000
+Relay 2: 169
+RFID: 255
+Door: 1
+[0;33mW (420760) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (420780) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (420810) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (420810) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (425440) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;32mI (430440) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 248
+Brightness: 4294967296.000000
+Relay 2: 169
+RFID: 255
+Door: 1
+[0;33mW (430790) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (430820) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (430840) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (430840) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (435450) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;32mI (440450) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 248
+Brightness: 4294967296.000000
+Relay 2: 169
+RFID: 255
+Door: 1
+[0;33mW (440780) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (440810) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (440840) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (440840) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (445480) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;32mI (450490) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 248
+Brightness: 4294967296.000000
+Relay 2: 169
+RFID: 255
+Door: 1
+[0;33mW (450840) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (450870) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (450890) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (450890) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (455490) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;32mI (460490) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 248
+Brightness: 4294967296.000000
+Relay 2: 169
+RFID: 255
+Door: 1
+[0;33mW (460840) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (460860) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (460890) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (460890) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (465490) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;32mI (470490) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 248
+Brightness: 4294967296.000000
+Relay 2: 169
+RFID: 255
+Door: 1
+[0;33mW (470840) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (470960) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (470990) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (470990) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (475530) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;32mI (480530) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 248
+Brightness: 4294967296.000000
+Relay 2: 169
+RFID: 255
+Door: 1
+[0;33mW (480840) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (480880) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (480900) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (480900) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (485530) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;32mI (490530) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 248
+Brightness: 4294967296.000000
+Relay 2: 169
+RFID: 255
+Door: 1
+[0;33mW (490850) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (490880) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (490900) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (490900) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (495580) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;32mI (500580) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 248
+Brightness: 4294967296.000000
+Relay 2: 169
+RFID: 255
+Door: 1
+[0;33mW (500890) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (500920) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (500940) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (500940) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (505580) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;32mI (510590) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 248
+Brightness: 4294967296.000000
+Relay 2: 169
+RFID: 255
+Door: 1
+[0;33mW (510880) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (510920) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (510940) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (510940) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (515640) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;32mI (520640) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 248
+Brightness: 4294967296.000000
+Relay 2: 169
+RFID: 255
+Door: 1
+[0;33mW (520910) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (520940) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (520960) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (520960) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (525640) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;32mI (530640) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 248
+Brightness: 4294967296.000000
+Relay 2: 169
+RFID: 255
+Door: 1
+[0;33mW (530910) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (530940) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (530960) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (530960) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (535640) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;32mI (540640) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 248
+Brightness: 4294967296.000000
+Relay 2: 169
+RFID: 255
+Door: 1
+[0;33mW (540900) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (541030) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (541060) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (541060) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (545680) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;32mI (550680) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 248
+Brightness: 4294967296.000000
+Relay 2: 169
+RFID: 255
+Door: 1
+[0;33mW (550920) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (550940) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (550970) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (550970) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (555680) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;32mI (560690) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 248
+Brightness: 4294967296.000000
+Relay 2: 169
+RFID: 255
+Door: 1
+[0;33mW (560920) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (560950) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (560970) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (560970) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (565720) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;32mI (570720) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 248
+Brightness: 4294967296.000000
+Relay 2: 169
+RFID: 255
+Door: 1
+[0;33mW (570940) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (570980) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (571000) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (571000) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (575720) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;32mI (580720) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 248
+Brightness: 4294967296.000000
+Relay 2: 169
+RFID: 255
+Door: 1
+[0;33mW (580940) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (580980) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (581000) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (581000) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (585740) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;32mI (590740) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 248
+Brightness: 4294967296.000000
+Relay 2: 169
+RFID: 255
+Door: 1
+[0;33mW (590960) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (591000) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (591020) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (591020) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (595740) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;32mI (600740) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 248
+Brightness: 4294967296.000000
+Relay 2: 169
+RFID: 255
+Door: 1
+[0;33mW (600960) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (601000) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (601020) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (601020) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (605740) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;32mI (610750) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 248
+Brightness: 4294967296.000000
+Relay 2: 169
+RFID: 255
+Door: 1
+[0;33mW (610970) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (611090) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (611120) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (611120) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (615780) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;32mI (620780) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 248
+Brightness: 4294967296.000000
+Relay 2: 169
+RFID: 255
+Door: 1
+[0;33mW (620980) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (621010) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (621030) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (621030) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (625780) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;32mI (630780) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 248
+Brightness: 4294967296.000000
+Relay 2: 169
+RFID: 255
+Door: 1
+[0;33mW (630980) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (631000) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (631030) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (631030) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (635810) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;32mI (640810) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 248
+Brightness: 4294967296.000000
+Relay 2: 169
+RFID: 255
+Door: 1
+[0;33mW (641000) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (641030) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (641050) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (641050) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMP -- Envio de msg opcode 0x00c202e5 com sucesso[0m
+[0;32mI (645810) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+[0;32mI (650810) MQTT_EXAMPLE: Published message: {
+	"temp":	4294967296,
+	"humi":	4294967296,
+	"light":	4294967296
+}[0m
+Device Number: 0
+Temperature: 4294967296.000000
+Humidity: 4294967296.000000
+Relay 1: 248
+Brightness: 4294967296.000000
+Relay 2: 169
+RFID: 255
+Door: 1
+[0;33mW (651000) B
