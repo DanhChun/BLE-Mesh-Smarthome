@@ -1,3 +1,5 @@
+# Note
+This projects is available for device only and lack of frontend and backend
 # ESP-BLE-MESH Examples
 
 [ESP-BLE-MESH](../../../components/bt/esp_ble_mesh/) is the official Bluetooth® Mesh stack of Espressif Systems. We will provide long-term support for new features, performance optimization, etc.
