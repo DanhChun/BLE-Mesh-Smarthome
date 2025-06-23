@@ -1,0 +1,11 @@
+
+{
+    "markdown.validate.fileLinks.enabled": "warning",
+    "markdown.validate.fileLinks.markdownFragmentLinks": "inherit",
+    "markdown.validate.fragmentLinks.enabled": "warning",
+    "markdown.validate.referenceLinks.enabled": "warning",
+    "markdown.validate.unusedLinkDefinitions.enabled": "hint",
+    "markdown.validate.duplicateLinkDefinitions.enabled": "warning",
+    "C_Cpp.errorSquiggles": "disabled"
+
+}
